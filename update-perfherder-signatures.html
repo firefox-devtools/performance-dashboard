@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="../common.css" />
+
+<script type="text/javascript" src="fetch.js"></script>
+<script>
+async function update() {
+  let url = "https://treeherder.mozilla.org/api/optioncollectionhash/";
+  let collections = await fetchJSON(url);
+  function getCollectionName(collection) {
+    let name = collections.filter(a => a.option_collection_hash == collection)[0].options[0].name;
+    return name;
+  }
+  url = "https://treeherder.mozilla.org/api/project/mozilla-central/performance/signatures/?framework=1&interval=1209600&platform=windows7-32&subtests=1"
+  let tests = await fetchJSON(url);
+  tests = Object.keys(tests).map(k => {
+    let o = tests[k];
+    o.signature = k;
+    return o;
+  }).filter(t => {
+    return t.suite == "damp" && t.extra_options.includes("e10s") && t.extra_options.length == 1;
+  });
+  let final = {};
+  tests.forEach(t => {
+    let name = t.test ? t.test.replace(/\.DAMP/, "") : "summary";
+    if (!final[name]) {
+      final[name] = {signatures: {}};
+    }
+    let s = final[name];
+    let platform = t.machine_platform + "-" + getCollectionName(t.option_collection_hash);
+    s.signatures[platform] = t.signature;
+  });
+
+  document.documentElement.innerHTML = "<pre>const PerfHerderSignatures = "+JSON.stringify(final, null, 2)+"</pre>";
+}
+window.onload = update;
+</script>

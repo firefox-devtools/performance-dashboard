@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="common.css" />
+
+<script type="text/javascript" src="perfherder-signatures.js"></script>
+<script>
+  // whenever telemetry inputs change
+  function updateTelemetry() {
+    let metric = document.getElementById("telemetry-metric").selectedOptions[0].value;
+    let histogramKey = document.getElementById("telemetry-key").selectedOptions[0].value;
+    let days = document.getElementById("days").selectedOptions[0].value;
+    let filterstddev = document.getElementById("filter-stddev").checked;
+
+    pushState({
+      view: "telemetry",
+      histogramKey,
+      metric,
+      days,
+      filterstddev,
+    });
+  }
+  // whenever perfherder inputs change
+  function updatePerfHerder(event) {
+    let test = document.getElementById("perfherder-test").selectedOptions[0].value;
+    let days = document.getElementById("days").selectedOptions[0].value;
+    let filterstddev = document.getElementById("filter-stddev").checked;
+    let options = { test, days };
+
+    pushState({
+      view: "perfherder",
+      test,
+      days,
+      filterstddev,
+    });
+  }
+  function updateFilterStddev() {
+    let state = history.state;
+    state.filterstddev = document.getElementById("filter-stddev").checked;
+    pushState(state);
+  }
+  function pushState(state) {
+    let u = new URL(window.location);
+    let params = u.searchParams;
+    for (let key in state) {
+      params.set(key, state[key]);
+    }
+    history.pushState(state, null, u.href);
+    onStateUpdated();
+  }
+  function onStateUpdated() {
+    let state = history.state;
+    if (!state) {
+      return;
+    }
+    if (!["telemetry", "perfherder"].includes(state.view)) {
+      throw new Error("Wrong view: "+state.view);
+    }
+    
+    updateIframeLocation(state);
+
+    let metric = document.getElementById("telemetry-metric");
+    restoreSelect(metric, state.metric);
+    let histogramKey = document.getElementById("telemetry-key");
+    restoreSelect(histogramKey, state.histogramKey);
+
+    let test = document.getElementById("perfherder-test");
+    restoreSelect(test, state.test);
+
+    let days = document.getElementById("days");
+    restoreSelect(days, state.days);
+  }
+  // Select the <option> with given `value` for the given <`select`>
+  function restoreSelect(select, value = "") {
+    for (let i = 0; i < select.options.length; i++) {
+      if (select.options[i].value == value) {
+        select.selectedIndex = i;
+      }
+    }
+  }
+  function updateIframeLocation(state) {
+    let iframe = document.getElementById("iframe");
+    let url = new URL(state.view + ".html", window.location);
+    let params = url.searchParams;
+
+    for (let key in state) {
+      if (key == "view") {
+        continue;
+      }
+      params.set(key, state[key]);
+    }
+    iframe.setAttribute("src", url.href);
+  }
+  window.addEventListener("popstate", function () {
+    onStateUpdated();
+  });
+  function selectDays() {
+    if (history.state.view == "perfherder") {
+      updatePerfHerder();
+    } else if (history.state.view == "telemetry") {
+      updateTelemetry();
+    }
+  }
+  function fillPerfHerderList() {
+    let select = document.getElementById("perfherder-test");
+    let list = Object.keys(PerfHerderSignatures).sort();
+    for (let title of list) {
+      let option = document.createElement("option");
+      option.value = title;
+      option.innerText = title;
+      select.appendChild(option);
+    }
+  }
+  window.addEventListener("load", function () {
+    fillPerfHerderList();
+    if (!history.state) {
+      let state = {};
+      for (let [key, value] of new URL(window.location).searchParams.entries()) {
+        state[key] = value;
+      }
+      console.log("state", state);
+      pushState(state);
+    } else {
+      onStateUpdated();
+    }
+  });
+</script>
+
+<div align="center">
+  <h1>Individual graph viewer</h1>
+
+  <b>Telemetry:</b>
+  <select id="telemetry-metric" onchange="updateTelemetry()">
+    <option></option>
+    <option>DEVTOOLS_COLD_TOOLBOX_OPEN_DELAY_MS</option>
+    <option>DEVTOOLS_WARM_TOOLBOX_OPEN_DELAY_MS</option>
+    <option>DEVTOOLS_TOOLBOX_PAGE_RELOAD_DELAY_MS</option>
+    <option>DEVTOOLS_INSPECTOR_NEW_ROOT_TO_RELOAD_DELAY_MS</option>
+  </select>
+  <select id="telemetry-key" onchange="updateTelemetry()">
+    <option>inspector</option>
+    <option>jsdebugger</option>
+    <option>webconsole</option>
+    <option>netmonitor</option>
+  </select>
+  <b>DAMP:</b>
+  <select id="perfherder-test" onchange="updatePerfHerder(event)">
+    <option></option>
+  </select>
+  <select id="days" onchange="selectDays();">
+    <option value="1">day</option>
+    <option value="2">2 days</option>
+    <option value="7">7 days</option>
+    <option value="14" selected="true">14 days</option>
+    <option value="30">month</option>
+    <option value="60">2 months</option>
+    <option value="90">3 months</option>
+    <option value="365">Year</option>
+  </select>
+  <div style="white-space: nowrap">
+    <input id="filter-stddev" type="checkbox" onchange="updateFilterStddev()">Filter out noise</input>
+  </div>
+</div>
+
+<iframe id="iframe"></iframe>
