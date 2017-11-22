@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 
-<script type="text/javascript" src="perfherder-signatures.js"></script>
+<script type="text/javascript" src="perfherder/perfherder-signatures.js"></script>
 <script>
   // whenever telemetry inputs change
   function updateTelemetry() {
@@ -81,7 +81,7 @@
   }
   function updateIframeLocation(state) {
     let iframe = document.getElementById("iframe");
-    let url = new URL(state.view + ".html", window.location);
+    let url = new URL(state.view + "/", window.location);
     let params = url.searchParams;
 
     for (let key in state) {
