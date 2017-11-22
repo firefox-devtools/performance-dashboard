@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 
-<link rel="stylesheet" type="text/css" href="common.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 
 <script type="text/javascript" src="perfherder-signatures.js"></script>
 <script>
@@ -45,7 +46,7 @@
     for (let key in state) {
       params.set(key, state[key]);
     }
-    history.pushState(state, null, u.href);
+    history.replaceState(state, null, u.href);
     onStateUpdated();
   }
   function onStateUpdated() {
@@ -126,8 +127,12 @@
   });
 </script>
 
+<style>
+
+</style>
 <div align="center">
-  <h1>Individual graph viewer</h1>
+  <a class="fa fa-home" href="index.html"></a>
+  <h1 >Individual graph viewer</h1>
 
   <b>Telemetry:</b>
   <select id="telemetry-metric" onchange="updateTelemetry()">

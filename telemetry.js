@@ -1,26 +1,41 @@
-function buildTelemetryURL({ version, days, metric }) {
-  // Build telemetry URL
-  let d = new Date();
-  d.setDate(d.getDate() - 2);
-  let dates = [];
-  for (let i = 0; i < days; i++) {
-    let yyyymmdd = d.toISOString().split('T')[0].replace(/-/g,"");
-    dates.push(yyyymmdd);
-    d.setDate(d.getDate() - 1);
-  }
-  let url = "https://aggregates.telemetry.mozilla.org/aggregates_by/build_id/channels/nightly/?version=" + version +
-    "&dates=" + dates.join(",") + "&metric=" + metric;// + "&application=Firefox";
-  return url;
+async function fetchDates(channel) {
+  let url = "https://aggregates.telemetry.mozilla.org/aggregates_by/build_id/channels/" + channel + "/dates/";
+  let response = await fetchJSON(url);
+  return response;
 }
-async function loadTelemetry({ version = 58, days = 12, metric = "DEVTOOLS_COLD_TOOLBOX_OPEN_DELAY_MS", histogramKey = "jsdebugger"}) {
-  let url = buildTelemetryURL({ version, days, metric });
-  console.log("telemetry url", url);
 
+async function fetchTelemetry({ channel = "nightly", days, metric }) {
+  // Fetch all the available dates for the given channel
+  let dates = await fetchDates(channel);
+
+  // Take the last ${days} dates and only consider the latest version
+  let dateList = [];
+  let versions = new Set();
+  for (let i = 0; i < days; i++) {
+    let d = dates[i];
+    dateList.push(d);
+    versions.add(d.version);
+  }
+
+  let buckets = [], data = [];
+  versions = [...versions].sort().reverse();
+  for (let version of versions) {
+    let list = dateList.filter(d => d.version == version).map(d => d.date);
+    let url = "https://aggregates.telemetry.mozilla.org/aggregates_by/build_id/channels/" + channel + "/?version=" + version +
+      "&dates=" + list.join(",") + "&metric=" + metric;
+    console.log("telemetry url", url);
+    let response = await fetchJSON(url);
+    buckets = buckets.concat(response.buckets);
+    data = data.concat(response.data);
+  }
+  return { buckets, data };
+}
+async function loadTelemetry({ days = 12, metric = "DEVTOOLS_COLD_TOOLBOX_OPEN_DELAY_MS", histogramKey = "jsdebugger"}) {
   document.getElementById("loading").style.display = "block";
 
-  let response = await fetchJSON(url);
-  let { buckets } = response;
-  let data = response.data.filter(d => !d.label || d.label == histogramKey)
+  let { buckets, data } = await fetchTelemetry({ days, metric });
+  console.log(buckets, data);
+  data = data.filter(d => !d.label || d.label == histogramKey)
     .map(d => {
       let l = d.histogram.length;
       let total = 0, totalCount = 0;
