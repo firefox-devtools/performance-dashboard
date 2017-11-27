@@ -25,7 +25,7 @@ function computeAverage(data) {
   average.push({ date: currentDate, value });
   return average;
 }
-function filterNoise(data) {
+function filterNoise(params, data) {
   // Compute standard deviation (i.e. the typical average difference between two points)
   let sumdev = 0;
   data.forEach((d, i) => {
@@ -39,7 +39,6 @@ function filterNoise(data) {
   // Then remove every point that is `maxstddev` times different compared to its
   // previous and next point
   let maxstddev = 3;
-  let params = new URL(window.location).searchParams;
   if (params.has("maxstddev")) {
     maxstddev = parseInt(params.get("maxstddev"));
   }
@@ -68,19 +67,28 @@ function filterNoise(data) {
 
 function graph(data, { displayAverageLine = false } = {}) {
   console.log("graph with data", data);
+  let params = new URL(window.location).searchParams;
+  let summaryMode = false;
+  if (params.has("summary")) {
+    summaryMode = params.get("summary") == "true";
+  }
+  if (summaryMode) {
+    displayAverageLine = true;
+  }
 
-  data = filterNoise(data);
+  data = filterNoise(params, data);
 
   let svg = d3.select("svg");
   let margin = {top: 20, right: 20, bottom: 30, left: 50};
+  if (summaryMode) {
+    margin = {top:0, right: 0, bottom: 0, left: 0};
+  }
   let rect = document.getElementById("svg").getBoundingClientRect();
   let width = rect.width - margin.left - margin.right;
   let height = rect.height - margin.top - margin.bottom;
 
   // Clear any previous content
   svg.selectAll("*").remove();
-
-  let g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   let div = d3.select("body").append("div")  
     .attr("class", "tooltip")        
@@ -101,23 +109,20 @@ function graph(data, { displayAverageLine = false } = {}) {
   x.domain(d3.extent(data, d => d.date));
   y.domain(d3.extent(data, d => d.value));
 
-  g.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x))
-    .select(".domain")
-      //.remove();
+  let g = svg.append("g");
 
-  g.append("g")
-     .call(d3.axisLeft(y))
+  // Don't display the axis in summary mode
+  if (!summaryMode) {
+    g.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    g.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+      .select(".domain")
+        //.remove();
 
-  g.append("path")
-   .datum(data)
-   .attr("fill", "none")
-   .attr("stroke", "steelblue")
-   .attr("stroke-linejoin", "round")
-   .attr("stroke-linecap", "round")
-   .attr("stroke-width", displayAverageLine? 0.1 : 1.5)
-   .attr("d", line);
+    g.append("g")
+       .call(d3.axisLeft(y))
+  }
 
   if (displayAverageLine) {
     let averageData = computeAverage(data);
@@ -130,6 +135,20 @@ function graph(data, { displayAverageLine = false } = {}) {
      .attr("stroke-width", 2)
      .attr("d", line2);
   }
+
+  // Only display the average line in summary mode
+  if (summaryMode) {
+    return;
+  }
+
+  g.append("path")
+   .datum(data)
+   .attr("fill", "none")
+   .attr("stroke", "steelblue")
+   .attr("stroke-linejoin", "round")
+   .attr("stroke-linecap", "round")
+   .attr("stroke-width", displayAverageLine ? 0.1 : 1.5)
+   .attr("d", line);
 
   let formatTime = d3.timeFormat("%e %B");
   g.selectAll("dot")

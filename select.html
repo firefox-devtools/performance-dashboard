@@ -13,6 +13,7 @@
     let histogramKey = document.getElementById("telemetry-key").selectedOptions[0].value;
     let days = document.getElementById("days").selectedOptions[0].value;
     let filterstddev = document.getElementById("filter-stddev").checked;
+    let summary = document.getElementById("summary").checked;
 
     pushState({
       view: "telemetry",
@@ -20,6 +21,7 @@
       metric,
       days,
       filterstddev,
+      summary,
     });
   }
   // whenever perfherder inputs change
@@ -27,6 +29,7 @@
     let test = document.getElementById("perfherder-test").selectedOptions[0].value;
     let days = document.getElementById("days").selectedOptions[0].value;
     let filterstddev = document.getElementById("filter-stddev").checked;
+    let summary = document.getElementById("summary").checked;
     let options = { test, days };
 
     pushState({
@@ -34,11 +37,17 @@
       test,
       days,
       filterstddev,
+      summary,
     });
   }
   function updateFilterStddev() {
     let state = history.state;
     state.filterstddev = document.getElementById("filter-stddev").checked;
+    pushState(state);
+  }
+  function updateSummary() {
+    let state = history.state;
+    state.summary = document.getElementById("summary").checked;
     pushState(state);
   }
   function pushState(state) {
@@ -71,6 +80,12 @@
 
     let days = document.getElementById("days");
     restoreSelect(days, state.days);
+
+    let filter = document.getElementById("filter-stddev");
+    filter.checked = !!state.filterstddev;
+
+    let summary = document.getElementById("summary");
+    summary.checked = !!state.summary;
   }
   // Select the <option> with given `value` for the given <`select`>
   function restoreSelect(select, value = "") {
@@ -165,6 +180,9 @@
   </select>
   <label style="white-space: nowrap">
     <input id="filter-stddev" type="checkbox" onchange="updateFilterStddev()">Filter out noise</input>
+  </label>
+  <label style="white-space: nowrap">
+    <input id="summary" type="checkbox" onchange="updateSummary()">Summary mode</input>
   </label>
 </div>
 
