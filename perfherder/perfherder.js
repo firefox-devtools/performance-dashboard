@@ -31,16 +31,17 @@ async function getLink({ push_id: to_push_id }, { push_id: from_push_id }) {
   return url;
 }
 async function loadPerfHerder({ interval = 2592000, test }) {
-  let signature = PerfHerderSignatures[test]
-  if (!signature) {
+  let signatures = PerfHerderSignatures[test]
+  if (!signatures) {
     throw new Error("Unable to find any DAMP test named '" + test + "'");
   }
   let platform = "windows7-32-opt";
-  signature = signature.signatures[platform];
+  let signature = signatures.platforms[platform].signature;
   if (!signature) {
     throw new Error("Unable to find test '" + test + "' for platform '" + platform + "'");
   }
-  console.log("signature", signature);
+  let perfHerderId = signatures.platforms[platform].id;
+  console.log("signature", signature, "id", perfHerderId);
   let url = buildTreeHerderURL({ interval, signature });
 
   document.getElementById("loading").style.display = "block";
@@ -56,9 +57,19 @@ async function loadPerfHerder({ interval = 2592000, test }) {
   });
 
   document.getElementById("loading").style.display = "none";
-  graph(data, {
+  let g = graph(data, {
     displayAverageLine: true,
   });
+
+  // Display a link to PerfHerder
+  let perfHerderLink = "https://treeherder.mozilla.org/perf.html#/graphs?timerange=" + interval + "&series=mozilla-central," + perfHerderId+ ",1,1";
+  g.append("a")
+   .attr("xlink:href", perfHerderLink)
+   .attr("target", "_blank")
+   .append("text")
+   .attr("x", 10)
+   .attr("y", 10)
+   .text("PerfHerder");
 }
 
 function update() {

@@ -23,11 +23,16 @@ async function update() {
   tests.sort((a,b) => a.test > b.test).forEach(t => {
     let name = t.test ? t.test.replace(/\.DAMP/, "") : "summary";
     if (!final[name]) {
-      final[name] = {signatures: {}};
+      final[name] = {
+        platforms: {}
+      };
     }
     let s = final[name];
     let platform = t.machine_platform + "-" + getCollectionName(t.option_collection_hash);
-    s.signatures[platform] = t.signature;
+    s.platforms[platform] = {
+      signature: t.signature,
+      id: t.id,
+    };
   });
 
   document.documentElement.innerHTML = "<pre>const PerfHerderSignatures = "+JSON.stringify(final, null, 2)+"</pre>";

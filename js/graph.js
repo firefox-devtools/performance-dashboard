@@ -197,4 +197,5 @@ function graph(data, { displayAverageLine = false } = {}) {
           .duration(500)
           .style("opacity", 0);
      });
+   return g;
 }
