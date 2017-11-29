@@ -162,9 +162,10 @@ function graph(data, { displayAverageLine = false } = {}) {
      .attr("r", 4)
      .attr("cx", function(d) { return x(d.date); })
      .attr("cy", function(d) { return y(d.value); })
-     .on("mouseover", async function(d) {
+     .on("mouseover", async function(d, i) {
        // Compute the point link immediately, as onclick should have access to the link
-       // synchronously, otherwise popup blocker prevents link opening...
+       // synchronously, otherwise popup blocker prevents opening link asynchronously,
+       // outside of the onclick handler.
        if (d.getLink) {
          let link = await d.getLink();
          d.link = link;
@@ -178,7 +179,10 @@ function graph(data, { displayAverageLine = false } = {}) {
        if (x + tooltipWidth > window.innerWidth) {
          x -= tooltipWidth + 20;
        }
-       let html = formatTime(d.date) + "<br/>"  + d.value;
+       let previous = data[i-1].value;
+       let current = d.value;
+       let percent =  Math.round( 1000 * ( ( current - previous ) / previous ) ) / 10;
+       let html = formatTime(d.date) + "<br/> Δ " + (percent > 0 ? "+" : "") + percent + "% " + current;
        div.html(html)
           .style("left", x + "px")
           .style("top", y + "px");
