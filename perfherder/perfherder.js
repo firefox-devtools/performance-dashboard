@@ -4,8 +4,8 @@ let PerfHerderTimings = {
   7: 604800, // last week
   14: 1209600, // last two weeks
   30: 2592000, // last month
-  60: 5184000, // last two monthes
-  90: 7776000, // last three monthes
+  60: 5184000, // last two months
+  90: 7776000, // last three months
   365: 31536000, // last year
 };
 function buildTreeHerderURL({ interval, signature }) {

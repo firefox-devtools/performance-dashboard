@@ -71,8 +71,8 @@ function createDaysSelector() {
     7: "one week",
     14: "two weeks",
     30: "month",
-    60: "two monthes",
-    90: "three monthes",
+    60: "two months",
+    90: "three months",
     365: "year"
   };
   for (let days in options) {
