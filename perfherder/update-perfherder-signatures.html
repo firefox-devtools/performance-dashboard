@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 
-<link rel="stylesheet" type="text/css" href="../common.css" />
-
-<script type="text/javascript" src="fetch.js"></script>
+<script type="text/javascript" src="../js/fetch.js"></script>
 <script>
 async function update() {
   let url = "https://treeherder.mozilla.org/api/optioncollectionhash/";
@@ -22,7 +20,7 @@ async function update() {
     return t.suite == "damp" && t.extra_options.includes("e10s") && t.extra_options.length == 1;
   });
   let final = {};
-  tests.forEach(t => {
+  tests.sort((a,b) => a.test > b.test).forEach(t => {
     let name = t.test ? t.test.replace(/\.DAMP/, "") : "summary";
     if (!final[name]) {
       final[name] = {signatures: {}};
