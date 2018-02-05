@@ -1,13 +1,13 @@
 const PerfHerderSignatures = {
   "cold.inspector.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "267c187b5b0c120105cbcc65ca9faafaa25fc8d2",
-        "id": 1556696
-      },
       "windows7-32-opt": {
         "signature": "8c3b90f90ed521ec07ea055b191e74fbcb010762",
         "id": 1556675
+      },
+      "windows7-32-pgo": {
+        "signature": "267c187b5b0c120105cbcc65ca9faafaa25fc8d2",
+        "id": 1556696
       }
     }
   },
@@ -25,25 +25,25 @@ const PerfHerderSignatures = {
   },
   "complicated.inspector.close": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "9c564b2d1af49ad501660164814dc524328a5a5f",
-        "id": 1418495
-      },
       "windows7-32-pgo": {
         "signature": "1f8645474562b86c69ada65fb9d6636cd5c43459",
         "id": 1424824
+      },
+      "windows7-32-opt": {
+        "signature": "9c564b2d1af49ad501660164814dc524328a5a5f",
+        "id": 1418495
       }
     }
   },
   "complicated.inspector.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "d15b5a9ae62647bae61f716e3e9fcff5a36c829b",
-        "id": 1418489
-      },
       "windows7-32-pgo": {
         "signature": "397892cd2f93cdcc4ab0d0c584676ccbd760b605",
         "id": 1424820
+      },
+      "windows7-32-opt": {
+        "signature": "d15b5a9ae62647bae61f716e3e9fcff5a36c829b",
+        "id": 1418489
       }
     }
   },
@@ -73,25 +73,25 @@ const PerfHerderSignatures = {
   },
   "complicated.inspector.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "5e796f4f028ae828521dae1450a90387279fac3c",
-        "id": 1630036
-      },
       "windows7-32-pgo": {
         "signature": "7064a99d3170fd57506d53ed013aa8f929c95856",
         "id": 1630269
+      },
+      "windows7-32-opt": {
+        "signature": "5e796f4f028ae828521dae1450a90387279fac3c",
+        "id": 1630036
       }
     }
   },
   "complicated.jsdebugger.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "ae4b8b4a4025ab2b271c33a635229d2a92a73773",
-        "id": 1424830
-      },
       "windows7-32-opt": {
         "signature": "700e039d9cc8581791ff3f3c7c4bb659a3b70bab",
         "id": 1418505
+      },
+      "windows7-32-pgo": {
+        "signature": "ae4b8b4a4025ab2b271c33a635229d2a92a73773",
+        "id": 1424830
       }
     }
   },
@@ -109,13 +109,13 @@ const PerfHerderSignatures = {
   },
   "complicated.jsdebugger.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "12f61634b3740894b68014e10d4bdf88a42cafe0",
-        "id": 1630037
-      },
       "windows7-32-pgo": {
         "signature": "ecf2a18d9d013edd4740cd8e28d60cb56ac1cab4",
         "id": 1630270
+      },
+      "windows7-32-opt": {
+        "signature": "12f61634b3740894b68014e10d4bdf88a42cafe0",
+        "id": 1630037
       }
     }
   },
@@ -133,13 +133,13 @@ const PerfHerderSignatures = {
   },
   "complicated.jsdebugger.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "1779d4e16dfce34c9cc4f4fb34ef5f9db02e4636",
-        "id": 1630038
-      },
       "windows7-32-pgo": {
         "signature": "f2594118d922c4f07a6fae637db62e9b6315fcc1",
         "id": 1630271
+      },
+      "windows7-32-opt": {
+        "signature": "1779d4e16dfce34c9cc4f4fb34ef5f9db02e4636",
+        "id": 1630038
       }
     }
   },
@@ -157,13 +157,13 @@ const PerfHerderSignatures = {
   },
   "complicated.memory.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "267c9127c73c8b6dd5e2257be6a4d455e6f5c509",
-        "id": 1424849
-      },
       "windows7-32-opt": {
         "signature": "762d9fc4a3c1152c74250dc2e9085a58b242ecdf",
         "id": 1418534
+      },
+      "windows7-32-pgo": {
+        "signature": "267c9127c73c8b6dd5e2257be6a4d455e6f5c509",
+        "id": 1424849
       }
     }
   },
@@ -181,13 +181,13 @@ const PerfHerderSignatures = {
   },
   "complicated.memory.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "7fdbdfcc6c99ea2fe395b8684d617e91a0c5dc6b",
-        "id": 1424851
-      },
       "windows7-32-opt": {
         "signature": "445c815ed02d1c98cac1a44f66ad7be8c6c2347a",
         "id": 1418536
+      },
+      "windows7-32-pgo": {
+        "signature": "7fdbdfcc6c99ea2fe395b8684d617e91a0c5dc6b",
+        "id": 1424851
       }
     }
   },
@@ -217,13 +217,13 @@ const PerfHerderSignatures = {
   },
   "complicated.netmonitor.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "556989f5820afa546ee12408a93ae7aeb500697a",
-        "id": 1418526
-      },
       "windows7-32-pgo": {
         "signature": "652ea699ab27f9827f921e4ce5a307908511dd5d",
         "id": 1424845
+      },
+      "windows7-32-opt": {
+        "signature": "556989f5820afa546ee12408a93ae7aeb500697a",
+        "id": 1418526
       }
     }
   },
@@ -241,13 +241,13 @@ const PerfHerderSignatures = {
   },
   "complicated.netmonitor.reload": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "7248006974263406fae3074b74dd4c1753fe36cd",
-        "id": 1418529
-      },
       "windows7-32-pgo": {
         "signature": "5eb22caea89dc04079b0a0854d419bc6818dd7e5",
         "id": 1424846
+      },
+      "windows7-32-opt": {
+        "signature": "7248006974263406fae3074b74dd4c1753fe36cd",
+        "id": 1418529
       }
     }
   },
@@ -275,27 +275,15 @@ const PerfHerderSignatures = {
       }
     }
   },
-  "complicated.performance.close": {
-    "platforms": {
-      "windows7-32-opt": {
-        "signature": "b9aa4fd588e0274fccc7365ec6b2b85951add2f3",
-        "id": 1418523
-      },
-      "windows7-32-pgo": {
-        "signature": "00be2cca6700eb4333a21da6b4b137a9d2da990a",
-        "id": 1424843
-      }
-    }
-  },
   "complicated.performance.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "149238bbe4766ae5db4238ee5f7e3e42326de131",
-        "id": 1418516
-      },
       "windows7-32-pgo": {
         "signature": "2b830363f4b1cdb3d712ac6199c39d9011308b7c",
         "id": 1424840
+      },
+      "windows7-32-opt": {
+        "signature": "149238bbe4766ae5db4238ee5f7e3e42326de131",
+        "id": 1418516
       }
     }
   },
@@ -313,13 +301,13 @@ const PerfHerderSignatures = {
   },
   "complicated.performance.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "4413e50c0efbf66638bec4ddb37e279b781bb057",
-        "id": 1424841
-      },
       "windows7-32-opt": {
         "signature": "7a0ba41bbd135c9db9b6eee6a4be82dbeb87c25f",
         "id": 1418519
+      },
+      "windows7-32-pgo": {
+        "signature": "4413e50c0efbf66638bec4ddb37e279b781bb057",
+        "id": 1424841
       }
     }
   },
@@ -337,25 +325,25 @@ const PerfHerderSignatures = {
   },
   "complicated.readHeapSnapshot": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "b8e35341fba26771315fdcd66ace668508fd645c",
-        "id": 1418542
-      },
       "windows7-32-pgo": {
         "signature": "afb554c7235d8db26a0ce06fa0a06854d546b4c1",
         "id": 1424855
+      },
+      "windows7-32-opt": {
+        "signature": "b8e35341fba26771315fdcd66ace668508fd645c",
+        "id": 1418542
       }
     }
   },
   "complicated.saveHeapSnapshot": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "de3adb826d077fc43c25cc52d70907bb43b60838",
-        "id": 1418539
-      },
       "windows7-32-pgo": {
         "signature": "243ac03d1324fc896135a29f3a282a0d683d2eb6",
         "id": 1424853
+      },
+      "windows7-32-opt": {
+        "signature": "de3adb826d077fc43c25cc52d70907bb43b60838",
+        "id": 1418539
       }
     }
   },
@@ -373,13 +361,13 @@ const PerfHerderSignatures = {
   },
   "complicated.styleeditor.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "1bf9cd524ab245d2a9da54eb707b3d20147530c8",
-        "id": 1424832
-      },
       "windows7-32-opt": {
         "signature": "c49a2a04b64bed3d1509592a44e8a72c4d9dbcb0",
         "id": 1418507
+      },
+      "windows7-32-pgo": {
+        "signature": "1bf9cd524ab245d2a9da54eb707b3d20147530c8",
+        "id": 1424832
       }
     }
   },
@@ -481,13 +469,13 @@ const PerfHerderSignatures = {
   },
   "complicated.webconsole.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "e2a6aaa1bb48ed60c00e65fbbeab96e664ec283b",
-        "id": 1630034
-      },
       "windows7-32-pgo": {
         "signature": "72126da7878dbde41ccdc49e9af1248ccfc2203d",
         "id": 1630267
+      },
+      "windows7-32-opt": {
+        "signature": "e2a6aaa1bb48ed60c00e65fbbeab96e664ec283b",
+        "id": 1630034
       }
     }
   },
@@ -529,25 +517,25 @@ const PerfHerderSignatures = {
   },
   "console.openwithcache.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "39df6626bea63bd3bc0613ab8191c28e43c7ce5a",
-        "id": 1577143
-      },
       "windows7-32-pgo": {
         "signature": "d6905053d4bb6ec651a2e6ac9305519110ba243c",
         "id": 1577151
+      },
+      "windows7-32-opt": {
+        "signature": "39df6626bea63bd3bc0613ab8191c28e43c7ce5a",
+        "id": 1577143
       }
     }
   },
   "console.openwithcache.open.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "ebf0ce3f6a0f1ddb9b2f42d4eb6eb8442b312a5f",
-        "id": 1630282
-      },
       "windows7-32-opt": {
         "signature": "e75994e5faa349e93937fef24b4a9e3d93a6ed6b",
         "id": 1630049
+      },
+      "windows7-32-pgo": {
+        "signature": "ebf0ce3f6a0f1ddb9b2f42d4eb6eb8442b312a5f",
+        "id": 1630282
       }
     }
   },
@@ -563,27 +551,15 @@ const PerfHerderSignatures = {
       }
     }
   },
-  "summary": {
-    "platforms": {
-      "windows7-32-opt": {
-        "signature": "63c652b34bd8fcf3623be048bdd3104906f70f02",
-        "id": 1337205
-      },
-      "windows7-32-pgo": {
-        "signature": "1f8aed46624975327d00a6b936cee2c09768ef5d",
-        "id": 1319050
-      }
-    }
-  },
   "custom.inspector.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "a59c45b975baf03d528e6d0c40aa809ff3eda804",
-        "id": 1581573
-      },
       "windows7-32-opt": {
         "signature": "bbdfcf3f3bebdd5c039793699cd55bc5f75c1e53",
         "id": 1581552
+      },
+      "windows7-32-pgo": {
+        "signature": "a59c45b975baf03d528e6d0c40aa809ff3eda804",
+        "id": 1581573
       }
     }
   },
@@ -613,25 +589,25 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.reload": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "918338fc5404bad3127deb9fd225a7219cb0d3d5",
-        "id": 1581551
-      },
       "windows7-32-pgo": {
         "signature": "7d0583039a320c7e77b6f52e42a5ec26b75ca8ff",
         "id": 1581572
+      },
+      "windows7-32-opt": {
+        "signature": "918338fc5404bad3127deb9fd225a7219cb0d3d5",
+        "id": 1581551
       }
     }
   },
   "custom.inspector.reload.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "59979b68458820f577c3228b20f25f13fb10a3c0",
-        "id": 1630281
-      },
       "windows7-32-opt": {
         "signature": "0bac01f0806567064a16a8925b4b49d05d7b320e",
         "id": 1630048
+      },
+      "windows7-32-pgo": {
+        "signature": "59979b68458820f577c3228b20f25f13fb10a3c0",
+        "id": 1630281
       }
     }
   },
@@ -649,37 +625,37 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "f14b53154c898d9a0058369f62c076568137262d",
-        "id": 1632345
-      },
       "windows7-32-pgo": {
         "signature": "d221a7e3e80c471abc0b8b43219378c75432a7bf",
         "id": 1632408
+      },
+      "windows7-32-opt": {
+        "signature": "f14b53154c898d9a0058369f62c076568137262d",
+        "id": 1632345
       }
     }
   },
   "custom.jsdebugger.open.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "cae5aab0345a90fd57c310fc78ce8314e9e9ad6d",
-        "id": 1632409
-      },
       "windows7-32-opt": {
         "signature": "a007c6535c6b997a3e1be9d5d2d6ad9bab7cf60e",
         "id": 1632346
+      },
+      "windows7-32-pgo": {
+        "signature": "cae5aab0345a90fd57c310fc78ce8314e9e9ad6d",
+        "id": 1632409
       }
     }
   },
   "custom.jsdebugger.reload": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "0fcd8532468e82b90f628e1515c2a607b79e3cb5",
-        "id": 1632347
-      },
       "windows7-32-pgo": {
         "signature": "8d5d2e560d1d6c5b2dd53dfa85828118a597d332",
         "id": 1632410
+      },
+      "windows7-32-opt": {
+        "signature": "0fcd8532468e82b90f628e1515c2a607b79e3cb5",
+        "id": 1632347
       }
     }
   },
@@ -695,51 +671,111 @@ const PerfHerderSignatures = {
       }
     }
   },
-  "inspector.layout.open": {
+  "custom.webconsole.close": {
     "platforms": {
       "windows7-32-opt": {
-        "signature": "4b03ee029131b55bf2833fab1fa7a7f0c013f2fd",
-        "id": 1584774
+        "signature": "9fd5b151e76c828fda13b235c31184f4a8cb3387",
+        "id": 1636693
       },
+      "windows7-32-pgo": {
+        "signature": "9c46e2f866f81d977e063ae6193f4e93d2a8fbdc",
+        "id": 1636698
+      }
+    }
+  },
+  "custom.webconsole.open": {
+    "platforms": {
+      "windows7-32-pgo": {
+        "signature": "94aa3668d74039967774268f7e66fc14959ad3e8",
+        "id": 1636694
+      },
+      "windows7-32-opt": {
+        "signature": "10db7e6687445877d79b16108af1d72fdf410ffe",
+        "id": 1636689
+      }
+    }
+  },
+  "custom.webconsole.open.settle": {
+    "platforms": {
+      "windows7-32-pgo": {
+        "signature": "fd0bd743905bbfbb855bc8f5544e86df9d382cb4",
+        "id": 1636695
+      },
+      "windows7-32-opt": {
+        "signature": "d31f18b014106809ca8a791e0d1fded7c0b01e49",
+        "id": 1636690
+      }
+    }
+  },
+  "custom.webconsole.reload": {
+    "platforms": {
+      "windows7-32-pgo": {
+        "signature": "8881cce795ab0b53e45dd8bee5e00aa73a2b8c74",
+        "id": 1636696
+      },
+      "windows7-32-opt": {
+        "signature": "533a8e54973512b5de9a2596273cc92806e53849",
+        "id": 1636691
+      }
+    }
+  },
+  "custom.webconsole.reload.settle": {
+    "platforms": {
+      "windows7-32-opt": {
+        "signature": "f069b1df3ad75f9e83b7d9d2b160c6f1e191208d",
+        "id": 1636692
+      },
+      "windows7-32-pgo": {
+        "signature": "e6404dbbe934017055dd3d8a0d4a9d613dd7cb5e",
+        "id": 1636697
+      }
+    }
+  },
+  "inspector.layout.open": {
+    "platforms": {
       "windows7-32-pgo": {
         "signature": "289c1a243ca6e52c6027846c9d268e503287e1eb",
         "id": 1585147
+      },
+      "windows7-32-opt": {
+        "signature": "4b03ee029131b55bf2833fab1fa7a7f0c013f2fd",
+        "id": 1584774
       }
     }
   },
   "inspector.mutations": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "cfe592d22463b2f3e7bab5fe0b675c43449dfbad",
-        "id": 1575156
-      },
       "windows7-32-pgo": {
         "signature": "06ddf3699857eb5b9234ff44d02938dac4e92dea",
         "id": 1575161
+      },
+      "windows7-32-opt": {
+        "signature": "cfe592d22463b2f3e7bab5fe0b675c43449dfbad",
+        "id": 1575156
       }
     }
   },
   "panelsInBackground.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "7883628d36f1d250c028fc574d7664ca54e78839",
-        "id": 1581129
-      },
       "windows7-32-opt": {
         "signature": "e325c467195d08b961697d78522d946800085998",
         "id": 1581124
+      },
+      "windows7-32-pgo": {
+        "signature": "7883628d36f1d250c028fc574d7664ca54e78839",
+        "id": 1581129
       }
     }
   },
   "panelsInBackground.reload.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "c55b5c26a136ef46bb6387a82919e59b699e24b6",
-        "id": 1630283
-      },
       "windows7-32-opt": {
         "signature": "38f47ced5ee57ea571a9f5f47ef248dcdb4f8afe",
         "id": 1630050
+      },
+      "windows7-32-pgo": {
+        "signature": "c55b5c26a136ef46bb6387a82919e59b699e24b6",
+        "id": 1630283
       }
     }
   },
@@ -757,13 +793,13 @@ const PerfHerderSignatures = {
   },
   "simple.inspector.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "ac1f6a879b267bb92914f3c9e7d4bb5f713ed858",
-        "id": 1424777
-      },
       "windows7-32-opt": {
         "signature": "3f3f14d75586dc2708c4e41dd6f7dc1a96fc7c66",
         "id": 1418410
+      },
+      "windows7-32-pgo": {
+        "signature": "ac1f6a879b267bb92914f3c9e7d4bb5f713ed858",
+        "id": 1424777
       }
     }
   },
@@ -781,13 +817,13 @@ const PerfHerderSignatures = {
   },
   "simple.inspector.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "d52e39dbcba3173a7e06816cb45f9d440a5a7232",
-        "id": 1424778
-      },
       "windows7-32-opt": {
         "signature": "2cf85d1cb9e22886cddc0d91483198e893d1a76d",
         "id": 1418413
+      },
+      "windows7-32-pgo": {
+        "signature": "d52e39dbcba3173a7e06816cb45f9d440a5a7232",
+        "id": 1424778
       }
     }
   },
@@ -817,13 +853,13 @@ const PerfHerderSignatures = {
   },
   "simple.jsdebugger.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "449940cfd3d979893287e1503171a14fbb5a63c0",
-        "id": 1424780
-      },
       "windows7-32-opt": {
         "signature": "e869bb90a6bbfd7d941c0d5c819d16b8a238149e",
         "id": 1418419
+      },
+      "windows7-32-pgo": {
+        "signature": "449940cfd3d979893287e1503171a14fbb5a63c0",
+        "id": 1424780
       }
     }
   },
@@ -841,49 +877,49 @@ const PerfHerderSignatures = {
   },
   "simple.jsdebugger.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "85ffa2f99c2a4611f1cc14d8ef2fdeb32b932abc",
-        "id": 1424781
-      },
       "windows7-32-opt": {
         "signature": "d023bbe231fc0ff2a74c081eaf92065b734707e3",
         "id": 1418423
+      },
+      "windows7-32-pgo": {
+        "signature": "85ffa2f99c2a4611f1cc14d8ef2fdeb32b932abc",
+        "id": 1424781
       }
     }
   },
   "simple.jsdebugger.reload.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "106564e95eac16e36e4e0c5e91ff415261d79ef1",
-        "id": 1630257
-      },
       "windows7-32-opt": {
         "signature": "b50cee9c58362b37096da85a5e6b53bea6424ccb",
         "id": 1630024
+      },
+      "windows7-32-pgo": {
+        "signature": "106564e95eac16e36e4e0c5e91ff415261d79ef1",
+        "id": 1630257
       }
     }
   },
   "simple.memory.close": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "c562e78f6fef5fb504687b5a4a8f38ba891d0c78",
-        "id": 1418477
-      },
       "windows7-32-pgo": {
         "signature": "8e6a5e8de781fb50c199d77435b02fbb95f7c079",
         "id": 1424811
+      },
+      "windows7-32-opt": {
+        "signature": "c562e78f6fef5fb504687b5a4a8f38ba891d0c78",
+        "id": 1418477
       }
     }
   },
   "simple.memory.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "f54051e5b6a188fa6494c030332270544c88628a",
-        "id": 1418459
-      },
       "windows7-32-pgo": {
         "signature": "bf3f3025a4287bc90646ecb5c07bc97d0ab89142",
         "id": 1424801
+      },
+      "windows7-32-opt": {
+        "signature": "f54051e5b6a188fa6494c030332270544c88628a",
+        "id": 1418459
       }
     }
   },
@@ -901,37 +937,37 @@ const PerfHerderSignatures = {
   },
   "simple.memory.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "e683b23c9a10fbc9b2fc689f9da52a24f96e895a",
-        "id": 1424803
-      },
       "windows7-32-opt": {
         "signature": "b258583850936922c85025740f6de59554991788",
         "id": 1418464
+      },
+      "windows7-32-pgo": {
+        "signature": "e683b23c9a10fbc9b2fc689f9da52a24f96e895a",
+        "id": 1424803
       }
     }
   },
   "simple.memory.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "28dc6fced42be167a75fe25aaf4f99c433999ad5",
-        "id": 1630032
-      },
       "windows7-32-pgo": {
         "signature": "b7305fe330074e0e47c0b676188a89823db4048c",
         "id": 1630265
+      },
+      "windows7-32-opt": {
+        "signature": "28dc6fced42be167a75fe25aaf4f99c433999ad5",
+        "id": 1630032
       }
     }
   },
   "simple.netmonitor.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "be5d02e642cfc69c3ae31829ad0fca13fdac032c",
-        "id": 1424798
-      },
       "windows7-32-opt": {
         "signature": "d8845e99e44088b67679738605bc79634bc21d9c",
         "id": 1418455
+      },
+      "windows7-32-pgo": {
+        "signature": "be5d02e642cfc69c3ae31829ad0fca13fdac032c",
+        "id": 1424798
       }
     }
   },
@@ -961,25 +997,25 @@ const PerfHerderSignatures = {
   },
   "simple.netmonitor.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "3d1a211f1c4a6855f5a1092c31d25fae841859bc",
-        "id": 1424796
-      },
       "windows7-32-opt": {
         "signature": "a82af36427325de534b7524353e5b91787a85ae7",
         "id": 1418451
+      },
+      "windows7-32-pgo": {
+        "signature": "3d1a211f1c4a6855f5a1092c31d25fae841859bc",
+        "id": 1424796
       }
     }
   },
   "simple.netmonitor.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "459119c58a629740b06ecb8f31d23d4cc7e97819",
-        "id": 1630030
-      },
       "windows7-32-pgo": {
         "signature": "4150adbfae268396c60079f00c879da8a03d1602",
         "id": 1630263
+      },
+      "windows7-32-opt": {
+        "signature": "459119c58a629740b06ecb8f31d23d4cc7e97819",
+        "id": 1630030
       }
     }
   },
@@ -997,49 +1033,49 @@ const PerfHerderSignatures = {
   },
   "simple.performance.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "0cc49b09e6751ec4a0d6e3daf082e2a98673b891",
-        "id": 1424790
-      },
       "windows7-32-opt": {
         "signature": "a3e18404e3a129c0e598af3d8996b35b2c0962ba",
         "id": 1418445
+      },
+      "windows7-32-pgo": {
+        "signature": "0cc49b09e6751ec4a0d6e3daf082e2a98673b891",
+        "id": 1424790
       }
     }
   },
   "simple.performance.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "bd0095b826f088984b84728c34d575e8978d9051",
-        "id": 1424786
-      },
       "windows7-32-opt": {
         "signature": "e9e37776dfbcb8a27934aec58f5bba7cc0baf578",
         "id": 1418439
+      },
+      "windows7-32-pgo": {
+        "signature": "bd0095b826f088984b84728c34d575e8978d9051",
+        "id": 1424786
       }
     }
   },
   "simple.performance.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "550dcd78e70eb9fbdfd0c81aec371cdf492d7a6c",
-        "id": 1630027
-      },
       "windows7-32-pgo": {
         "signature": "845cecc96a51325ae803b66880049065e0908be7",
         "id": 1630260
+      },
+      "windows7-32-opt": {
+        "signature": "550dcd78e70eb9fbdfd0c81aec371cdf492d7a6c",
+        "id": 1630027
       }
     }
   },
   "simple.performance.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "b7680ecffc3e223ff01b159f69c1d92fd83ce399",
-        "id": 1424788
-      },
       "windows7-32-opt": {
         "signature": "40e4e58e7daef1b590601f6aecb8e487c36414a9",
         "id": 1418442
+      },
+      "windows7-32-pgo": {
+        "signature": "b7680ecffc3e223ff01b159f69c1d92fd83ce399",
+        "id": 1424788
       }
     }
   },
@@ -1081,37 +1117,37 @@ const PerfHerderSignatures = {
   },
   "simple.styleeditor.close": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "a8bf68b370ba546b00cbc8065765802bf9d81cd7",
-        "id": 1418435
-      },
       "windows7-32-pgo": {
         "signature": "a4aa4bf0fed63c6e413b487e5df48425ef8fd114",
         "id": 1424785
+      },
+      "windows7-32-opt": {
+        "signature": "a8bf68b370ba546b00cbc8065765802bf9d81cd7",
+        "id": 1418435
       }
     }
   },
   "simple.styleeditor.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "ea3a715b69c5c053f77f11984f476cb01b84a295",
-        "id": 1418429
-      },
       "windows7-32-pgo": {
         "signature": "fefa2b66e78a81dcced889c02c7cff8e64660099",
         "id": 1424783
+      },
+      "windows7-32-opt": {
+        "signature": "ea3a715b69c5c053f77f11984f476cb01b84a295",
+        "id": 1418429
       }
     }
   },
   "simple.styleeditor.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "123f720adf587a29b232cb365a02d37b48c0311f",
-        "id": 1630025
-      },
       "windows7-32-pgo": {
         "signature": "4a16dab462e2c5eb7267cdaae9a40992eba4129f",
         "id": 1630258
+      },
+      "windows7-32-opt": {
+        "signature": "123f720adf587a29b232cb365a02d37b48c0311f",
+        "id": 1630025
       }
     }
   },
@@ -1129,61 +1165,61 @@ const PerfHerderSignatures = {
   },
   "simple.styleeditor.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "77b46c0f4f73fd1b3e6c6eff76cfb6660bd99506",
-        "id": 1630026
-      },
       "windows7-32-pgo": {
         "signature": "ba93fb34c749ad56f8edd4398930cf493b6dac94",
         "id": 1630259
+      },
+      "windows7-32-opt": {
+        "signature": "77b46c0f4f73fd1b3e6c6eff76cfb6660bd99506",
+        "id": 1630026
       }
     }
   },
   "simple.takeCensus": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "2b2a7a74827d51bf99a2efda34ba49b3cd1c4a83",
-        "id": 1418474
-      },
       "windows7-32-pgo": {
         "signature": "1f6d11dba19c5cfa17adc36e9de65ca96fef77b5",
         "id": 1424808
+      },
+      "windows7-32-opt": {
+        "signature": "2b2a7a74827d51bf99a2efda34ba49b3cd1c4a83",
+        "id": 1418474
       }
     }
   },
   "simple.webconsole.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "ce706dc072811adec7a3632ce793f02a113a2943",
-        "id": 1424775
-      },
       "windows7-32-opt": {
         "signature": "8f7081c82fdd2129e01b4240a28a394f1e9224c5",
         "id": 1418407
+      },
+      "windows7-32-pgo": {
+        "signature": "ce706dc072811adec7a3632ce793f02a113a2943",
+        "id": 1424775
       }
     }
   },
   "simple.webconsole.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "dc70b98133966f7ca277b3cc75a9c0b0422f6b2c",
-        "id": 1424773
-      },
       "windows7-32-opt": {
         "signature": "8ab2ee0da3b4645b04ea535d51256048ae519cdb",
         "id": 1418402
+      },
+      "windows7-32-pgo": {
+        "signature": "dc70b98133966f7ca277b3cc75a9c0b0422f6b2c",
+        "id": 1424773
       }
     }
   },
   "simple.webconsole.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "47162f5139782e45c5cd70ed85ddfae5f0b0cab0",
-        "id": 1630019
-      },
       "windows7-32-pgo": {
         "signature": "acc0b905e42e66fcd8f76659d3e074e4beae0426",
         "id": 1630252
+      },
+      "windows7-32-opt": {
+        "signature": "47162f5139782e45c5cd70ed85ddfae5f0b0cab0",
+        "id": 1630019
       }
     }
   },
@@ -1208,6 +1244,30 @@ const PerfHerderSignatures = {
       "windows7-32-pgo": {
         "signature": "e1c08cf453507a79e1fe8090f9968b86fc95741e",
         "id": 1630253
+      }
+    }
+  },
+  "summary": {
+    "platforms": {
+      "windows7-32-opt": {
+        "signature": "63c652b34bd8fcf3623be048bdd3104906f70f02",
+        "id": 1337205
+      },
+      "windows7-32-pgo": {
+        "signature": "1f8aed46624975327d00a6b936cee2c09768ef5d",
+        "id": 1319050
+      }
+    }
+  },
+  "complicated.performance.close": {
+    "platforms": {
+      "windows7-32-opt": {
+        "signature": "b9aa4fd588e0274fccc7365ec6b2b85951add2f3",
+        "id": 1418523
+      },
+      "windows7-32-pgo": {
+        "signature": "00be2cca6700eb4333a21da6b4b137a9d2da990a",
+        "id": 1424843
       }
     }
   }
