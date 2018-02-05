@@ -30,12 +30,11 @@ async function getLink({ push_id: to_push_id }, { push_id: from_push_id }) {
   let url = "https://hg.mozilla.org/mozilla-central/pushloghtml?fromchange=" + from_revision + "&tochange=" + to_revision;
   return url;
 }
-async function loadPerfHerder({ interval = 2592000, test }) {
+async function loadPerfHerder({ interval, platform, test }) {
   let signatures = PerfHerderSignatures[test]
   if (!signatures) {
     throw new Error("Unable to find any DAMP test named '" + test + "'");
   }
-  let platform = "windows7-32-opt";
   let signature = signatures.platforms[platform].signature;
   if (!signature) {
     throw new Error("Unable to find test '" + test + "' for platform '" + platform + "'");
@@ -78,8 +77,10 @@ function update() {
     return;
   }
   let interval = PerfHerderTimings[params.get("days") || 14];
+  let platform = params.get("platform") || "windows7-32-opt";
   loadPerfHerder({
     interval,
+    platform,
     test: params.get("test"),
   });
 }

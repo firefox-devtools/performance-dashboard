@@ -29,11 +29,14 @@ function onStateUpdated() {
     return;
   }
   
-  let { days, filterstddev } = state;
+  let { days, filterstddev, platform } = state;
   for (let iframe of document.querySelectorAll("iframe")) {
     let url = new URL(iframe.src);
     url.searchParams.set("days", days);
     url.searchParams.set("filterstddev", filterstddev);
+    if (platform) {
+      url.searchParams.set("platform", platform);
+    }
     iframe.src = url.href;
   }
   let daysSelect = document.getElementById("days");
