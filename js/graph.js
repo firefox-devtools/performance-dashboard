@@ -17,12 +17,9 @@ function computeAverage(data) {
       currentValues = [];
     }
   });
-  let mean = 0;
-  currentValues.forEach(v => { mean += v; });
-  currentDate.setHours(12);
-  currentDate.setMinutes(0);
-  let value = Math.round(mean / currentValues.length);
-  average.push({ date: currentDate, value });
+  // Explicitely avoid displaying the average for the last day
+  // to prevent displaying boggus average if the last day data
+  // is having a lot of noise.
   return average;
 }
 function filterNoise(params, data) {
