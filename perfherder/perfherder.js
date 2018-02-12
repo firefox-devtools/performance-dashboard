@@ -30,6 +30,19 @@ async function getLink({ push_id: to_push_id }, { push_id: from_push_id }) {
   let url = "https://hg.mozilla.org/mozilla-central/pushloghtml?fromchange=" + from_revision + "&tochange=" + to_revision;
   return url;
 }
+async function fetchObsoleteTests(old_signatures, interval, data) {
+  let oldestTime = new Date().getTime() - ( interval * 1000 );
+  for (let { id, signature, before } of old_signatures) {
+    console.log("old signature", signature, "id", id, before > oldestTime);
+    if (before > oldestTime) {
+      let url = buildTreeHerderURL({ interval, signature });
+      let response = await fetchJSON(url);
+      if (response && response[signature]) {
+        data.push(...response[signature]);
+      }
+    }
+  }
+}
 async function loadPerfHerder({ interval, platform, test }) {
   let signatures = PerfHerderSignatures[test]
   if (!signatures) {
@@ -44,10 +57,15 @@ async function loadPerfHerder({ interval, platform, test }) {
   let url = buildTreeHerderURL({ interval, signature });
 
   document.getElementById("loading").style.display = "block";
+  let data = [];
+
+  let { old_signatures } = signatures.platforms[platform];
+  await fetchObsoleteTests(old_signatures, interval, data);
 
   let response = await fetchJSON(url);
-  let data = response[signature];
-  console.log("perfherder data", data);
+  data.push(...response[signature]);
+
+  data.sort((d1, d2) => d1.push_timestamp < d2.push_timestamp);
 
   data.forEach((d, i) => {
     d.date = new Date(d.push_timestamp * 1000);

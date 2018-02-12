@@ -26,7 +26,8 @@ async function update() {
       o.signature = k;
       return o;
     }).filter(t => {
-      return t.suite == "damp" && t.extra_options.includes("e10s") && t.extra_options.length == 1;
+      // Select only the tests we want: DAMP and with at least e10s (there can be other items in there, like "stylo")
+      return t.suite == "damp" && t.extra_options.includes("e10s") && !t.extra_options.includes("stylo_disabled");
     });
 
     tests.sort((a,b) => a.test > b.test).forEach(t => {
@@ -37,11 +38,27 @@ async function update() {
         };
       }
       let s = final[name];
+      // getCollectionName returns "pgo" or "opt"
       let platform = t.machine_platform + "-" + getCollectionName(t.option_collection_hash);
-      s.platforms[platform] = {
-        signature: t.signature,
-        id: t.id,
-      };
+      if (!s.platforms[platform]) {
+        s.platforms[platform] = {
+          signature: null,
+          id: null,
+          old_signatures: []
+        };
+      }
+      // Since Feb 09 2018, now tests includes "stylo" in extra_options.
+      // But we still have to fetch the ones without "stylo" for any data before Feb 09.
+      if (t.extra_options.includes("stylo")) {
+        s.platforms[platform].signature = t.signature;
+        s.platforms[platform].id = t.id;
+      } else {
+        s.platforms[platform].old_signatures.push({
+          signature : t.signature,
+          id: t.id,
+          before: new Date(2018, 1, 9, 0, 0).getTime(), // The date when this test became obsolete
+        });
+      }
     });
   }
 
