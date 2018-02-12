@@ -65,7 +65,7 @@ async function loadPerfHerder({ interval, platform, test }) {
   let response = await fetchJSON(url);
   data.push(...response[signature]);
 
-  data.sort((d1, d2) => d1.push_timestamp < d2.push_timestamp);
+  data.sort((d1, d2) => d1.push_timestamp > d2.push_timestamp);
 
   data.forEach((d, i) => {
     d.date = new Date(d.push_timestamp * 1000);
