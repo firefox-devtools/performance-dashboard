@@ -19,7 +19,7 @@ async function update() {
     return name;
   }
   for (let platform of platforms) {
-    url = `https://treeherder.mozilla.org/api/project/mozilla-central/performance/signatures/?framework=1&interval=1209600&platform=${platform}&subtests=1`;
+    url = `https://treeherder.mozilla.org/api/project/mozilla-central/performance/signatures/?framework=1&interval=31536000&platform=${platform}&subtests=1`;
     let tests = await fetchJSON(url);
     tests = Object.keys(tests).map(k => {
       let o = tests[k];
@@ -27,7 +27,7 @@ async function update() {
       return o;
     }).filter(t => {
       // Select only the tests we want: DAMP and with at least e10s (there can be other items in there, like "stylo")
-      return t.suite == "damp" && t.extra_options.includes("e10s") && !t.extra_options.includes("stylo_disabled");
+      return t.suite == "damp" && t.extra_options && t.extra_options.includes("e10s") && !t.extra_options.includes("stylo_disabled");
     });
 
     tests.sort((a,b) => a.test > b.test).forEach(t => {
