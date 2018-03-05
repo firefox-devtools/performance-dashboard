@@ -87,10 +87,6 @@ function graph(data, { displayAverageLine = false } = {}) {
   // Clear any previous content
   svg.selectAll("*").remove();
 
-  let div = d3.select("body").append("div")  
-    .attr("class", "tooltip")        
-    .style("opacity", 0);
-
   let x = d3.scaleTime().rangeRound([0, width]);
   let y = d3.scaleLinear().rangeRound([height, 0]);
 
@@ -147,6 +143,11 @@ function graph(data, { displayAverageLine = false } = {}) {
    .attr("stroke-width", displayAverageLine ? 0.1 : 1.5)
    .attr("d", line);
 
+  let tooltipDiv = d3.select("body").append("div")  
+    .attr("class", "tooltip")        
+    .style("opacity", 0);
+  let hideTooltipTimeout = null;
+
   let formatTime = d3.timeFormat("%e %B");
   g.selectAll("dot")
    .data(data)
@@ -155,7 +156,9 @@ function graph(data, { displayAverageLine = false } = {}) {
      .style("stroke", function(d) {
        return d.color ? d.color : "green";
      })
-     .style("fill", "white")
+     .style("fill", function(d) {
+       return d.fill ? d.fill : "white";
+     })
      .attr("r", 4)
      .attr("cx", function(d) { return x(d.date); })
      .attr("cy", function(d) { return y(d.value); })
@@ -167,7 +170,11 @@ function graph(data, { displayAverageLine = false } = {}) {
          let link = await d.getLink();
          d.link = link;
        }
-       div.transition()
+       if (hideTooltipTimeout) {
+         clearTimeout(hideTooltipTimeout);
+         hideTooltipTimeout = null;
+       }
+       tooltipDiv.transition()
           .duration(200)
           .style("opacity", .9);
        let x = 60 + parseInt(d3.select(this).attr("cx"));
@@ -180,7 +187,10 @@ function graph(data, { displayAverageLine = false } = {}) {
        let current = d.value;
        let percent =  Math.round( 1000 * ( ( current - previous ) / previous ) ) / 10;
        let html = formatTime(d.date) + "<br/> Δ " + (percent > 0 ? "+" : "") + percent + "% " + current;
-       div.html(html)
+       if (d.getTooltip) {
+         html += await d.getTooltip(d, data[i-1]);
+       }
+       tooltipDiv.html(html)
           .style("left", x + "px")
           .style("top", y + "px");
      })
@@ -190,9 +200,24 @@ function graph(data, { displayAverageLine = false } = {}) {
        }
      })
      .on("mouseout", function(d) {
-       div.transition()
+       hideTooltip();
+     });
+   tooltipDiv.on("mouseoover", function(d) {
+     if (hideTooltipTimeout) {
+       clearTimeout(hideTooltipTimeout);
+       hideTooltipTimeout = null;
+     }
+   });
+   tooltipDiv.on("mouseout", function(d) {
+     hideTooltip();
+   });
+   function hideTooltip() {
+     hideTooltipTimeout = setTimeout(function () {
+       hideTooltipTimeout = null;
+       tooltipDiv.transition()
           .duration(500)
           .style("opacity", 0);
-     });
+     }, 1000);
+   }
    return g;
 }

@@ -18,11 +18,18 @@ async function getPushIdRevision(push_id, callback) {
   let { revision } = await fetchJSON(url);
   return revision;
 }
+let pushInfo = {
+  "33362": {
+    type: "platform",
+    bug: "1433837",
+  }
+};
 async function getTooltip({ push_id: to_push_id }, { push_id: from_push_id }) {
-  let from_revision = await getPushIdRevision(from_push_id);
-  let to_revision = await getPushIdRevision(to_push_id);
-  let url = "https://hg.mozilla.org/mozilla-central/pushloghtml?fromchange=" + from_revision + "&tochange=" + to_revision;
-  return "<a href=\"" + url + "\" target=\"_blank\">" + to_revision.substr(0, 6) + "</a>";
+  let info = pushInfo[to_push_id];
+  if (info) {
+    return `<br />${info.type} - <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=${info.bug}">Bug ${info.bug}</a>`;
+  }
+  return "";
 }
 async function getLink({ push_id: to_push_id }, { push_id: from_push_id }) {
   let from_revision = await getPushIdRevision(from_push_id);
@@ -67,15 +74,54 @@ async function loadPerfHerder({ interval, platform, test }) {
 
   data.sort((d1, d2) => d1.push_timestamp > d2.push_timestamp);
 
-  data.forEach((d, i) => {
+  let i = 0;
+  for (let d of data) {
     d.date = new Date(d.push_timestamp * 1000);
     d.getTooltip = getTooltip.bind(null, d, data[i - 1]);
     d.getLink = getLink.bind(null, d, data[i - 1]);
-  });
+    let info = pushInfo[d.push_id];
+    if (info) {
+      let isRegression = d.value > data[i-1].value;
+      switch(info.type) {
+        case "platform":
+          d.fill = isRegression ? "orange" : "lightgreen";
+          break;
+        case "devtools":
+          d.fill = isRegression ? "red" : "green";
+          break;
+        case "damp":
+          d.fill = isRegression ? "gray" : "lightgray";
+          break;
+       }
+    }
+    i++;
+  }
+
+  console.log("perfherder data", data);
+/*
+  let settleData = null;
+  if (PerfHerderSignatures[test + ".settle"]) {
+    signatures = PerfHerderSignatures[test + ".settle"]
+    signature = signatures.platforms[platform].signature;
+    perfHerderId = signatures.platforms[platform].id;
+    console.log("signature settle", signature, "id", perfHerderId);
+    url = buildTreeHerderURL({ interval, signature });
+    response = await fetchJSON(url);
+    settleData = response[signature];
+    console.log("settle perfherder data", settleData);
+
+    settleData.forEach((d, i) => {
+      d.date = new Date(d.push_timestamp * 1000);
+      d.getTooltip = getTooltip.bind(null, d, data[i - 1]);
+      d.getLink = getLink.bind(null, d, data[i - 1]);
+    });
+  }
+  */
 
   document.getElementById("loading").style.display = "none";
   let g = graph(data, {
     displayAverageLine: true,
+    //cummulativeData: settleData,
   });
 
   // Display a link to PerfHerder
