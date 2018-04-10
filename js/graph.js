@@ -199,6 +199,14 @@ function graph(data, { displayAverageLine = false } = {}) {
          window.open(d.link, "_blank");
        }
      })
+     .on("contextmenu", function(d) {
+       d3.event.preventDefault();
+			 hideTooltip();
+
+       if (typeof window.showFormPopup == "function") {
+         showFormPopup(this, d);
+       }
+     })
      .on("mouseout", function(d) {
        hideTooltip();
      });

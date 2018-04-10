@@ -18,18 +18,18 @@ async function getPushIdRevision(push_id, callback) {
   let { revision } = await fetchJSON(url);
   return revision;
 }
-let pushInfo = {
-  "33362": {
-    type: "platform",
-    bug: "1433837",
+async function getTooltip(metadata, to, from) {
+  if (metadata) {
+    let msg = `<br />${metadata.type}`;
+    if (metadata.message) {
+      msg += `: ${metadata.message}`;
+    }
+    if (metadata.bug) {
+      msg += ` - <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=${metadata.bug}">Bug ${metadata.bug}</a>`;
+    }
+    return msg;
   }
-};
-async function getTooltip({ push_id: to_push_id }, { push_id: from_push_id }) {
-  let info = pushInfo[to_push_id];
-  if (info) {
-    return `<br />${info.type} - <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=${info.bug}">Bug ${info.bug}</a>`;
-  }
-  return "";
+  return `<div class="push-id">push id: ${to.push_id}</div>`;
 }
 async function getLink({ push_id: to_push_id }, { push_id: from_push_id }) {
   let from_revision = await getPushIdRevision(from_push_id);
@@ -69,28 +69,36 @@ async function loadPerfHerder({ interval, platform, test }) {
   let { old_signatures } = signatures.platforms[platform];
   await fetchObsoleteTests(old_signatures, interval, data);
 
-  let response = await fetchJSON(url);
+  let perfHerderRequest = fetchJSON(url);
+  let tagsRequest = loadPushTags();
+
+  let response = await perfHerderRequest;
+
   data.push(...response[signature]);
 
   data.sort((d1, d2) => d1.push_timestamp > d2.push_timestamp);
 
+  const pushTags = await tagsRequest;
   let i = 0;
   for (let d of data) {
     d.date = new Date(d.push_timestamp * 1000);
-    d.getTooltip = getTooltip.bind(null, d, data[i - 1]);
+    let metadata = pushTags[d.push_id];
+    d.getTooltip = getTooltip.bind(null, metadata, d, data[i - 1]);
     d.getLink = getLink.bind(null, d, data[i - 1]);
-    let info = pushInfo[d.push_id];
-    if (info) {
-      let isRegression = d.value > data[i-1].value;
-      switch(info.type) {
+    if (metadata) {
+      let isRegression = !data[i -1 ] ? true : d.value > data[i - 1].value;
+      switch(metadata.type) {
         case "platform":
           d.fill = isRegression ? "orange" : "lightgreen";
           break;
         case "devtools":
           d.fill = isRegression ? "red" : "green";
           break;
-        case "damp":
+        case "hardware":
           d.fill = isRegression ? "gray" : "lightgray";
+          break;
+        case "damp":
+          d.fill = isRegression ? "blue" : "lightblue";
           break;
        }
     }
