@@ -174,15 +174,7 @@ function graph(data, { displayAverageLine = false } = {}) {
          clearTimeout(hideTooltipTimeout);
          hideTooltipTimeout = null;
        }
-       tooltipDiv.transition()
-          .duration(200)
-          .style("opacity", .9);
-       let x = 60 + parseInt(d3.select(this).attr("cx"));
-       let y = parseInt(d3.select(this).attr("cy"));
-       let tooltipWidth = 100;
-       if (x + tooltipWidth > window.innerWidth) {
-         x -= tooltipWidth + 20;
-       }
+
        let previous = data[i-1].value;
        let current = d.value;
        let percent =  Math.round( 1000 * ( ( current - previous ) / previous ) ) / 10;
@@ -191,8 +183,22 @@ function graph(data, { displayAverageLine = false } = {}) {
          html += await d.getTooltip(d, data[i-1]);
        }
        tooltipDiv.html(html)
+
+       let x = 60 + parseInt(d3.select(this).attr("cx"));
+       let y = parseInt(d3.select(this).attr("cy"));
+       let tooltipWidth = tooltipDiv.node().clientWidth;
+       if (x + tooltipWidth > window.innerWidth) {
+         x = window.innerWidth - tooltipWidth - 10;
+       }
+       let tooltipHeight = tooltipDiv.node().clientHeight;
+       console.log(tooltipHeight);
+       if (y + tooltipHeight > window.innerHeight) {
+         y = window.innerHeight - tooltipHeight - 10;
+       }
+       tooltipDiv
           .style("left", x + "px")
-          .style("top", y + "px");
+          .style("top", y + "px")
+          .style("opacity", .9);
      })
      .on("click", function(d) {
        if (d.link) {
@@ -222,9 +228,10 @@ function graph(data, { displayAverageLine = false } = {}) {
    function hideTooltip() {
      hideTooltipTimeout = setTimeout(function () {
        hideTooltipTimeout = null;
-       tooltipDiv.transition()
-          .duration(500)
-          .style("opacity", 0);
+       tooltipDiv
+          .style("opacity", 0)
+          .style("left", "0px")
+          .style("top", "0px");
      }, 1000);
    }
    return g;
