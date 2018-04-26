@@ -133,7 +133,13 @@ async function loadPerfHerder({ interval, platform, test }) {
   });
 
   // Display a link to PerfHerder
-  let perfHerderLink = "https://treeherder.mozilla.org/perf.html#/graphs?timerange=" + interval + "&series=mozilla-central," + perfHerderId+ ",1,1";
+  // With graph for the test with its current name and flags
+  let series = ["series=mozilla-central," + perfHerderId+ ",1,1"]
+  // But also any old, different one it may have had in the past
+  for (let { id } of old_signatures) {
+    series.push("series=mozilla-central," + id + ",1,1");
+  }
+  let perfHerderLink = "https://treeherder.mozilla.org/perf.html#/graphs?timerange=" + interval + "&" + series.join("&");
   g.append("a")
    .attr("xlink:href", perfHerderLink)
    .attr("target", "_blank")
