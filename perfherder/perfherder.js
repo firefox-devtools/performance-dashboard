@@ -50,7 +50,86 @@ async function fetchObsoleteTests(old_signatures, interval, data) {
     }
   }
 }
-async function loadPerfHerder({ interval, platform, test }) {
+
+/**
+ * Helper to ignore changesets with flags related to baseline changes
+ * that should be ignored, like hardware changes, test changes leading to
+ * increase/decrease of its runtime, ...
+ *
+ * A side effect of this method is that the value is completely arbitrar.
+ * Only change percentage is meaningful.
+ */
+const FLAGS_TO_IGNORE = ["hardware", "damp"];
+const BASELINE_VALUE = 1000;
+function filterOutIgnoredFlags(data, pushTags) {
+  let data2 = [];
+  let lastFlattenValue = null;
+  let lastRealValue = null;
+  for (let d of data) {
+    let value;
+    if (lastFlattenValue === null) {
+      value = BASELINE_VALUE;
+    } else {
+      let metadata = pushTags[d.push_id];
+      if (metadata && FLAGS_TO_IGNORE.includes(metadata.type)) {
+        value = lastFlattenValue;
+      } else {
+        let previous = lastRealValue;
+        let current = d.value;
+        let factor = ( current - previous ) / previous;
+        value = lastFlattenValue + ( lastFlattenValue * factor );
+      }
+    }
+    let copy = Object.assign({}, d);
+    copy.value = value;
+    data2.push(copy);
+    lastFlattenValue = value;
+    lastRealValue = d.value;
+  }
+  return data2;
+}
+
+function filterNoise(params, data) {
+  // Compute standard deviation (i.e. the typical average difference between two points)
+  let sumdev = 0;
+  data.forEach((d, i) => {
+    if (i > 0) {
+      sumdev += Math.abs(d.value - data[i-1].value);
+    }
+  });
+  let stddev = sumdev / data.length;
+  console.log("stddev", stddev);
+
+  // Then remove every point that is `maxstddev` times different compared to its
+  // previous and next point
+  let maxstddev = 3;
+  if (params.has("maxstddev")) {
+    maxstddev = parseInt(params.get("maxstddev"));
+  }
+  let filterstddev = false;
+  if (params.has("filterstddev")) {
+    filterstddev = params.get("filterstddev") == "true"
+  }
+  return data.filter((d, i) => {
+    if (i > 0 && i < data.length -1) {
+      let previous = data[i - 1].value;
+      let next = data[i+1].value;
+      let diffPrevious = Math.abs(d.value - previous);
+      let diffNext = Math.abs(next - d.value);
+      if (diffPrevious > maxstddev * stddev && diffNext > maxstddev * stddev) {
+        if (filterstddev) {
+          return false;
+        } else {
+          d.color = "lightgray";
+          return true;
+        }
+      }
+    }
+    return true;
+  });
+}
+
+async function loadPerfHerder({ interval, platform, ignoreFlags, params, test }) {
   let signatures = PerfHerderSignatures[test]
   if (!signatures) {
     throw new Error("Unable to find any DAMP test named '" + test + "'");
@@ -78,7 +157,14 @@ async function loadPerfHerder({ interval, platform, test }) {
 
   data.sort((d1, d2) => d1.push_timestamp > d2.push_timestamp);
 
+  data = filterNoise(params, data);
+
   const pushTags = await tagsRequest;
+
+  if (ignoreFlags) {
+    data = filterOutIgnoredFlags(data, pushTags);
+  }
+
   let i = 0;
   for (let d of data) {
     d.date = new Date(d.push_timestamp * 1000);
@@ -156,9 +242,12 @@ function update() {
   }
   let interval = PerfHerderTimings[params.get("days") || 14];
   let platform = params.get("platform") || "windows7-32-opt";
+  let ignoreFlags = params.get("ignore-flags") === "true";
   loadPerfHerder({
     interval,
     platform,
+    ignoreFlags,
+    params,
     test: params.get("test"),
   });
 }

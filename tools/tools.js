@@ -10,6 +10,12 @@ function updateFilterStddev() {
     filterstddev
   });
 }
+function updateIgnoreFlags() {
+  let ignoreFlags = document.getElementById("ignore-flags").checked;
+  pushState({
+    ignoreFlags
+  });
+}
 function pushState(newState) {
   let state = Object.assign(history.state || {}, newState);
 
@@ -29,11 +35,12 @@ function onStateUpdated() {
     return;
   }
   
-  let { days, filterstddev, platform } = state;
+  let { days, filterstddev, ignoreFlags, platform } = state;
   for (let iframe of document.querySelectorAll("iframe")) {
     let url = new URL(iframe.src);
     url.searchParams.set("days", days);
     url.searchParams.set("filterstddev", filterstddev);
+    url.searchParams.set("ignore-flags", ignoreFlags);
     if (platform) {
       url.searchParams.set("platform", platform);
     }
@@ -43,9 +50,12 @@ function onStateUpdated() {
   restoreSelect(daysSelect, days);
   let filter = document.getElementById("filter-stddev");
   filter.checked = !!filterstddev;
+  let ignore = document.getElementById("ignore-flags");
+  ignore.checked = !!ignoreFlags;
 }
 window.addEventListener("DOMContentLoaded", function () {
   createStddevToggle();
+  createIgnoreFlagsToggle();
   createDaysSelector();
 
   if (!history.state) {
@@ -53,6 +63,7 @@ window.addEventListener("DOMContentLoaded", function () {
     let state = {
       days: 14,
       filterstddev: true,
+      ignoreFlags: true,
     };
     for (let [key, value] of new URL(window.location).searchParams.entries()) {
       state[key] = value;
@@ -96,6 +107,18 @@ function createStddevToggle() {
   toggle.onchange = updateFilterStddev;
   label.appendChild(toggle);
   label.appendChild(document.createTextNode("Filter out noise"));
+  let h1 = document.querySelector("h1");
+  h1.parentNode.insertBefore(label, h1);
+}
+function createIgnoreFlagsToggle() {
+  let label = document.createElement("label");
+  label.style.float = "right";
+  let toggle = document.createElement("input");
+  toggle.id = "ignore-flags";
+  toggle.type = "checkbox";
+  toggle.onchange = updateIgnoreFlags;
+  label.appendChild(toggle);
+  label.appendChild(document.createTextNode("Ignore test/hardware changes"));
   let h1 = document.querySelector("h1");
   h1.parentNode.insertBefore(label, h1);
 }

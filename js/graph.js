@@ -22,47 +22,28 @@ function computeAverage(data) {
   // is having a lot of noise.
   return average;
 }
-function filterNoise(params, data) {
-  // Compute standard deviation (i.e. the typical average difference between two points)
-  let sumdev = 0;
-  data.forEach((d, i) => {
-    if (i > 0) {
-      sumdev += Math.abs(d.value - data[i-1].value);
-    }
-  });
-  let stddev = sumdev / data.length;
-  console.log("stddev", stddev);
 
-  // Then remove every point that is `maxstddev` times different compared to its
-  // previous and next point
-  let maxstddev = 3;
-  if (params.has("maxstddev")) {
-    maxstddev = parseInt(params.get("maxstddev"));
+/**
+ * Helper function to compute the 9/10'nth higher value of typical difference
+ * between two subsequent changeset
+ *
+ * This helps identifying noise and significant drop/increases.
+ */
+function computeStddev(data) {
+  // Compute the difference between each changeset
+  let stddev = [];
+  for(let i = 1; i < data.length; i++) {
+    let dev = Math.abs(data[i].value - data[i - 1].value);
+    stddev.push(dev);
   }
-  let filterstddev = false;
-  if (params.has("filterstddev")) {
-    filterstddev = params.get("filterstddev") == "true"
-  }
-  return data.filter((d, i) => {
-    if (i > 0 && i < data.length -1) {
-      let previous = data[i - 1].value;
-      let next = data[i+1].value;
-      let diffPrevious = Math.abs(d.value - previous);
-      let diffNext = Math.abs(next - d.value);
-      if (diffPrevious > maxstddev * stddev && diffNext > maxstddev * stddev) {
-        if (filterstddev) {
-          return false;
-        } else {
-          d.color = "lightgray";
-          return true;
-        }
-      }
-    }
-    return true;
-  });
+  // JS is magic and can't sort numbers correctly,
+  // we have to pass such custom compare method.
+  stddev.sort(function (a, b) { return a - b; });
+
+  return stddev[Math.ceil(stddev.length * ( 4 / 5 ))];
 }
 
-function graph(data, { displayAverageLine = false } = {}) {
+function graph(data, { displayAverageLine = false, displayOnlySignificantDots = false } = {}) {
   console.log("graph with data", data);
   let params = new URL(window.location).searchParams;
   let summaryMode = false;
@@ -73,7 +54,8 @@ function graph(data, { displayAverageLine = false } = {}) {
     displayAverageLine = true;
   }
 
-  data = filterNoise(params, data);
+  let stddev = computeStddev(data);
+  console.log("stddev", stddev);
 
   let svg = d3.select("svg");
   let margin = {top: 20, right: 20, bottom: 30, left: 50};
@@ -159,7 +141,15 @@ function graph(data, { displayAverageLine = false } = {}) {
      .style("fill", function(d) {
        return d.fill ? d.fill : "white";
      })
-     .attr("r", 4)
+     .attr("r", function(d, i) {
+       if (i > 0 && displayOnlySignificantDots) {
+         let previous = data[i - 1].value;
+         let current = d.value;
+         let dev =  Math.abs(current - previous);
+         return dev > stddev ? "4" : "";
+       }
+       return "4";
+     })
      .attr("cx", function(d) { return x(d.date); })
      .attr("cy", function(d) { return y(d.value); })
      .on("mouseover", async function(d, i) {
