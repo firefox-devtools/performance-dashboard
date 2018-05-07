@@ -1,17 +1,6 @@
 const PerfHerderSignatures = {
   "cold.inspector.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "8897315c3f8ea0920a0e928144f2516251d788eb",
-        "id": 1655181,
-        "old_signatures": [
-          {
-            "signature": "267c187b5b0c120105cbcc65ca9faafaa25fc8d2",
-            "id": 1556696,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "75892d40388be4c3ed0cacfd3809634c745c352a",
         "id": 1654655,
@@ -19,6 +8,17 @@ const PerfHerderSignatures = {
           {
             "signature": "8c3b90f90ed521ec07ea055b191e74fbcb010762",
             "id": 1556675,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "8897315c3f8ea0920a0e928144f2516251d788eb",
+        "id": 1655181,
+        "old_signatures": [
+          {
+            "signature": "267c187b5b0c120105cbcc65ca9faafaa25fc8d2",
+            "id": 1556696,
             "before": 1518163200000
           }
         ]
@@ -45,17 +45,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "0d02b575b2ec61dc0dfb078d87699f25622d60ed",
-        "id": 1654449,
-        "old_signatures": [
-          {
-            "signature": "4f2b6da7438479ae1750bef647bb0342a08a0302",
-            "id": 1556677,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "c3ac3ab674fc4852863176608fd2001c90e0526d",
         "id": 1649532,
@@ -63,6 +52,17 @@ const PerfHerderSignatures = {
           {
             "signature": "f953f2b413a907da389451bc2329f2a7b01999c2",
             "id": 1556628,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "0d02b575b2ec61dc0dfb078d87699f25622d60ed",
+        "id": 1654449,
+        "old_signatures": [
+          {
+            "signature": "4f2b6da7438479ae1750bef647bb0342a08a0302",
+            "id": 1556677,
             "before": 1518163200000
           }
         ]
@@ -82,17 +82,6 @@ const PerfHerderSignatures = {
   },
   "cold.inspector.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "bb66a7c0faebade326dc8d50ed6e6919613b9fc9",
-        "id": 1654656,
-        "old_signatures": [
-          {
-            "signature": "715d7f7cfdfc50eb492580254f9f313b2bebbc1c",
-            "id": 1630018,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "c56c8bdcbe2cccc7eacb9700244ab3cab7af1572",
         "id": 1655182,
@@ -100,6 +89,17 @@ const PerfHerderSignatures = {
           {
             "signature": "8fcf4a15139f3e3e55fda5e2edccd4dc0fa7f4b9",
             "id": 1630251,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "bb66a7c0faebade326dc8d50ed6e6919613b9fc9",
+        "id": 1654656,
+        "old_signatures": [
+          {
+            "signature": "715d7f7cfdfc50eb492580254f9f313b2bebbc1c",
+            "id": 1630018,
             "before": 1518163200000
           }
         ]
@@ -185,17 +185,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "3409ce5a386eb37e4df1e0d7c7b348459197ddd5",
-        "id": 1538306,
-        "old_signatures": [
-          {
-            "signature": "4b5c00ad93e6be7b9c7bee0cc03d3408dce374b2",
-            "id": 1502873,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "ca6bd87c43503c3c9fa38e94acb5ecd3d114744e",
         "id": 1539134,
@@ -203,6 +192,17 @@ const PerfHerderSignatures = {
           {
             "signature": "e5bf68d218a94eff3d7e7b25dbbcce076da9a21b",
             "id": 1503334,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "3409ce5a386eb37e4df1e0d7c7b348459197ddd5",
+        "id": 1538306,
+        "old_signatures": [
+          {
+            "signature": "4b5c00ad93e6be7b9c7bee0cc03d3408dce374b2",
+            "id": 1502873,
             "before": 1518163200000
           }
         ]
@@ -244,17 +244,6 @@ const PerfHerderSignatures = {
   },
   "complicated.inspector.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "2b910c2eeba6c8ddbd4ddeb3c46ab3e7bee5ad5f",
-        "id": 1539669,
-        "old_signatures": [
-          {
-            "signature": "d15b5a9ae62647bae61f716e3e9fcff5a36c829b",
-            "id": 1418489,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "0da14803ccd551bd6c152a191ce46170451dab0f",
         "id": 1539106,
@@ -262,6 +251,17 @@ const PerfHerderSignatures = {
           {
             "signature": "397892cd2f93cdcc4ab0d0c584676ccbd760b605",
             "id": 1424820,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "2b910c2eeba6c8ddbd4ddeb3c46ab3e7bee5ad5f",
+        "id": 1539669,
+        "old_signatures": [
+          {
+            "signature": "d15b5a9ae62647bae61f716e3e9fcff5a36c829b",
+            "id": 1418489,
             "before": 1518163200000
           }
         ]
@@ -325,17 +325,6 @@ const PerfHerderSignatures = {
   },
   "complicated.inspector.open.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "d4aa9607edd5950677ccfb4464a2f344c6a8e9c3",
-        "id": 1655232,
-        "old_signatures": [
-          {
-            "signature": "8c0ae20f091ba5198002ccd0bbb170b802dc77dc",
-            "id": 1630268,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "be320c4b77a069921f000c58c60722d658232176",
         "id": 1654673,
@@ -343,6 +332,17 @@ const PerfHerderSignatures = {
           {
             "signature": "c30fd8079d34cc045615a70d7ff10c20b79cfbf6",
             "id": 1630035,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "d4aa9607edd5950677ccfb4464a2f344c6a8e9c3",
+        "id": 1655232,
+        "old_signatures": [
+          {
+            "signature": "8c0ae20f091ba5198002ccd0bbb170b802dc77dc",
+            "id": 1630268,
             "before": 1518163200000
           }
         ]
@@ -369,17 +369,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "bf7ca7cfdde0c9b6083e5d0a46ec7d85e16f82cf",
-        "id": 1654496,
-        "old_signatures": [
-          {
-            "signature": "c76608b6a47f279b1bfbcd4d0f40300788704d69",
-            "id": 1630068,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "34bba19d4c6298b682cda58a9f2f64b70dc010dc",
         "id": 1649579,
@@ -387,6 +376,17 @@ const PerfHerderSignatures = {
           {
             "signature": "0ff5797579a04fd6982baa663ecfc444a0bba19b",
             "id": 1629906,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "bf7ca7cfdde0c9b6083e5d0a46ec7d85e16f82cf",
+        "id": 1654496,
+        "old_signatures": [
+          {
+            "signature": "c76608b6a47f279b1bfbcd4d0f40300788704d69",
+            "id": 1630068,
             "before": 1518163200000
           }
         ]
@@ -428,17 +428,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "8dc367a5e5b15f482667853facac248a513b51f8",
-        "id": 1538305,
-        "old_signatures": [
-          {
-            "signature": "9e86a36d54e91115dc592dadb7ccc292b637b526",
-            "id": 1502872,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "93866d84946f2442755d82fe393743612e160c8c",
         "id": 1539131,
@@ -450,13 +439,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "9438fe01afb26eab3d43bac8b09de5123d59ae2e",
-        "id": 1649580,
+      "windows10-64-opt": {
+        "signature": "8dc367a5e5b15f482667853facac248a513b51f8",
+        "id": 1538305,
         "old_signatures": [
           {
-            "signature": "677a51463b8d29a8fc0705c69a525edc5126770f",
-            "id": 1418018,
+            "signature": "9e86a36d54e91115dc592dadb7ccc292b637b526",
+            "id": 1502872,
             "before": 1518163200000
           }
         ]
@@ -468,6 +457,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7be861cf8c24741de6ff30eeff76c05c7a76c713",
             "id": 1355513,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "9438fe01afb26eab3d43bac8b09de5123d59ae2e",
+        "id": 1649580,
+        "old_signatures": [
+          {
+            "signature": "677a51463b8d29a8fc0705c69a525edc5126770f",
+            "id": 1418018,
             "before": 1518163200000
           }
         ]
@@ -487,17 +487,6 @@ const PerfHerderSignatures = {
   },
   "complicated.inspector.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "f398f4c30bc32c8908193766a669eccf90263de6",
-        "id": 1654674,
-        "old_signatures": [
-          {
-            "signature": "5e796f4f028ae828521dae1450a90387279fac3c",
-            "id": 1630036,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "63e7d91e76bb73dfa99d1ac2959e81890a23cac4",
         "id": 1655235,
@@ -505,6 +494,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7064a99d3170fd57506d53ed013aa8f929c95856",
             "id": 1630269,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "f398f4c30bc32c8908193766a669eccf90263de6",
+        "id": 1654674,
+        "old_signatures": [
+          {
+            "signature": "5e796f4f028ae828521dae1450a90387279fac3c",
+            "id": 1630036,
             "before": 1518163200000
           }
         ]
@@ -590,17 +590,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "4e1fa3dcac185e333633303660b28b886c3c054d",
-        "id": 1538309,
-        "old_signatures": [
-          {
-            "signature": "ea37b4ffc0cfbc6c19dba91a7dc06d7bce9495bb",
-            "id": 1502876,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "b7fbc150bf385a7532ffdd95dd87963900342ced",
         "id": 1539145,
@@ -612,13 +601,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "01a48a65cc0406d65a648ca7777d755e3115eaee",
-        "id": 1649587,
+      "windows10-64-opt": {
+        "signature": "4e1fa3dcac185e333633303660b28b886c3c054d",
+        "id": 1538309,
         "old_signatures": [
           {
-            "signature": "59379d6537cdfc27e18a0bed48d9d0c4eea95d41",
-            "id": 1418026,
+            "signature": "ea37b4ffc0cfbc6c19dba91a7dc06d7bce9495bb",
+            "id": 1502876,
             "before": 1518163200000
           }
         ]
@@ -630,6 +619,17 @@ const PerfHerderSignatures = {
           {
             "signature": "aeca2daa9293e5ab8619dedb4a787544cd0bc143",
             "id": 1355517,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "01a48a65cc0406d65a648ca7777d755e3115eaee",
+        "id": 1649587,
+        "old_signatures": [
+          {
+            "signature": "59379d6537cdfc27e18a0bed48d9d0c4eea95d41",
+            "id": 1418026,
             "before": 1518163200000
           }
         ]
@@ -671,17 +671,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "99004e108af7dc62837f92ec9ea7c73dc0d172fc",
-        "id": 1538307,
-        "old_signatures": [
-          {
-            "signature": "b74c7b251fe25c595e7eac5f6dfc2810ba3f3e51",
-            "id": 1502874,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "c3459d23df4a6655b3ec23e629eaf90af6302fcc",
         "id": 1539138,
@@ -693,13 +682,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "282645ae33d2d3025c06204da0dde0a936cd2b11",
-        "id": 1654500,
+      "windows10-64-opt": {
+        "signature": "99004e108af7dc62837f92ec9ea7c73dc0d172fc",
+        "id": 1538307,
         "old_signatures": [
           {
-            "signature": "214136c5ea61d55839af78ad358cd88d1019698a",
-            "id": 1355515,
+            "signature": "b74c7b251fe25c595e7eac5f6dfc2810ba3f3e51",
+            "id": 1502874,
             "before": 1518163200000
           }
         ]
@@ -711,6 +700,17 @@ const PerfHerderSignatures = {
           {
             "signature": "2553b66d04a183d371c4ac6d4a812deb0d735bf9",
             "id": 1418022,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "282645ae33d2d3025c06204da0dde0a936cd2b11",
+        "id": 1654500,
+        "old_signatures": [
+          {
+            "signature": "214136c5ea61d55839af78ad358cd88d1019698a",
+            "id": 1355515,
             "before": 1518163200000
           }
         ]
@@ -752,17 +752,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "2d057d87dea1a45378d336c44b110cee4dd71a8b",
-        "id": 1654000,
-        "old_signatures": [
-          {
-            "signature": "edee541664a1b14b8f38f0a6812ac031890196cc",
-            "id": 1630004,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "0424f723fe2d8124d2aa1a2f4980862bb6fe9aef",
         "id": 1656367,
@@ -770,6 +759,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7b1b00cc52afcb2528c07eafd5cb28266cd01513",
             "id": 1630188,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "2d057d87dea1a45378d336c44b110cee4dd71a8b",
+        "id": 1654000,
+        "old_signatures": [
+          {
+            "signature": "edee541664a1b14b8f38f0a6812ac031890196cc",
+            "id": 1630004,
             "before": 1518163200000
           }
         ]
@@ -811,17 +811,6 @@ const PerfHerderSignatures = {
   },
   "complicated.jsdebugger.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "e1fbd375db9555ead277540af902e0a91acffad5",
-        "id": 1539126,
-        "old_signatures": [
-          {
-            "signature": "6367cb587c3b3d2829f85429e4e96e45729f8d09",
-            "id": 1424828,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "c928d511ba65453fd5427bdace953d6b9a455dec",
         "id": 1539673,
@@ -833,13 +822,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "5bbf597daa6eebc3c417df4e3529e53b3b715b8a",
-        "id": 1539141,
+      "windows7-32-pgo": {
+        "signature": "e1fbd375db9555ead277540af902e0a91acffad5",
+        "id": 1539126,
         "old_signatures": [
           {
-            "signature": "50912dc432c530d55e3d3b1945f47da629369712",
-            "id": 1503336,
+            "signature": "6367cb587c3b3d2829f85429e4e96e45729f8d09",
+            "id": 1424828,
             "before": 1518163200000
           }
         ]
@@ -855,13 +844,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "9e325cc34e6de95e2408fbf36e3240d469b5cd93",
-        "id": 1654502,
+      "windows10-64-pgo": {
+        "signature": "5bbf597daa6eebc3c417df4e3529e53b3b715b8a",
+        "id": 1539141,
         "old_signatures": [
           {
-            "signature": "f4f97cbc95c5da31516b7d907d875cc7acfcbd9a",
-            "id": 1355516,
+            "signature": "50912dc432c530d55e3d3b1945f47da629369712",
+            "id": 1503336,
             "before": 1518163200000
           }
         ]
@@ -873,6 +862,17 @@ const PerfHerderSignatures = {
           {
             "signature": "ad6cc708bc6cbb595f7db7283788d581a7e1a6f3",
             "id": 1418024,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "9e325cc34e6de95e2408fbf36e3240d469b5cd93",
+        "id": 1654502,
+        "old_signatures": [
+          {
+            "signature": "f4f97cbc95c5da31516b7d907d875cc7acfcbd9a",
+            "id": 1355516,
             "before": 1518163200000
           }
         ]
@@ -892,17 +892,6 @@ const PerfHerderSignatures = {
   },
   "complicated.jsdebugger.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "254afe588c8fdff7696fa3ed32ab4f955919f174",
-        "id": 1654676,
-        "old_signatures": [
-          {
-            "signature": "1779d4e16dfce34c9cc4f4fb34ef5f9db02e4636",
-            "id": 1630038,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "4f550cb28e3728b9b6dc52f6dfcbf0fc5ef1bcb6",
         "id": 1655241,
@@ -910,6 +899,17 @@ const PerfHerderSignatures = {
           {
             "signature": "f2594118d922c4f07a6fae637db62e9b6315fcc1",
             "id": 1630271,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "254afe588c8fdff7696fa3ed32ab4f955919f174",
+        "id": 1654676,
+        "old_signatures": [
+          {
+            "signature": "1779d4e16dfce34c9cc4f4fb34ef5f9db02e4636",
+            "id": 1630038,
             "before": 1518163200000
           }
         ]
@@ -1135,17 +1135,6 @@ const PerfHerderSignatures = {
   },
   "complicated.memory.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "0a2ce1c1d86a78fc8cf2a8538863412caefbe9a1",
-        "id": 1654683,
-        "old_signatures": [
-          {
-            "signature": "6101bc69ba102da66579b957db4b84af4511ed6a",
-            "id": 1630045,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "1aad91751daa22c2f00c859952a81cc87ab16356",
         "id": 1655261,
@@ -1157,13 +1146,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "63db442f5c34cd2bd26931e9d364a3e7be4ab7c1",
-        "id": 1654008,
+      "windows7-32-opt": {
+        "signature": "0a2ce1c1d86a78fc8cf2a8538863412caefbe9a1",
+        "id": 1654683,
         "old_signatures": [
           {
-            "signature": "2ed920fd061189aeb3f92de711deefcd510c60c6",
-            "id": 1630012,
+            "signature": "6101bc69ba102da66579b957db4b84af4511ed6a",
+            "id": 1630045,
             "before": 1518163200000
           }
         ]
@@ -1179,13 +1168,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "cbba8037a5f25c129cb30606d1559b6bb3dafc43",
-        "id": 1654522,
+      "windows10-64-opt": {
+        "signature": "63db442f5c34cd2bd26931e9d364a3e7be4ab7c1",
+        "id": 1654008,
         "old_signatures": [
           {
-            "signature": "20b03ba0da7d701212faec749bd578fb2ed05821",
-            "id": 1630078,
+            "signature": "2ed920fd061189aeb3f92de711deefcd510c60c6",
+            "id": 1630012,
             "before": 1518163200000
           }
         ]
@@ -1197,6 +1186,17 @@ const PerfHerderSignatures = {
           {
             "signature": "0b53004255869925e6876feee164f484b634c6c2",
             "id": 1629916,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "cbba8037a5f25c129cb30606d1559b6bb3dafc43",
+        "id": 1654522,
+        "old_signatures": [
+          {
+            "signature": "20b03ba0da7d701212faec749bd578fb2ed05821",
+            "id": 1630078,
             "before": 1518163200000
           }
         ]
@@ -1216,17 +1216,6 @@ const PerfHerderSignatures = {
   },
   "complicated.memory.reload": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "8a774a16e0ae9018ed42f5938c26b9439ea10663",
-        "id": 1539686,
-        "old_signatures": [
-          {
-            "signature": "445c815ed02d1c98cac1a44f66ad7be8c6c2347a",
-            "id": 1418536,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "23348fe8f328cc1f74bba2827b74138aab3c3bfe",
         "id": 1539187,
@@ -1238,13 +1227,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "a1689b6035a16283699466eb2c1954cb22a582a2",
-        "id": 1538321,
+      "windows7-32-opt": {
+        "signature": "8a774a16e0ae9018ed42f5938c26b9439ea10663",
+        "id": 1539686,
         "old_signatures": [
           {
-            "signature": "7657c0e89e6b276455b0b4370ebe604e0ee4cf11",
-            "id": 1502888,
+            "signature": "445c815ed02d1c98cac1a44f66ad7be8c6c2347a",
+            "id": 1418536,
             "before": 1518163200000
           }
         ]
@@ -1256,6 +1245,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d068a8aa50e88050efe54d7bb9054973e62dc190",
             "id": 1503349,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "a1689b6035a16283699466eb2c1954cb22a582a2",
+        "id": 1538321,
+        "old_signatures": [
+          {
+            "signature": "7657c0e89e6b276455b0b4370ebe604e0ee4cf11",
+            "id": 1502888,
             "before": 1518163200000
           }
         ]
@@ -1297,17 +1297,6 @@ const PerfHerderSignatures = {
   },
   "complicated.memory.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "a60e599cbe771e9cfd98a427d9a53dd29fa6334c",
-        "id": 1654684,
-        "old_signatures": [
-          {
-            "signature": "90f42f01cd867af054b9c8ac4a1813569ae9e763",
-            "id": 1630046,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "d345d644bffe5da4c19399c7c78a6c077fda29de",
         "id": 1655263,
@@ -1319,13 +1308,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "4123f775882ca90c6adc0f8b9e6f4d212265d64a",
-        "id": 1654009,
+      "windows7-32-opt": {
+        "signature": "a60e599cbe771e9cfd98a427d9a53dd29fa6334c",
+        "id": 1654684,
         "old_signatures": [
           {
-            "signature": "d716a4d323759f429b61790521256262d101cf8b",
-            "id": 1630013,
+            "signature": "90f42f01cd867af054b9c8ac4a1813569ae9e763",
+            "id": 1630046,
             "before": 1518163200000
           }
         ]
@@ -1341,13 +1330,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "5505e09e39400c5379d6268ef612a3950811d346",
-        "id": 1654524,
+      "windows10-64-opt": {
+        "signature": "4123f775882ca90c6adc0f8b9e6f4d212265d64a",
+        "id": 1654009,
         "old_signatures": [
           {
-            "signature": "a8fd2bd0efa3674f0f4d85a1af1a6080ebcef7ab",
-            "id": 1630079,
+            "signature": "d716a4d323759f429b61790521256262d101cf8b",
+            "id": 1630013,
             "before": 1518163200000
           }
         ]
@@ -1359,6 +1348,17 @@ const PerfHerderSignatures = {
           {
             "signature": "15f05b4a94e3c83f3a506ac964968822b31b83be",
             "id": 1629917,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "5505e09e39400c5379d6268ef612a3950811d346",
+        "id": 1654524,
+        "old_signatures": [
+          {
+            "signature": "a8fd2bd0efa3674f0f4d85a1af1a6080ebcef7ab",
+            "id": 1630079,
             "before": 1518163200000
           }
         ]
@@ -1378,17 +1378,6 @@ const PerfHerderSignatures = {
   },
   "complicated.netmonitor.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "6fcda28e2fc6eeefb137a698aa319aa588b06a78",
-        "id": 1539178,
-        "old_signatures": [
-          {
-            "signature": "d9ef539aa2ca04f3fec6935d1a45e3c5735963f5",
-            "id": 1424848,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "b3059e47ab8fd79887bc7c69cd3bf17235afb5c6",
         "id": 1539684,
@@ -1396,6 +1385,17 @@ const PerfHerderSignatures = {
           {
             "signature": "5443fdb9da88cf288e4700be1a88ed2541af0be3",
             "id": 1418532,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "6fcda28e2fc6eeefb137a698aa319aa588b06a78",
+        "id": 1539178,
+        "old_signatures": [
+          {
+            "signature": "d9ef539aa2ca04f3fec6935d1a45e3c5735963f5",
+            "id": 1424848,
             "before": 1518163200000
           }
         ]
@@ -1422,17 +1422,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "795fd01fba0a8de4df6fe8b006d6517fe3ef110f",
-        "id": 1654520,
-        "old_signatures": [
-          {
-            "signature": "683b9d6ea15661977914b388f9f26cfea306e927",
-            "id": 1355529,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "2de1f58d829ebf59179090a590529409ead7d207",
         "id": 1649603,
@@ -1440,6 +1429,17 @@ const PerfHerderSignatures = {
           {
             "signature": "10d88bb4f002f6259f11ef610a1ab7c4df4cb5dd",
             "id": 1418041,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "795fd01fba0a8de4df6fe8b006d6517fe3ef110f",
+        "id": 1654520,
+        "old_signatures": [
+          {
+            "signature": "683b9d6ea15661977914b388f9f26cfea306e927",
+            "id": 1355529,
             "before": 1518163200000
           }
         ]
@@ -1479,14 +1479,14 @@ const PerfHerderSignatures = {
         "id": 1668816,
         "old_signatures": []
       },
-      "linux64-pgo": {
-        "signature": "43c7c7dcf3662fa575c4639c97e1cdd64ee7ac88",
-        "id": 1668804,
-        "old_signatures": []
-      },
       "linux64-opt": {
         "signature": "935faaf13b5c5cd9b78b4851804320eea67dbc1b",
         "id": 1668800,
+        "old_signatures": []
+      },
+      "linux64-pgo": {
+        "signature": "43c7c7dcf3662fa575c4639c97e1cdd64ee7ac88",
+        "id": 1668804,
         "old_signatures": []
       },
       "osx-10-10-opt": {
@@ -1542,17 +1542,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "a829d97a075d511bbbca238ad36f420b46bc6c2c",
-        "id": 1649598,
-        "old_signatures": [
-          {
-            "signature": "84d62bc55a946cd4e3f56ef233eb1fed68a5a614",
-            "id": 1418039,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "7c6d23ab92b551a20f01418f0ec0658d6b169695",
         "id": 1654515,
@@ -1560,6 +1549,17 @@ const PerfHerderSignatures = {
           {
             "signature": "16b1015f153cde9fbd85ef1c6465adf9ee62212e",
             "id": 1355527,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "a829d97a075d511bbbca238ad36f420b46bc6c2c",
+        "id": 1649598,
+        "old_signatures": [
+          {
+            "signature": "84d62bc55a946cd4e3f56ef233eb1fed68a5a614",
+            "id": 1418039,
             "before": 1518163200000
           }
         ]
@@ -1704,17 +1704,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "4ef53cf4e3a6b2677ec4c23bf100dd7aaf996b7a",
-        "id": 1654517,
-        "old_signatures": [
-          {
-            "signature": "8efbed5925bb92635c6677e47e9c5e9c77f337d7",
-            "id": 1355528,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "adcab331a70cfd234d0b42c06687c3ea96cd0535",
         "id": 1649600,
@@ -1722,6 +1711,17 @@ const PerfHerderSignatures = {
           {
             "signature": "85acc8ba10fa3592cca8899c1b4d2e7c82f9f651",
             "id": 1418040,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "4ef53cf4e3a6b2677ec4c23bf100dd7aaf996b7a",
+        "id": 1654517,
+        "old_signatures": [
+          {
+            "signature": "8efbed5925bb92635c6677e47e9c5e9c77f337d7",
+            "id": 1355528,
             "before": 1518163200000
           }
         ]
@@ -1741,17 +1741,6 @@ const PerfHerderSignatures = {
   },
   "complicated.netmonitor.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "ebc4d97095b52d859e237937f1eeab70ac439b84",
-        "id": 1654682,
-        "old_signatures": [
-          {
-            "signature": "11887ca298111b514c301120fb5e9f4c33e15263",
-            "id": 1630044,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "92a98d127458fb61c890ff1d8e803067eed53619",
         "id": 1655258,
@@ -1759,6 +1748,17 @@ const PerfHerderSignatures = {
           {
             "signature": "a1fbe6437991bbc927625f55faaabc2c0ff6c5b9",
             "id": 1630277,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "ebc4d97095b52d859e237937f1eeab70ac439b84",
+        "id": 1654682,
+        "old_signatures": [
+          {
+            "signature": "11887ca298111b514c301120fb5e9f4c33e15263",
+            "id": 1630044,
             "before": 1518163200000
           }
         ]
@@ -1785,17 +1785,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "3dc4530049356d2b85454bccf0c7f9ba47810748",
-        "id": 1654518,
-        "old_signatures": [
-          {
-            "signature": "816b38b03ce3b41003c1c7dff5897cf44ef241e8",
-            "id": 1630077,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "13a16102f76aed238e7282e5a2c41e7b54a29ca8",
         "id": 1649601,
@@ -1803,6 +1792,17 @@ const PerfHerderSignatures = {
           {
             "signature": "8c93ae7bb2aefd17ac87c7b250405acfd9c170df",
             "id": 1629915,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "3dc4530049356d2b85454bccf0c7f9ba47810748",
+        "id": 1654518,
+        "old_signatures": [
+          {
+            "signature": "816b38b03ce3b41003c1c7dff5897cf44ef241e8",
+            "id": 1630077,
             "before": 1518163200000
           }
         ]
@@ -1925,17 +1925,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "4210037bf6d69e0f7668dd3a0a3ee3c5d7e2252b",
-        "id": 1539169,
-        "old_signatures": [
-          {
-            "signature": "7d594acd1f8d92ce6f095834fe03db87a1f76f9e",
-            "id": 1503343,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "8b0ddc81fb2e03230cc85b2dd2bfda55a4f95d77",
         "id": 1538315,
@@ -1943,6 +1932,17 @@ const PerfHerderSignatures = {
           {
             "signature": "78461abb0d70807c415f99422a8606b5c54ae744",
             "id": 1502882,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "4210037bf6d69e0f7668dd3a0a3ee3c5d7e2252b",
+        "id": 1539169,
+        "old_signatures": [
+          {
+            "signature": "7d594acd1f8d92ce6f095834fe03db87a1f76f9e",
+            "id": 1503343,
             "before": 1518163200000
           }
         ]
@@ -2028,17 +2028,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "f84fd95ed92a3014278aece52c85e49a17357bcf",
-        "id": 1649593,
-        "old_signatures": [
-          {
-            "signature": "2aa86257b1cf5a90b6f640f784f3190b4f25567e",
-            "id": 1418035,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "da054be55a2b01f8d00c79bc66e14b09bd7e3e5f",
         "id": 1654510,
@@ -2046,6 +2035,17 @@ const PerfHerderSignatures = {
           {
             "signature": "1fa863525702357e838ee8837d58376dc9e12fd3",
             "id": 1355523,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "f84fd95ed92a3014278aece52c85e49a17357bcf",
+        "id": 1649593,
+        "old_signatures": [
+          {
+            "signature": "2aa86257b1cf5a90b6f640f784f3190b4f25567e",
+            "id": 1418035,
             "before": 1518163200000
           }
         ]
@@ -2065,17 +2065,6 @@ const PerfHerderSignatures = {
   },
   "complicated.performance.open.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "1d57715afdd992b14eac299509c6ec3a79fd9045",
-        "id": 1655249,
-        "old_signatures": [
-          {
-            "signature": "0062a89bba0b6ba73dfa7640fd6be8d3b3e25ffd",
-            "id": 1630274,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "779da529f6085eeb1ad09dc73a4b97aecfc15d4d",
         "id": 1654679,
@@ -2083,6 +2072,17 @@ const PerfHerderSignatures = {
           {
             "signature": "cdbf053ae9555f4f49aac843e82abf5625c3b179",
             "id": 1630041,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "1d57715afdd992b14eac299509c6ec3a79fd9045",
+        "id": 1655249,
+        "old_signatures": [
+          {
+            "signature": "0062a89bba0b6ba73dfa7640fd6be8d3b3e25ffd",
+            "id": 1630274,
             "before": 1518163200000
           }
         ]
@@ -2109,17 +2109,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "9717c30e6d7d892d35f4d3d5baa6b3441bc3189f",
-        "id": 1654511,
-        "old_signatures": [
-          {
-            "signature": "9265efe1e450b69b3cedfc376b0aa3675f6c65c8",
-            "id": 1630074,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "1ccae6b2cb9dbcd60ec7f6489e0d8ed392682849",
         "id": 1649594,
@@ -2127,6 +2116,17 @@ const PerfHerderSignatures = {
           {
             "signature": "e3ca9ca50baad662c9f54ef934ae9cc2869a2410",
             "id": 1629912,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "9717c30e6d7d892d35f4d3d5baa6b3441bc3189f",
+        "id": 1654511,
+        "old_signatures": [
+          {
+            "signature": "9265efe1e450b69b3cedfc376b0aa3675f6c65c8",
+            "id": 1630074,
             "before": 1518163200000
           }
         ]
@@ -2146,17 +2146,6 @@ const PerfHerderSignatures = {
   },
   "complicated.performance.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "f164bc9c3dace6ba31c0afde8c0ddd38dd390b0d",
-        "id": 1539158,
-        "old_signatures": [
-          {
-            "signature": "4413e50c0efbf66638bec4ddb37e279b781bb057",
-            "id": 1424841,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "a66e64bf90d6679a9335b6cf114bfbb4f42d31ac",
         "id": 1539679,
@@ -2168,13 +2157,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "bbed5e23ada653cb744b8a133656862df33dcf13",
-        "id": 1538314,
+      "windows7-32-pgo": {
+        "signature": "f164bc9c3dace6ba31c0afde8c0ddd38dd390b0d",
+        "id": 1539158,
         "old_signatures": [
           {
-            "signature": "cb0ec05694789d2dbae3152a712f13a238a4c4cb",
-            "id": 1502881,
+            "signature": "4413e50c0efbf66638bec4ddb37e279b781bb057",
+            "id": 1424841,
             "before": 1518163200000
           }
         ]
@@ -2186,6 +2175,17 @@ const PerfHerderSignatures = {
           {
             "signature": "ec6ff03fc86e9065d5b17df34a00a6f4c714d092",
             "id": 1503342,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "bbed5e23ada653cb744b8a133656862df33dcf13",
+        "id": 1538314,
+        "old_signatures": [
+          {
+            "signature": "cb0ec05694789d2dbae3152a712f13a238a4c4cb",
+            "id": 1502881,
             "before": 1518163200000
           }
         ]
@@ -2249,17 +2249,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "d331a2579ecef2f4d40d8c3fed4c5326e302a412",
-        "id": 1656372,
-        "old_signatures": [
-          {
-            "signature": "c558d2513826a5d05ef80847a70b370caa00b10e",
-            "id": 1630193,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "6851cf53f9f29d523f3e89240117bb12ab9ee9b5",
         "id": 1654005,
@@ -2267,6 +2256,17 @@ const PerfHerderSignatures = {
           {
             "signature": "94f86e04f545412818f0ce7d42698654227ab56e",
             "id": 1630009,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "d331a2579ecef2f4d40d8c3fed4c5326e302a412",
+        "id": 1656372,
+        "old_signatures": [
+          {
+            "signature": "c558d2513826a5d05ef80847a70b370caa00b10e",
+            "id": 1630193,
             "before": 1518163200000
           }
         ]
@@ -2308,17 +2308,6 @@ const PerfHerderSignatures = {
   },
   "complicated.readHeapSnapshot": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "2d5f3c8cc8524b8a83a3fe725c5c35d71802f014",
-        "id": 1539196,
-        "old_signatures": [
-          {
-            "signature": "afb554c7235d8db26a0ce06fa0a06854d546b4c1",
-            "id": 1424855,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "12f8751b3705931cc4175cfc456a7f7bcc8d8b51",
         "id": 1539688,
@@ -2326,6 +2315,17 @@ const PerfHerderSignatures = {
           {
             "signature": "b8e35341fba26771315fdcd66ace668508fd645c",
             "id": 1418542,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "2d5f3c8cc8524b8a83a3fe725c5c35d71802f014",
+        "id": 1539196,
+        "old_signatures": [
+          {
+            "signature": "afb554c7235d8db26a0ce06fa0a06854d546b4c1",
+            "id": 1424855,
             "before": 1518163200000
           }
         ]
@@ -2352,17 +2352,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "b97016ffb010f925398d6432a4e8add5c73c2e86",
-        "id": 1649609,
-        "old_signatures": [
-          {
-            "signature": "3fddbb26dcce9f89da91caf12f165b5956ab233a",
-            "id": 1418045,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "d2553c5d951ea15ac72967649412ef5cb963f598",
         "id": 1654526,
@@ -2370,6 +2359,17 @@ const PerfHerderSignatures = {
           {
             "signature": "ac86861f4a9eabb782ed5c769b8dfef0f8f2a18d",
             "id": 1355540,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "b97016ffb010f925398d6432a4e8add5c73c2e86",
+        "id": 1649609,
+        "old_signatures": [
+          {
+            "signature": "3fddbb26dcce9f89da91caf12f165b5956ab233a",
+            "id": 1418045,
             "before": 1518163200000
           }
         ]
@@ -2514,17 +2514,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "99f50ab4f7ca3144644c518bab47c8aaeceee9ed",
-        "id": 1654509,
-        "old_signatures": [
-          {
-            "signature": "fa2227e394ffd4b84a0ef66ea4cc2af3c7fca8e6",
-            "id": 1355521,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "ef9a07d9fe64dd94dd7a57a094d329defcb8a7e8",
         "id": 1649592,
@@ -2532,6 +2521,17 @@ const PerfHerderSignatures = {
           {
             "signature": "4afcb1c167d2e23a79a2fc8e8297446491dbf577",
             "id": 1418033,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "99f50ab4f7ca3144644c518bab47c8aaeceee9ed",
+        "id": 1654509,
+        "old_signatures": [
+          {
+            "signature": "fa2227e394ffd4b84a0ef66ea4cc2af3c7fca8e6",
+            "id": 1355521,
             "before": 1518163200000
           }
         ]
@@ -2654,17 +2654,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "21f727deac0b97742f657b2391b73f75d7841165",
-        "id": 1654002,
-        "old_signatures": [
-          {
-            "signature": "8b5f61851921e75ad07f6a4ca51b80e3b0321cc3",
-            "id": 1630006,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "3457419a17c6cef165dfc45d412be00cff3feba3",
         "id": 1656369,
@@ -2672,6 +2661,17 @@ const PerfHerderSignatures = {
           {
             "signature": "75aaf4fcb2a95202840d436075ad1abfdcb39f40",
             "id": 1630190,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "21f727deac0b97742f657b2391b73f75d7841165",
+        "id": 1654002,
+        "old_signatures": [
+          {
+            "signature": "8b5f61851921e75ad07f6a4ca51b80e3b0321cc3",
+            "id": 1630006,
             "before": 1518163200000
           }
         ]
@@ -2757,17 +2757,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "eaca97f9a79609ee2a6b0a87aa0cfaccf20f1618",
-        "id": 1654507,
-        "old_signatures": [
-          {
-            "signature": "0bd9d0051da483c42dadcb563c8a49195260531f",
-            "id": 1355520,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "b8b69e494f9886b00ff98143ef0fd62f25248a84",
         "id": 1649590,
@@ -2775,6 +2764,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d5ec603c32dc0912d93a8d8a66643a441d0d1d7a",
             "id": 1418031,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "eaca97f9a79609ee2a6b0a87aa0cfaccf20f1618",
+        "id": 1654507,
+        "old_signatures": [
+          {
+            "signature": "0bd9d0051da483c42dadcb563c8a49195260531f",
+            "id": 1355520,
             "before": 1518163200000
           }
         ]
@@ -2794,17 +2794,6 @@ const PerfHerderSignatures = {
   },
   "complicated.styleeditor.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "02e33cff5f4e54b774311fabdcd67613758bcb2a",
-        "id": 1654678,
-        "old_signatures": [
-          {
-            "signature": "0fc83cdc921db85d1ff79b95d5eba15f6f739a53",
-            "id": 1630040,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "c2214045b2013865b9d085b33edf81dd33c0766b",
         "id": 1655247,
@@ -2812,6 +2801,17 @@ const PerfHerderSignatures = {
           {
             "signature": "75dedcbe862aaa89dcb46aa5ab73837302c6b6a4",
             "id": 1630273,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "02e33cff5f4e54b774311fabdcd67613758bcb2a",
+        "id": 1654678,
+        "old_signatures": [
+          {
+            "signature": "0fc83cdc921db85d1ff79b95d5eba15f6f739a53",
+            "id": 1630040,
             "before": 1518163200000
           }
         ]
@@ -2838,17 +2838,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "3251d684f341c28f4c9f487e192531b13291d60d",
-        "id": 1649591,
-        "old_signatures": [
-          {
-            "signature": "202d404a60b425b77f3a1b131930c37cddf1d8ee",
-            "id": 1629911,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "48764f8c8724960b995e758214edac0bfc328200",
         "id": 1654508,
@@ -2856,6 +2845,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7954555639f1df5ddcf70182987382409843ab12",
             "id": 1630073,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "3251d684f341c28f4c9f487e192531b13291d60d",
+        "id": 1649591,
+        "old_signatures": [
+          {
+            "signature": "202d404a60b425b77f3a1b131930c37cddf1d8ee",
+            "id": 1629911,
             "before": 1518163200000
           }
         ]
@@ -2897,17 +2897,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "e81532eca952abb5b4f9d8bc96ac8b9585fa37bc",
-        "id": 1539208,
-        "old_signatures": [
-          {
-            "signature": "e7f19ead5bb360d1cc0c7669d1d8f2f84878705b",
-            "id": 1503352,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "637e2902b07cc602c128c5fd477cc374d004a38a",
         "id": 1538324,
@@ -2915,6 +2904,17 @@ const PerfHerderSignatures = {
           {
             "signature": "adb504dba6aee10e16bb25e7984339a88ab1dfc0",
             "id": 1502891,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "e81532eca952abb5b4f9d8bc96ac8b9585fa37bc",
+        "id": 1539208,
+        "old_signatures": [
+          {
+            "signature": "e7f19ead5bb360d1cc0c7669d1d8f2f84878705b",
+            "id": 1503352,
             "before": 1518163200000
           }
         ]
@@ -2956,17 +2956,6 @@ const PerfHerderSignatures = {
   },
   "complicated.webconsole.close": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "376d56fce6598fc6e9f06a7acfa9198a2aece31f",
-        "id": 1539668,
-        "old_signatures": [
-          {
-            "signature": "18f1208adc5eee67f5d31e95ec686bddb69c5d2b",
-            "id": 1418486,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "c4729dea54b9a8d313d5209d86536b0be1a447f3",
         "id": 1539102,
@@ -2974,6 +2963,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d5ffab88f920c1b50575d7f762432d20ce71c2d4",
             "id": 1424818,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "376d56fce6598fc6e9f06a7acfa9198a2aece31f",
+        "id": 1539668,
+        "old_signatures": [
+          {
+            "signature": "18f1208adc5eee67f5d31e95ec686bddb69c5d2b",
+            "id": 1418486,
             "before": 1518163200000
           }
         ]
@@ -3037,17 +3037,6 @@ const PerfHerderSignatures = {
   },
   "complicated.webconsole.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "ef31076b53aa9114d461b861dba6e1b1c40efe00",
-        "id": 1539087,
-        "old_signatures": [
-          {
-            "signature": "a4dbd2d7d21ce4311c73bb8864620a7154617676",
-            "id": 1424812,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "7e4f9bc41206489c4ea9ea0bc58bd58a51f93074",
         "id": 1539666,
@@ -3055,6 +3044,17 @@ const PerfHerderSignatures = {
           {
             "signature": "0387b9e9be2033aedb2811277a29431cf678b7b9",
             "id": 1418481,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "ef31076b53aa9114d461b861dba6e1b1c40efe00",
+        "id": 1539087,
+        "old_signatures": [
+          {
+            "signature": "a4dbd2d7d21ce4311c73bb8864620a7154617676",
+            "id": 1424812,
             "before": 1518163200000
           }
         ]
@@ -3081,17 +3081,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "5e273b93875f10482d4ab2f6f31a3398d769bb6d",
-        "id": 1649573,
-        "old_signatures": [
-          {
-            "signature": "59d63a5a685fbb807849de363ab9e52c1488b9bb",
-            "id": 1418010,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "6599f8b6a38145c116337212286197946ea38fcf",
         "id": 1654490,
@@ -3099,6 +3088,17 @@ const PerfHerderSignatures = {
           {
             "signature": "8a82055766057f61b655a8199ae60f954ae28075",
             "id": 1355506,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "5e273b93875f10482d4ab2f6f31a3398d769bb6d",
+        "id": 1649573,
+        "old_signatures": [
+          {
+            "signature": "59d63a5a685fbb807849de363ab9e52c1488b9bb",
+            "id": 1418010,
             "before": 1518163200000
           }
         ]
@@ -3302,17 +3302,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "221368d0dc68ad09a9cd9633b2a38b04ac30c39c",
-        "id": 1656364,
-        "old_signatures": [
-          {
-            "signature": "9f0f318324ef3665d4319b5ec204a6cb11749c6f",
-            "id": 1630185,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "ffd0dcbe9b2c15a06dd0e06c73332097b57868fb",
         "id": 1653997,
@@ -3324,13 +3313,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "3be460eb6163ed9cca09610524b1e5c25e57e66f",
-        "id": 1654493,
+      "windows10-64-pgo": {
+        "signature": "221368d0dc68ad09a9cd9633b2a38b04ac30c39c",
+        "id": 1656364,
         "old_signatures": [
           {
-            "signature": "0c3298289bd359271a77831f15839c96573825db",
-            "id": 1630067,
+            "signature": "9f0f318324ef3665d4319b5ec204a6cb11749c6f",
+            "id": 1630185,
             "before": 1518163200000
           }
         ]
@@ -3342,6 +3331,17 @@ const PerfHerderSignatures = {
           {
             "signature": "a01b2ee57cc7e0be01c98002a064cb573cfb7b10",
             "id": 1629905,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "3be460eb6163ed9cca09610524b1e5c25e57e66f",
+        "id": 1654493,
+        "old_signatures": [
+          {
+            "signature": "0c3298289bd359271a77831f15839c96573825db",
+            "id": 1630067,
             "before": 1518163200000
           }
         ]
@@ -3405,17 +3405,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "6758cecba0cf4d2b048648ee657f5c541c3c157c",
-        "id": 1654544,
-        "old_signatures": [
-          {
-            "signature": "65162ef6df8dc889b68d8226e233325de9d0584b",
-            "id": 1355548,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "e5a0446f5f248c6490695dd2d90ec608175957c9",
         "id": 1649627,
@@ -3423,6 +3412,17 @@ const PerfHerderSignatures = {
           {
             "signature": "1d3938f4008a5770658a1a7112ce991ebd92bebe",
             "id": 1418048,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "6758cecba0cf4d2b048648ee657f5c541c3c157c",
+        "id": 1654544,
+        "old_signatures": [
+          {
+            "signature": "65162ef6df8dc889b68d8226e233325de9d0584b",
+            "id": 1355548,
             "before": 1518163200000
           }
         ]
@@ -3523,17 +3523,6 @@ const PerfHerderSignatures = {
   },
   "console.objectexpanded.close": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "bc1cf0fe5ecf781af339b2739ed483e3a3be3d80",
-        "id": 1654701,
-        "old_signatures": [
-          {
-            "signature": "b7b1ca741869f5964b31bc403f2d9197d15b7ba9",
-            "id": 1573893,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "570e06c012b8ffe1c7fc217357972cd9ce28c277",
         "id": 1655299,
@@ -3541,6 +3530,17 @@ const PerfHerderSignatures = {
           {
             "signature": "58a4279c7350de93fac370606a9184238b9782f3",
             "id": 1574196,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "bc1cf0fe5ecf781af339b2739ed483e3a3be3d80",
+        "id": 1654701,
+        "old_signatures": [
+          {
+            "signature": "b7b1ca741869f5964b31bc403f2d9197d15b7ba9",
+            "id": 1573893,
             "before": 1518163200000
           }
         ]
@@ -3567,17 +3567,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "6d413bcc545817d29d997e573ab5be08edd85080",
-        "id": 1654547,
-        "old_signatures": [
-          {
-            "signature": "09299c7d6ac694b77b483a7e24cc4dd9f84be21f",
-            "id": 1573895,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "b0e8f4dcb75883dffceee221f35c044274d3c624",
         "id": 1649630,
@@ -3585,6 +3574,17 @@ const PerfHerderSignatures = {
           {
             "signature": "3fad4bb8f646b080a7cf150d1670517eda43c336",
             "id": 1573851,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "6d413bcc545817d29d997e573ab5be08edd85080",
+        "id": 1654547,
+        "old_signatures": [
+          {
+            "signature": "09299c7d6ac694b77b483a7e24cc4dd9f84be21f",
+            "id": 1573895,
             "before": 1518163200000
           }
         ]
@@ -3626,17 +3626,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "0ea965fe139ba245e3b01c69047cb741d4f6115d",
-        "id": 1656394,
-        "old_signatures": [
-          {
-            "signature": "79e94f29d1b5d7060199a0ef4efe921d63660b30",
-            "id": 1577152,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "1ed55698ceaaea75966410c0fbbd3c67f6cc13d4",
         "id": 1654027,
@@ -3648,13 +3637,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "b12966be150fb8d180683c9994b95b7b41717d8b",
-        "id": 1649631,
+      "windows10-64-pgo": {
+        "signature": "0ea965fe139ba245e3b01c69047cb741d4f6115d",
+        "id": 1656394,
         "old_signatures": [
           {
-            "signature": "05116fe78fd9b77a4f4ebc121343d53f1ab4b648",
-            "id": 1577139,
+            "signature": "79e94f29d1b5d7060199a0ef4efe921d63660b30",
+            "id": 1577152,
             "before": 1518163200000
           }
         ]
@@ -3666,6 +3655,17 @@ const PerfHerderSignatures = {
           {
             "signature": "06832c50ad29f8631c314ce79bba0bc76563544e",
             "id": 1577147,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "b12966be150fb8d180683c9994b95b7b41717d8b",
+        "id": 1649631,
+        "old_signatures": [
+          {
+            "signature": "05116fe78fd9b77a4f4ebc121343d53f1ab4b648",
+            "id": 1577139,
             "before": 1518163200000
           }
         ]
@@ -3707,17 +3707,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "456c7b714a9ae5f69035b56971ffa3eb11ea5569",
-        "id": 1656395,
-        "old_signatures": [
-          {
-            "signature": "377a3421e79398bda0f95fc087d67e60d3f86368",
-            "id": 1630200,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "2816e18771050bdc813a8ea95fb6c6ee668b24a3",
         "id": 1654028,
@@ -3729,13 +3718,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "0f1065304230195196c57fe2ae9e89685afb8711",
-        "id": 1654549,
+      "windows10-64-pgo": {
+        "signature": "456c7b714a9ae5f69035b56971ffa3eb11ea5569",
+        "id": 1656395,
         "old_signatures": [
           {
-            "signature": "4c9cb19989125202fffd2270a330511ec0b95060",
-            "id": 1630082,
+            "signature": "377a3421e79398bda0f95fc087d67e60d3f86368",
+            "id": 1630200,
             "before": 1518163200000
           }
         ]
@@ -3747,6 +3736,17 @@ const PerfHerderSignatures = {
           {
             "signature": "5bb87c704836a574f4937fa175baf88f364e1c6c",
             "id": 1629920,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "0f1065304230195196c57fe2ae9e89685afb8711",
+        "id": 1654549,
+        "old_signatures": [
+          {
+            "signature": "4c9cb19989125202fffd2270a330511ec0b95060",
+            "id": 1630082,
             "before": 1518163200000
           }
         ]
@@ -3766,17 +3766,6 @@ const PerfHerderSignatures = {
   },
   "console.streamlog": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "ac8ed43934946b4dbe8c04e69c09a3faf0a7c868",
-        "id": 1539692,
-        "old_signatures": [
-          {
-            "signature": "4475243c120f7d7807ca9f85d0c6c83025e0f5cf",
-            "id": 1418553,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "a4f43672d6a58f09e58e5767061132d84291ca81",
         "id": 1539212,
@@ -3788,13 +3777,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "0afec0b8791193fb419a58b0e405f26f4e756606",
-        "id": 1538327,
+      "windows7-32-opt": {
+        "signature": "ac8ed43934946b4dbe8c04e69c09a3faf0a7c868",
+        "id": 1539692,
         "old_signatures": [
           {
-            "signature": "36c668dd021a2ef626ef86c6efc781d5f824ccc1",
-            "id": 1502894,
+            "signature": "4475243c120f7d7807ca9f85d0c6c83025e0f5cf",
+            "id": 1418553,
             "before": 1518163200000
           }
         ]
@@ -3810,13 +3799,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "95ca6e2f4bb93a07e52f3b5daa236570578e3e3a",
-        "id": 1649628,
+      "windows10-64-opt": {
+        "signature": "0afec0b8791193fb419a58b0e405f26f4e756606",
+        "id": 1538327,
         "old_signatures": [
           {
-            "signature": "8bc4754e120ce94868618e7b3874ed454dbfbdfa",
-            "id": 1418049,
+            "signature": "36c668dd021a2ef626ef86c6efc781d5f824ccc1",
+            "id": 1502894,
             "before": 1518163200000
           }
         ]
@@ -3828,6 +3817,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d7a5200c5e68bbf23c76c7cdf3d903469df271ac",
             "id": 1355550,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "95ca6e2f4bb93a07e52f3b5daa236570578e3e3a",
+        "id": 1649628,
+        "old_signatures": [
+          {
+            "signature": "8bc4754e120ce94868618e7b3874ed454dbfbdfa",
+            "id": 1418049,
             "before": 1518163200000
           }
         ]
@@ -3847,17 +3847,6 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "a3b490795c60c181414c32bb4f1e6b86855ce7bb",
-        "id": 1655283,
-        "old_signatures": [
-          {
-            "signature": "a59c45b975baf03d528e6d0c40aa809ff3eda804",
-            "id": 1581573,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "60ec776cdbe6fe307bf5b5136e42a3014b4b2d81",
         "id": 1654694,
@@ -3869,13 +3858,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "9c2ee0821b08fd5880aaa681bc06ea079ea823e0",
-        "id": 1656386,
+      "windows7-32-pgo": {
+        "signature": "a3b490795c60c181414c32bb4f1e6b86855ce7bb",
+        "id": 1655283,
         "old_signatures": [
           {
-            "signature": "87b1a1217c75c05c3b1af2df200413635f222cad",
-            "id": 1581564,
+            "signature": "a59c45b975baf03d528e6d0c40aa809ff3eda804",
+            "id": 1581573,
             "before": 1518163200000
           }
         ]
@@ -3891,13 +3880,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "17a82fb0c17f471ea24b26ee68c3673cccffefcd",
-        "id": 1654538,
+      "windows10-64-pgo": {
+        "signature": "9c2ee0821b08fd5880aaa681bc06ea079ea823e0",
+        "id": 1656386,
         "old_signatures": [
           {
-            "signature": "17e053c49af8c28c2fdae748e37448670c91580a",
-            "id": 1581558,
+            "signature": "87b1a1217c75c05c3b1af2df200413635f222cad",
+            "id": 1581564,
             "before": 1518163200000
           }
         ]
@@ -3909,6 +3898,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d986cf5dd6d687fc352c08568238e2fe5c288932",
             "id": 1581540,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "17a82fb0c17f471ea24b26ee68c3673cccffefcd",
+        "id": 1654538,
+        "old_signatures": [
+          {
+            "signature": "17e053c49af8c28c2fdae748e37448670c91580a",
+            "id": 1581558,
             "before": 1518163200000
           }
         ]
@@ -3928,19 +3928,14 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.collapseall.balanced": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "b57d746f0ca2222590ab1930e2dbef650e08c4d2",
-        "id": 1669250,
-        "old_signatures": []
-      },
       "windows7-32-pgo": {
         "signature": "12955855421820c74bcfca3d964fdb277a5786dc",
         "id": 1669266,
         "old_signatures": []
       },
-      "windows10-64-pgo": {
-        "signature": "2e6f1a4585f22f6f166375c3e1a30cb06c2647ea",
-        "id": 1669262,
+      "windows7-32-opt": {
+        "signature": "b57d746f0ca2222590ab1930e2dbef650e08c4d2",
+        "id": 1669250,
         "old_signatures": []
       },
       "windows10-64-opt": {
@@ -3948,14 +3943,19 @@ const PerfHerderSignatures = {
         "id": 1669246,
         "old_signatures": []
       },
-      "linux64-opt": {
-        "signature": "e4e2177920f02792673589b094f5ed7b1f535a96",
-        "id": 1669219,
+      "windows10-64-pgo": {
+        "signature": "2e6f1a4585f22f6f166375c3e1a30cb06c2647ea",
+        "id": 1669262,
         "old_signatures": []
       },
       "linux64-pgo": {
         "signature": "18dedca3c3f19d8eb61403aabd4229d491efa002",
         "id": 1669233,
+        "old_signatures": []
+      },
+      "linux64-opt": {
+        "signature": "e4e2177920f02792673589b094f5ed7b1f535a96",
+        "id": 1669219,
         "old_signatures": []
       },
       "osx-10-10-opt": {
@@ -3967,14 +3967,14 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.collapseall.manychildren": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "d0ecc7f767e58731a00f4ea594770eb3c64fdb3d",
-        "id": 1669248,
-        "old_signatures": []
-      },
       "windows7-32-pgo": {
         "signature": "f39c53ac6a2c256c4bc46449ba604a68731342fe",
         "id": 1669264,
+        "old_signatures": []
+      },
+      "windows7-32-opt": {
+        "signature": "d0ecc7f767e58731a00f4ea594770eb3c64fdb3d",
+        "id": 1669248,
         "old_signatures": []
       },
       "windows10-64-opt": {
@@ -4006,14 +4006,14 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.expandall.balanced": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "ead7726d0d2b0e35baa721a2ff8252a053d483f5",
-        "id": 1669249,
-        "old_signatures": []
-      },
       "windows7-32-pgo": {
         "signature": "973b5d4e5868961b43bec0d6533eddd9ed9b3afa",
         "id": 1669265,
+        "old_signatures": []
+      },
+      "windows7-32-opt": {
+        "signature": "ead7726d0d2b0e35baa721a2ff8252a053d483f5",
+        "id": 1669249,
         "old_signatures": []
       },
       "windows10-64-opt": {
@@ -4045,14 +4045,14 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.expandall.manychildren": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "c0f0a0819480c48a5c16fe16d4744d34b8a7e068",
-        "id": 1669247,
-        "old_signatures": []
-      },
       "windows7-32-pgo": {
         "signature": "03ab439d3b745f3bf5145f9c79ff68b27ff94ee3",
         "id": 1669263,
+        "old_signatures": []
+      },
+      "windows7-32-opt": {
+        "signature": "c0f0a0819480c48a5c16fe16d4744d34b8a7e068",
+        "id": 1669247,
         "old_signatures": []
       },
       "windows10-64-opt": {
@@ -4065,14 +4065,14 @@ const PerfHerderSignatures = {
         "id": 1669259,
         "old_signatures": []
       },
-      "linux64-pgo": {
-        "signature": "41b372283739b2fc36406400f7fe01d9aa86377e",
-        "id": 1669230,
-        "old_signatures": []
-      },
       "linux64-opt": {
         "signature": "2827dd590756caff04628f65c6f15710fce569c7",
         "id": 1669216,
+        "old_signatures": []
+      },
+      "linux64-pgo": {
+        "signature": "41b372283739b2fc36406400f7fe01d9aa86377e",
+        "id": 1669230,
         "old_signatures": []
       },
       "osx-10-10-opt": {
@@ -4094,24 +4094,24 @@ const PerfHerderSignatures = {
         "id": 1663683,
         "old_signatures": []
       },
-      "windows10-64-opt": {
-        "signature": "4b1126b5bc0b70d6dcd065b8b27350c6ab94001c",
-        "id": 1663625,
-        "old_signatures": []
-      },
       "windows10-64-pgo": {
         "signature": "2e08d27fc847fffe3930e1f32d0a2fab77baa660",
         "id": 1663691,
         "old_signatures": []
       },
-      "linux64-pgo": {
-        "signature": "2517f1804caaa7aaffce8534231c537dfeb04035",
-        "id": 1663615,
+      "windows10-64-opt": {
+        "signature": "4b1126b5bc0b70d6dcd065b8b27350c6ab94001c",
+        "id": 1663625,
         "old_signatures": []
       },
       "linux64-opt": {
         "signature": "308a29c813bc4f09b131fffcd0c6d1d1f55b5470",
         "id": 1663503,
+        "old_signatures": []
+      },
+      "linux64-pgo": {
+        "signature": "2517f1804caaa7aaffce8534231c537dfeb04035",
+        "id": 1663615,
         "old_signatures": []
       },
       "osx-10-10-opt": {
@@ -4143,14 +4143,14 @@ const PerfHerderSignatures = {
         "id": 1663624,
         "old_signatures": []
       },
-      "linux64-opt": {
-        "signature": "e461295da6e3d4a6fa60edf4fb0204d3dba0d84f",
-        "id": 1663502,
-        "old_signatures": []
-      },
       "linux64-pgo": {
         "signature": "cfd2d45ccfc1d43d4373cb1f47ad8b0f51542d30",
         "id": 1663614,
+        "old_signatures": []
+      },
+      "linux64-opt": {
+        "signature": "e461295da6e3d4a6fa60edf4fb0204d3dba0d84f",
+        "id": 1663502,
         "old_signatures": []
       },
       "osx-10-10-opt": {
@@ -4162,17 +4162,6 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "a092ecfa6abb9137e7f3e77fdffb83df74161a22",
-        "id": 1654690,
-        "old_signatures": [
-          {
-            "signature": "117cf4f0de16915b48c3d5737823783376c7ff32",
-            "id": 1581550,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "e2ec96e182ce4a171399761578a7a573ffcdec53",
         "id": 1655275,
@@ -4180,6 +4169,17 @@ const PerfHerderSignatures = {
           {
             "signature": "861554e609f71936316a1f45b7357f376e4ffdca",
             "id": 1581571,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "a092ecfa6abb9137e7f3e77fdffb83df74161a22",
+        "id": 1654690,
+        "old_signatures": [
+          {
+            "signature": "117cf4f0de16915b48c3d5737823783376c7ff32",
+            "id": 1581550,
             "before": 1518163200000
           }
         ]
@@ -4206,17 +4206,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "7dc6817d8889e93e5281bd863517e28d9a56e6fb",
-        "id": 1649617,
-        "old_signatures": [
-          {
-            "signature": "99d0fe7a9a6d55dcbab418e21f99aa515b2f8783",
-            "id": 1581538,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "a8b03818ef1c4b1982fe113a82293360b7028c34",
         "id": 1654534,
@@ -4224,6 +4213,17 @@ const PerfHerderSignatures = {
           {
             "signature": "964fd3ae14c339115e9d199e68c16d93fd573179",
             "id": 1581556,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "7dc6817d8889e93e5281bd863517e28d9a56e6fb",
+        "id": 1649617,
+        "old_signatures": [
+          {
+            "signature": "99d0fe7a9a6d55dcbab418e21f99aa515b2f8783",
+            "id": 1581538,
             "before": 1518163200000
           }
         ]
@@ -4243,17 +4243,6 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "fdcc76333df8031ac7e69c1380346217cd98277d",
-        "id": 1654691,
-        "old_signatures": [
-          {
-            "signature": "286f327107ebdaa9222e6166139b3ec337429de6",
-            "id": 1630047,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "90815665453744d9da033fa027c768aa68cb46fa",
         "id": 1655277,
@@ -4261,6 +4250,17 @@ const PerfHerderSignatures = {
           {
             "signature": "1ece963d49f1ce576741c791eb49bca4c33979b6",
             "id": 1630280,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "fdcc76333df8031ac7e69c1380346217cd98277d",
+        "id": 1654691,
+        "old_signatures": [
+          {
+            "signature": "286f327107ebdaa9222e6166139b3ec337429de6",
+            "id": 1630047,
             "before": 1518163200000
           }
         ]
@@ -4287,17 +4287,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "e23495cb11732414dde9fcca590f37e42ca92a16",
-        "id": 1654535,
-        "old_signatures": [
-          {
-            "signature": "6634ac7e6120c64b685e0d0eee92586af16af690",
-            "id": 1630080,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "2405906057c0c9f95215d0dd4576b94e98154982",
         "id": 1649618,
@@ -4305,6 +4294,17 @@ const PerfHerderSignatures = {
           {
             "signature": "25c977d76d68189cd2178472d812dd06a033c002",
             "id": 1629918,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "e23495cb11732414dde9fcca590f37e42ca92a16",
+        "id": 1654535,
+        "old_signatures": [
+          {
+            "signature": "6634ac7e6120c64b685e0d0eee92586af16af690",
+            "id": 1630080,
             "before": 1518163200000
           }
         ]
@@ -4346,17 +4346,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "4dbcf10f692214140d6afd10bc8722b3bb93e7bf",
-        "id": 1654017,
-        "old_signatures": [
-          {
-            "signature": "a978acc3b57f6445787dd8a30ed8aa73ce793156",
-            "id": 1581545,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "e2be806f19e2b909d2f19f831be886d778b0c2d3",
         "id": 1656384,
@@ -4364,6 +4353,17 @@ const PerfHerderSignatures = {
           {
             "signature": "46f3706886ae6be58ad40efebed692d4f7c6ed3f",
             "id": 1581563,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "4dbcf10f692214140d6afd10bc8722b3bb93e7bf",
+        "id": 1654017,
+        "old_signatures": [
+          {
+            "signature": "a978acc3b57f6445787dd8a30ed8aa73ce793156",
+            "id": 1581545,
             "before": 1518163200000
           }
         ]
@@ -4405,17 +4405,6 @@ const PerfHerderSignatures = {
   },
   "custom.inspector.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "c4be0def0af03c0d9e96b7a341293f9374fe6687",
-        "id": 1654693,
-        "old_signatures": [
-          {
-            "signature": "0bac01f0806567064a16a8925b4b49d05d7b320e",
-            "id": 1630048,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "409abb1d8e0b3e53029198fa7a6a57d41bcda1a3",
         "id": 1655281,
@@ -4427,13 +4416,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "1844496be46a55aa369a800758e9cbbe02fe59e9",
-        "id": 1654018,
+      "windows7-32-opt": {
+        "signature": "c4be0def0af03c0d9e96b7a341293f9374fe6687",
+        "id": 1654693,
         "old_signatures": [
           {
-            "signature": "b41e0d45ddaec1d8b5c7a4feedd76484e23a3166",
-            "id": 1630015,
+            "signature": "0bac01f0806567064a16a8925b4b49d05d7b320e",
+            "id": 1630048,
             "before": 1518163200000
           }
         ]
@@ -4449,13 +4438,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "ef2cd6966c4bf482d8abc546853a47ca973a6a9b",
-        "id": 1649620,
+      "windows10-64-opt": {
+        "signature": "1844496be46a55aa369a800758e9cbbe02fe59e9",
+        "id": 1654018,
         "old_signatures": [
           {
-            "signature": "5f776b73be2b49fbbc33e58f07b0ea68486fa3d0",
-            "id": 1629919,
+            "signature": "b41e0d45ddaec1d8b5c7a4feedd76484e23a3166",
+            "id": 1630015,
             "before": 1518163200000
           }
         ]
@@ -4467,6 +4456,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7e7f2cb22859dc402425a82a2e808b29c6e8398e",
             "id": 1630081,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "ef2cd6966c4bf482d8abc546853a47ca973a6a9b",
+        "id": 1649620,
+        "old_signatures": [
+          {
+            "signature": "5f776b73be2b49fbbc33e58f07b0ea68486fa3d0",
+            "id": 1629919,
             "before": 1518163200000
           }
         ]
@@ -4567,17 +4567,6 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "a9866b78c24f53b108dc0c51b471f01a2b4083df",
-        "id": 1655285,
-        "old_signatures": [
-          {
-            "signature": "d221a7e3e80c471abc0b8b43219378c75432a7bf",
-            "id": 1632408,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "29cb6ad3bd290c5217c7935ac48af40d7835d38c",
         "id": 1654695,
@@ -4585,6 +4574,17 @@ const PerfHerderSignatures = {
           {
             "signature": "f14b53154c898d9a0058369f62c076568137262d",
             "id": 1632345,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "a9866b78c24f53b108dc0c51b471f01a2b4083df",
+        "id": 1655285,
+        "old_signatures": [
+          {
+            "signature": "d221a7e3e80c471abc0b8b43219378c75432a7bf",
+            "id": 1632408,
             "before": 1518163200000
           }
         ]
@@ -4648,17 +4648,6 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "3101cbbc20ee0b08fc3101bbaffef677224df28c",
-        "id": 1654696,
-        "old_signatures": [
-          {
-            "signature": "a007c6535c6b997a3e1be9d5d2d6ad9bab7cf60e",
-            "id": 1632346,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "deafcca3332eb82126626362659592f25d0a6085",
         "id": 1655287,
@@ -4670,13 +4659,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "deb2514cb702ffe54b3cffedd52a35f55320ce6c",
-        "id": 1654021,
+      "windows7-32-opt": {
+        "signature": "3101cbbc20ee0b08fc3101bbaffef677224df28c",
+        "id": 1654696,
         "old_signatures": [
           {
-            "signature": "47c7eeb729a704dd5c118295d6ce6116a6f267c0",
-            "id": 1632351,
+            "signature": "a007c6535c6b997a3e1be9d5d2d6ad9bab7cf60e",
+            "id": 1632346,
             "before": 1518163200000
           }
         ]
@@ -4688,6 +4677,17 @@ const PerfHerderSignatures = {
           {
             "signature": "37e9d5989cd615ddd58437a0d1f46d106859c408",
             "id": 1632404,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "deb2514cb702ffe54b3cffedd52a35f55320ce6c",
+        "id": 1654021,
+        "old_signatures": [
+          {
+            "signature": "47c7eeb729a704dd5c118295d6ce6116a6f267c0",
+            "id": 1632351,
             "before": 1518163200000
           }
         ]
@@ -4729,14 +4729,14 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.pause": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "a27a8f62b9e2cf72655922425ff202c7a96f5bab",
-        "id": 1668698,
-        "old_signatures": []
-      },
       "windows7-32-opt": {
         "signature": "e48a906ff2548551b585549bed8e40be1cda3e74",
         "id": 1668694,
+        "old_signatures": []
+      },
+      "windows7-32-pgo": {
+        "signature": "a27a8f62b9e2cf72655922425ff202c7a96f5bab",
+        "id": 1668698,
         "old_signatures": []
       },
       "windows10-64-pgo": {
@@ -4768,17 +4768,6 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "0a447de6a33dcf44fe3a2f591cf5c068fb385c9f",
-        "id": 1655288,
-        "old_signatures": [
-          {
-            "signature": "8d5d2e560d1d6c5b2dd53dfa85828118a597d332",
-            "id": 1632410,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "fb540659f1d9a7756497e3a0d065f94cb8df5dd9",
         "id": 1654697,
@@ -4790,13 +4779,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "11a8d22b76fe9e1b9183e99a3d7c65d01f25f6dc",
-        "id": 1656389,
+      "windows7-32-pgo": {
+        "signature": "0a447de6a33dcf44fe3a2f591cf5c068fb385c9f",
+        "id": 1655288,
         "old_signatures": [
           {
-            "signature": "479dea34bcdfca28ccc972daf523a5a05a5ab707",
-            "id": 1632405,
+            "signature": "8d5d2e560d1d6c5b2dd53dfa85828118a597d332",
+            "id": 1632410,
             "before": 1518163200000
           }
         ]
@@ -4808,6 +4797,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7a78a38c7a3ba2d9329ad66caf5317eaf02d010e",
             "id": 1632352,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "11a8d22b76fe9e1b9183e99a3d7c65d01f25f6dc",
+        "id": 1656389,
+        "old_signatures": [
+          {
+            "signature": "479dea34bcdfca28ccc972daf523a5a05a5ab707",
+            "id": 1632405,
             "before": 1518163200000
           }
         ]
@@ -4849,17 +4849,6 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "f4d34a34492d2101243d1826626ccd7fac087c73",
-        "id": 1654698,
-        "old_signatures": [
-          {
-            "signature": "f9911c1fc4a8dc838de6c042c7fc863d1c97095d",
-            "id": 1632348,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "f0d011f08ff146ddc5fcca6c398ab6f7dc4933d4",
         "id": 1655291,
@@ -4867,6 +4856,17 @@ const PerfHerderSignatures = {
           {
             "signature": "6097c1dcb4e958c5e89e123c58c6a5ceae54e32c",
             "id": 1632411,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "f4d34a34492d2101243d1826626ccd7fac087c73",
+        "id": 1654698,
+        "old_signatures": [
+          {
+            "signature": "f9911c1fc4a8dc838de6c042c7fc863d1c97095d",
+            "id": 1632348,
             "before": 1518163200000
           }
         ]
@@ -4893,17 +4893,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "78b5c3215b813e2372dcb684ba8c68a17cc9f289",
-        "id": 1649625,
-        "old_signatures": [
-          {
-            "signature": "6d278c0bbedfebb4babcaf477297997a45e81b2d",
-            "id": 1632323,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "1063e3f550c9ec9513f8ee9ff93b1eb5e79dda12",
         "id": 1654542,
@@ -4911,6 +4900,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7167aea5f8b2a351d729dcd41a40fb70e25cffac",
             "id": 1632358,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "78b5c3215b813e2372dcb684ba8c68a17cc9f289",
+        "id": 1649625,
+        "old_signatures": [
+          {
+            "signature": "6d278c0bbedfebb4babcaf477297997a45e81b2d",
+            "id": 1632323,
             "before": 1518163200000
           }
         ]
@@ -4930,19 +4930,14 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.stepIn": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "f92b95e4f9362de27534dc069cd5db59ea5561e7",
-        "id": 1668695,
-        "old_signatures": []
-      },
       "windows7-32-pgo": {
         "signature": "11329565da785675a2f801d7379959835c04c2ee",
         "id": 1668699,
         "old_signatures": []
       },
-      "windows10-64-pgo": {
-        "signature": "5c6560dc4a0854b862f5921b811e4bae50028807",
-        "id": 1668703,
+      "windows7-32-opt": {
+        "signature": "f92b95e4f9362de27534dc069cd5db59ea5561e7",
+        "id": 1668695,
         "old_signatures": []
       },
       "windows10-64-opt": {
@@ -4950,14 +4945,19 @@ const PerfHerderSignatures = {
         "id": 1668691,
         "old_signatures": []
       },
-      "linux64-opt": {
-        "signature": "6f37c3ba3eb01e234e2dbc9c3d02544346d083cd",
-        "id": 1668675,
+      "windows10-64-pgo": {
+        "signature": "5c6560dc4a0854b862f5921b811e4bae50028807",
+        "id": 1668703,
         "old_signatures": []
       },
       "linux64-pgo": {
         "signature": "e5beaac2183892fd1032edaddecc71296e0c7f39",
         "id": 1668683,
+        "old_signatures": []
+      },
+      "linux64-opt": {
+        "signature": "6f37c3ba3eb01e234e2dbc9c3d02544346d083cd",
+        "id": 1668675,
         "old_signatures": []
       },
       "osx-10-10-opt": {
@@ -4969,14 +4969,14 @@ const PerfHerderSignatures = {
   },
   "custom.jsdebugger.stepOut": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "6cab0854e637644aad510bd009dad1f44a0244ba",
-        "id": 1668697,
-        "old_signatures": []
-      },
       "windows7-32-pgo": {
         "signature": "aa7cd73e3e6e7527778b70be16d01068a288028b",
         "id": 1668701,
+        "old_signatures": []
+      },
+      "windows7-32-opt": {
+        "signature": "6cab0854e637644aad510bd009dad1f44a0244ba",
+        "id": 1668697,
         "old_signatures": []
       },
       "windows10-64-pgo": {
@@ -5018,14 +5018,14 @@ const PerfHerderSignatures = {
         "id": 1668696,
         "old_signatures": []
       },
-      "windows10-64-opt": {
-        "signature": "9e471ecaf4c4bf72ef3d2a5d76a1c41989372f72",
-        "id": 1668692,
-        "old_signatures": []
-      },
       "windows10-64-pgo": {
         "signature": "be6b5f6c5813bc302d541ff3ae6a81c7bfd1b4a1",
         "id": 1668704,
+        "old_signatures": []
+      },
+      "windows10-64-opt": {
+        "signature": "9e471ecaf4c4bf72ef3d2a5d76a1c41989372f72",
+        "id": 1668692,
         "old_signatures": []
       },
       "linux64-pgo": {
@@ -5091,17 +5091,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "8f98334178a5ca3c8f912f0178b45b0ef78deae0",
-        "id": 1654533,
-        "old_signatures": [
-          {
-            "signature": "861f48af585e7933ae38b62a9fe10aa424096e0a",
-            "id": 1636678,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "f93a80d8632e2d8ef36c011edf4f38a9b66af0d4",
         "id": 1649616,
@@ -5109,6 +5098,17 @@ const PerfHerderSignatures = {
           {
             "signature": "37edfbcc03fd7a640e1354ab4a3b89a007a36e0f",
             "id": 1636653,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "8f98334178a5ca3c8f912f0178b45b0ef78deae0",
+        "id": 1654533,
+        "old_signatures": [
+          {
+            "signature": "861f48af585e7933ae38b62a9fe10aa424096e0a",
+            "id": 1636678,
             "before": 1518163200000
           }
         ]
@@ -5150,17 +5150,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "2b63cffbb426fe8e554e7c921df57c76fe78c25e",
-        "id": 1656377,
-        "old_signatures": [
-          {
-            "signature": "59eafd64ce57b2889ff1db5ee6d6bce259f768b4",
-            "id": 1636699,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "7f0a05c1f3274a0624709a3c49a010c170ecd9fb",
         "id": 1654010,
@@ -5172,13 +5161,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "99a80e257b1cf8839c630f5250f4d4ac74d4d59f",
-        "id": 1649612,
+      "windows10-64-pgo": {
+        "signature": "2b63cffbb426fe8e554e7c921df57c76fe78c25e",
+        "id": 1656377,
         "old_signatures": [
           {
-            "signature": "6f16f0f1bcb7dc4f5997c0769b0910b271a1601a",
-            "id": 1636649,
+            "signature": "59eafd64ce57b2889ff1db5ee6d6bce259f768b4",
+            "id": 1636699,
             "before": 1518163200000
           }
         ]
@@ -5190,6 +5179,17 @@ const PerfHerderSignatures = {
           {
             "signature": "2eadea8e73c5e8d98f58a457ddf39a39f3904250",
             "id": 1636674,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "99a80e257b1cf8839c630f5250f4d4ac74d4d59f",
+        "id": 1649612,
+        "old_signatures": [
+          {
+            "signature": "6f16f0f1bcb7dc4f5997c0769b0910b271a1601a",
+            "id": 1636649,
             "before": 1518163200000
           }
         ]
@@ -5209,17 +5209,6 @@ const PerfHerderSignatures = {
   },
   "custom.webconsole.open.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "cedaae342c20a2ae0167ee58e6389629ea3e3bed",
-        "id": 1655268,
-        "old_signatures": [
-          {
-            "signature": "fd0bd743905bbfbb855bc8f5544e86df9d382cb4",
-            "id": 1636695,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "29b3ffc1392e9ec87b8704d1854b0e5c41138cab",
         "id": 1654686,
@@ -5231,13 +5220,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "57fabca46c0ad14534b59b1eab40166f7b637b81",
-        "id": 1656378,
+      "windows7-32-pgo": {
+        "signature": "cedaae342c20a2ae0167ee58e6389629ea3e3bed",
+        "id": 1655268,
         "old_signatures": [
           {
-            "signature": "56a0875b1b962c49a8860bc66ab5a8e8736ad9b1",
-            "id": 1636700,
+            "signature": "fd0bd743905bbfbb855bc8f5544e86df9d382cb4",
+            "id": 1636695,
             "before": 1518163200000
           }
         ]
@@ -5253,13 +5242,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "4ed1c0980137f63d5da048a9a5489fc7ea8b39b4",
-        "id": 1654530,
+      "windows10-64-pgo": {
+        "signature": "57fabca46c0ad14534b59b1eab40166f7b637b81",
+        "id": 1656378,
         "old_signatures": [
           {
-            "signature": "62d2259167386b9a820a9cda9e4b5f0b924ab5f3",
-            "id": 1636675,
+            "signature": "56a0875b1b962c49a8860bc66ab5a8e8736ad9b1",
+            "id": 1636700,
             "before": 1518163200000
           }
         ]
@@ -5271,6 +5260,17 @@ const PerfHerderSignatures = {
           {
             "signature": "f28141127594df0d8ce0db2bd7144d1921040a00",
             "id": 1636650,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "4ed1c0980137f63d5da048a9a5489fc7ea8b39b4",
+        "id": 1654530,
+        "old_signatures": [
+          {
+            "signature": "62d2259167386b9a820a9cda9e4b5f0b924ab5f3",
+            "id": 1636675,
             "before": 1518163200000
           }
         ]
@@ -5290,17 +5290,6 @@ const PerfHerderSignatures = {
   },
   "custom.webconsole.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "667a34afb9dd6d45d2f242bf70a5b6126498e0c2",
-        "id": 1655270,
-        "old_signatures": [
-          {
-            "signature": "8881cce795ab0b53e45dd8bee5e00aa73a2b8c74",
-            "id": 1636696,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "dd0ec03f6fc8802f0e867adc5c1b7d72712e9894",
         "id": 1654687,
@@ -5308,6 +5297,17 @@ const PerfHerderSignatures = {
           {
             "signature": "533a8e54973512b5de9a2596273cc92806e53849",
             "id": 1636691,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "667a34afb9dd6d45d2f242bf70a5b6126498e0c2",
+        "id": 1655270,
+        "old_signatures": [
+          {
+            "signature": "8881cce795ab0b53e45dd8bee5e00aa73a2b8c74",
+            "id": 1636696,
             "before": 1518163200000
           }
         ]
@@ -5334,17 +5334,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "3778a98abbae34fdbafdec03e60695781ef17435",
-        "id": 1649614,
-        "old_signatures": [
-          {
-            "signature": "7a3655e03c5ac8bc2949f8c4d519e99d58104f4e",
-            "id": 1636651,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "87429c5a2a213871be4e16fda9376f1a1dbba460",
         "id": 1654531,
@@ -5352,6 +5341,17 @@ const PerfHerderSignatures = {
           {
             "signature": "385debccd29a5ac8bfacebdd8be0ae470d9bd6ec",
             "id": 1636676,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "3778a98abbae34fdbafdec03e60695781ef17435",
+        "id": 1649614,
+        "old_signatures": [
+          {
+            "signature": "7a3655e03c5ac8bc2949f8c4d519e99d58104f4e",
+            "id": 1636651,
             "before": 1518163200000
           }
         ]
@@ -5371,17 +5371,6 @@ const PerfHerderSignatures = {
   },
   "custom.webconsole.reload.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "8cab913e7042991c21a25b323c1ac72494b0de7b",
-        "id": 1655271,
-        "old_signatures": [
-          {
-            "signature": "e6404dbbe934017055dd3d8a0d4a9d613dd7cb5e",
-            "id": 1636697,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "882f673af5c424310c4ccff6fe36f291e9fcc67b",
         "id": 1654688,
@@ -5393,13 +5382,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "bae2f9eeb57514f8f5a93fdbbe1aa7fc089e9e08",
-        "id": 1654013,
+      "windows7-32-pgo": {
+        "signature": "8cab913e7042991c21a25b323c1ac72494b0de7b",
+        "id": 1655271,
         "old_signatures": [
           {
-            "signature": "fa9d3cba5da1af4a1f7e48f59b03964c4cd7b2d9",
-            "id": 1636687,
+            "signature": "e6404dbbe934017055dd3d8a0d4a9d613dd7cb5e",
+            "id": 1636697,
             "before": 1518163200000
           }
         ]
@@ -5411,6 +5400,17 @@ const PerfHerderSignatures = {
           {
             "signature": "41623c07ec0468a7f6edd39a9e8588cb140949eb",
             "id": 1636702,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "bae2f9eeb57514f8f5a93fdbbe1aa7fc089e9e08",
+        "id": 1654013,
+        "old_signatures": [
+          {
+            "signature": "fa9d3cba5da1af4a1f7e48f59b03964c4cd7b2d9",
+            "id": 1636687,
             "before": 1518163200000
           }
         ]
@@ -5496,17 +5496,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "e32b8c386fcdd8ed909e03ab1e343002899f3ddf",
-        "id": 1654551,
-        "old_signatures": [
-          {
-            "signature": "ff68e348af6a1868f414bf5efd63590b89cfa4b1",
-            "id": 1584797,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "4af1b4a7b1b849070343ed8898b9b9f3a242d73e",
         "id": 1649634,
@@ -5514,6 +5503,17 @@ const PerfHerderSignatures = {
           {
             "signature": "74e67b79d9b5c8c13608bc8ffb2728949b2c06e8",
             "id": 1584770,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "e32b8c386fcdd8ed909e03ab1e343002899f3ddf",
+        "id": 1654551,
+        "old_signatures": [
+          {
+            "signature": "ff68e348af6a1868f414bf5efd63590b89cfa4b1",
+            "id": 1584797,
             "before": 1518163200000
           }
         ]
@@ -5555,17 +5555,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "0b82213b7cd982364667364258c2dfc8d29c911d",
-        "id": 1654029,
-        "old_signatures": [
-          {
-            "signature": "c236658c1ed5bc6942a9aec574d8e0811f3596b2",
-            "id": 1575154,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "728d96e90991b11a3748f9150590147dfe89fa0f",
         "id": 1656396,
@@ -5577,13 +5566,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "4b210e20bf8cbd9568e99e3933cf925fb443f89c",
-        "id": 1649633,
+      "windows10-64-opt": {
+        "signature": "0b82213b7cd982364667364258c2dfc8d29c911d",
+        "id": 1654029,
         "old_signatures": [
           {
-            "signature": "c306973a8c30f49e38abcedae32ae2dc143a753b",
-            "id": 1575150,
+            "signature": "c236658c1ed5bc6942a9aec574d8e0811f3596b2",
+            "id": 1575154,
             "before": 1518163200000
           }
         ]
@@ -5595,6 +5584,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d6e9ab1604f22a9d13f38e899524722be8c7d45b",
             "id": 1575157,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "4b210e20bf8cbd9568e99e3933cf925fb443f89c",
+        "id": 1649633,
+        "old_signatures": [
+          {
+            "signature": "c306973a8c30f49e38abcedae32ae2dc143a753b",
+            "id": 1575150,
             "before": 1518163200000
           }
         ]
@@ -5614,17 +5614,6 @@ const PerfHerderSignatures = {
   },
   "panelsInBackground.reload": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "1dfab7b033854b437854e082e734a0c1e4afb9e4",
-        "id": 1655309,
-        "old_signatures": [
-          {
-            "signature": "7883628d36f1d250c028fc574d7664ca54e78839",
-            "id": 1581129,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "0761732e23f0530808487dbaae322e8657f15b3f",
         "id": 1654706,
@@ -5636,13 +5625,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "8f98c6f33053cc8ca8227a6207912049e5fa1cd4",
-        "id": 1654031,
+      "windows7-32-pgo": {
+        "signature": "1dfab7b033854b437854e082e734a0c1e4afb9e4",
+        "id": 1655309,
         "old_signatures": [
           {
-            "signature": "5d939578da9a91211b8354a62afbacccf9ce60b9",
-            "id": 1581122,
+            "signature": "7883628d36f1d250c028fc574d7664ca54e78839",
+            "id": 1581129,
             "before": 1518163200000
           }
         ]
@@ -5654,6 +5643,17 @@ const PerfHerderSignatures = {
           {
             "signature": "276ddda99532543f85a958c3bc2b927e6c32f081",
             "id": 1581130,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "8f98c6f33053cc8ca8227a6207912049e5fa1cd4",
+        "id": 1654031,
+        "old_signatures": [
+          {
+            "signature": "5d939578da9a91211b8354a62afbacccf9ce60b9",
+            "id": 1581122,
             "before": 1518163200000
           }
         ]
@@ -5695,17 +5695,6 @@ const PerfHerderSignatures = {
   },
   "panelsInBackground.reload.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "e0e83d9708c66b8b5998cb6b4f5f1f90792e39fb",
-        "id": 1655311,
-        "old_signatures": [
-          {
-            "signature": "c55b5c26a136ef46bb6387a82919e59b699e24b6",
-            "id": 1630283,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "0a87ebeb7a540fbb6f664bc2befa3b4880c7a8ec",
         "id": 1654707,
@@ -5713,6 +5702,17 @@ const PerfHerderSignatures = {
           {
             "signature": "38f47ced5ee57ea571a9f5f47ef248dcdb4f8afe",
             "id": 1630050,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "e0e83d9708c66b8b5998cb6b4f5f1f90792e39fb",
+        "id": 1655311,
+        "old_signatures": [
+          {
+            "signature": "c55b5c26a136ef46bb6387a82919e59b699e24b6",
+            "id": 1630283,
             "before": 1518163200000
           }
         ]
@@ -5739,17 +5739,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "77e061bb336e3bcf189bc791cc059da263c501d8",
-        "id": 1649636,
-        "old_signatures": [
-          {
-            "signature": "e544ea5d25d3e0ce605c8b1f635782b717be01a9",
-            "id": 1629921,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "0ab90f19ef3758f4a12a471e1dc57884b8279bef",
         "id": 1654553,
@@ -5757,6 +5746,17 @@ const PerfHerderSignatures = {
           {
             "signature": "6644c96785ebe1fca14df2e22a56fadd8ced881f",
             "id": 1630083,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "77e061bb336e3bcf189bc791cc059da263c501d8",
+        "id": 1649636,
+        "old_signatures": [
+          {
+            "signature": "e544ea5d25d3e0ce605c8b1f635782b717be01a9",
+            "id": 1629921,
             "before": 1518163200000
           }
         ]
@@ -5771,6 +5771,45 @@ const PerfHerderSignatures = {
             "before": 1518163200000
           }
         ]
+      }
+    }
+  },
+  "server.protocoljs": {
+    "platforms": {
+      "windows7-32-opt": {
+        "signature": "5e0148d5b58b634e86c1e9e363b58d41b13e6ab6",
+        "id": 1682556,
+        "old_signatures": []
+      },
+      "windows7-32-pgo": {
+        "signature": "3cdb675ece7211de28248ba70c395f6611b55629",
+        "id": 1682559,
+        "old_signatures": []
+      },
+      "windows10-64-pgo": {
+        "signature": "bec8323c62d855e70bed4e0c455ad69d023f5122",
+        "id": 1682560,
+        "old_signatures": []
+      },
+      "windows10-64-opt": {
+        "signature": "1e1848a79458c58ed04503e66aab1d154fa9b9db",
+        "id": 1682555,
+        "old_signatures": []
+      },
+      "linux64-opt": {
+        "signature": "1fb5e5aa6e50348e1828f40f1f4a2185d3db2bd8",
+        "id": 1682550,
+        "old_signatures": []
+      },
+      "linux64-pgo": {
+        "signature": "1bd628cffa7f4fa51e901a9963c842f26ff8c2ac",
+        "id": 1682553,
+        "old_signatures": []
+      },
+      "osx-10-10-opt": {
+        "signature": "2ea6549d4878c56feaa86f8c77df71f1006dfec7",
+        "id": 1682554,
+        "old_signatures": []
       }
     }
   },
@@ -5798,17 +5837,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "95133f33af911ff05bcae6bdd3fc88cbd55d0f61",
-        "id": 1539041,
-        "old_signatures": [
-          {
-            "signature": "4e27402259de5336e3da8d771d5c60d44c4c7931",
-            "id": 1503309,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "daefed59599f269eb7224ad2227a70209eeb9da1",
         "id": 1538281,
@@ -5820,13 +5848,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "c58b0e57d17065d3942c02832ce506139de4f2f2",
-        "id": 1649543,
+      "windows10-64-pgo": {
+        "signature": "95133f33af911ff05bcae6bdd3fc88cbd55d0f61",
+        "id": 1539041,
         "old_signatures": [
           {
-            "signature": "7ba161ffeb83370b5c82922776b613eb87f6381d",
-            "id": 1417971,
+            "signature": "4e27402259de5336e3da8d771d5c60d44c4c7931",
+            "id": 1503309,
             "before": 1518163200000
           }
         ]
@@ -5838,6 +5866,17 @@ const PerfHerderSignatures = {
           {
             "signature": "c636a5f6ab0d6ef9b1f8f52285fe6a8ae083c12d",
             "id": 1355478,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "c58b0e57d17065d3942c02832ce506139de4f2f2",
+        "id": 1649543,
+        "old_signatures": [
+          {
+            "signature": "7ba161ffeb83370b5c82922776b613eb87f6381d",
+            "id": 1417971,
             "before": 1518163200000
           }
         ]
@@ -5857,17 +5896,6 @@ const PerfHerderSignatures = {
   },
   "simple.inspector.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "2959ebdddfb5765a9de137b2c62aa452d8f5abc1",
-        "id": 1539644,
-        "old_signatures": [
-          {
-            "signature": "3f3f14d75586dc2708c4e41dd6f7dc1a96fc7c66",
-            "id": 1418410,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "757cfe590847079c9571da6543609588d7e831ad",
         "id": 1539022,
@@ -5879,13 +5907,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "ec8e72615f54530ecba24eb85e8e856b3266be8f",
-        "id": 1539036,
+      "windows7-32-opt": {
+        "signature": "2959ebdddfb5765a9de137b2c62aa452d8f5abc1",
+        "id": 1539644,
         "old_signatures": [
           {
-            "signature": "18357f31a9a38476a54eaf17f1b03cf3deacc0e5",
-            "id": 1503307,
+            "signature": "3f3f14d75586dc2708c4e41dd6f7dc1a96fc7c66",
+            "id": 1418410,
             "before": 1518163200000
           }
         ]
@@ -5901,13 +5929,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "ca95ae244d5cb2ce60290a4ed4483696ab7ba77b",
-        "id": 1654456,
+      "windows10-64-pgo": {
+        "signature": "ec8e72615f54530ecba24eb85e8e856b3266be8f",
+        "id": 1539036,
         "old_signatures": [
           {
-            "signature": "cc9a98cb5dd02205927cf0ceee85edb659d27cf9",
-            "id": 1355476,
+            "signature": "18357f31a9a38476a54eaf17f1b03cf3deacc0e5",
+            "id": 1503307,
             "before": 1518163200000
           }
         ]
@@ -5919,6 +5947,17 @@ const PerfHerderSignatures = {
           {
             "signature": "c3544492faadc16b56803c4b15eebc21e3a96778",
             "id": 1417966,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "ca95ae244d5cb2ce60290a4ed4483696ab7ba77b",
+        "id": 1654456,
+        "old_signatures": [
+          {
+            "signature": "cc9a98cb5dd02205927cf0ceee85edb659d27cf9",
+            "id": 1355476,
             "before": 1518163200000
           }
         ]
@@ -6063,17 +6102,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "adcabd1022c892de196394d3cbb3b1fd7aea7132",
-        "id": 1654458,
-        "old_signatures": [
-          {
-            "signature": "5a64eeddca6254cb35a7a62eae3186159b789b7b",
-            "id": 1355477,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "3d83793788276d9cc299561ccfbc3ce9efa5114e",
         "id": 1649541,
@@ -6081,6 +6109,17 @@ const PerfHerderSignatures = {
           {
             "signature": "6bb01b6520a88724995b2abf0f1b3c61873e4647",
             "id": 1417969,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "adcabd1022c892de196394d3cbb3b1fd7aea7132",
+        "id": 1654458,
+        "old_signatures": [
+          {
+            "signature": "5a64eeddca6254cb35a7a62eae3186159b789b7b",
+            "id": 1355477,
             "before": 1518163200000
           }
         ]
@@ -6144,17 +6183,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "a894c00895848aca4048356bf42c3a8988dbb1cc",
-        "id": 1654459,
-        "old_signatures": [
-          {
-            "signature": "8b751abe0c5d1f484741853b3462d0ae0e1fe33b",
-            "id": 1630055,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "b0bad2d06616942a2423bc7460217213a582a39f",
         "id": 1649542,
@@ -6162,6 +6190,17 @@ const PerfHerderSignatures = {
           {
             "signature": "a90ec39943da4b296b6075a5a0d626e3d80e20cf",
             "id": 1629893,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "a894c00895848aca4048356bf42c3a8988dbb1cc",
+        "id": 1654459,
+        "old_signatures": [
+          {
+            "signature": "8b751abe0c5d1f484741853b3462d0ae0e1fe33b",
+            "id": 1630055,
             "before": 1518163200000
           }
         ]
@@ -6203,17 +6242,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "bd9429d1f8de953300151c5d48cd4d61eb517be0",
-        "id": 1539050,
-        "old_signatures": [
-          {
-            "signature": "eece676fba42ff07ccef41bb233ea3866dfc929e",
-            "id": 1503312,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "baa78e462f57b4a8300f122f54420deaf28898df",
         "id": 1538284,
@@ -6225,13 +6253,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "6fe2ae7ff141fc3e61dc0bac5a31f0972bb10c1a",
-        "id": 1654465,
+      "windows10-64-pgo": {
+        "signature": "bd9429d1f8de953300151c5d48cd4d61eb517be0",
+        "id": 1539050,
         "old_signatures": [
           {
-            "signature": "9477f5e4c1d61958b514f5ac490a9bb1b3dd2266",
-            "id": 1355483,
+            "signature": "eece676fba42ff07ccef41bb233ea3866dfc929e",
+            "id": 1503312,
             "before": 1518163200000
           }
         ]
@@ -6243,6 +6271,17 @@ const PerfHerderSignatures = {
           {
             "signature": "c2408bc7c84cacdb541f8a0c6664376496796c69",
             "id": 1417977,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "6fe2ae7ff141fc3e61dc0bac5a31f0972bb10c1a",
+        "id": 1654465,
+        "old_signatures": [
+          {
+            "signature": "9477f5e4c1d61958b514f5ac490a9bb1b3dd2266",
+            "id": 1355483,
             "before": 1518163200000
           }
         ]
@@ -6262,17 +6301,6 @@ const PerfHerderSignatures = {
   },
   "simple.jsdebugger.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "92183d723c04bdb024432abf4a4145897067174b",
-        "id": 1539025,
-        "old_signatures": [
-          {
-            "signature": "449940cfd3d979893287e1503171a14fbb5a63c0",
-            "id": 1424780,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "ee3145b583b49bf87c33ada0920f580c374c8164",
         "id": 1539647,
@@ -6280,6 +6308,17 @@ const PerfHerderSignatures = {
           {
             "signature": "e869bb90a6bbfd7d941c0d5c819d16b8a238149e",
             "id": 1418419,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "92183d723c04bdb024432abf4a4145897067174b",
+        "id": 1539025,
+        "old_signatures": [
+          {
+            "signature": "449940cfd3d979893287e1503171a14fbb5a63c0",
+            "id": 1424780,
             "before": 1518163200000
           }
         ]
@@ -6306,17 +6345,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "f5a396d11d2ed70d491fb66c2a25422f73e013ba",
-        "id": 1654461,
-        "old_signatures": [
-          {
-            "signature": "a54c6536128fe70a83829e374c5764d6d498382f",
-            "id": 1355479,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "123d54019780bc67dbce5049094f2825fa50538e",
         "id": 1649544,
@@ -6324,6 +6352,17 @@ const PerfHerderSignatures = {
           {
             "signature": "0606c3754c7c23f78670836464f080aaded4be59",
             "id": 1417973,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "f5a396d11d2ed70d491fb66c2a25422f73e013ba",
+        "id": 1654461,
+        "old_signatures": [
+          {
+            "signature": "a54c6536128fe70a83829e374c5764d6d498382f",
+            "id": 1355479,
             "before": 1518163200000
           }
         ]
@@ -6365,17 +6404,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "95d97f708d3c4bcca7070ed779f209b5d45ff963",
-        "id": 1656353,
-        "old_signatures": [
-          {
-            "signature": "b7914fac4b031fdf958ff42c7bdc8178cdd1a6e3",
-            "id": 1630174,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "905c8ffef032cc45ffb741afebcf8afc92b77648",
         "id": 1653986,
@@ -6383,6 +6411,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d85bf435bd13d67c7103a5736d5c791c186d2b8d",
             "id": 1629990,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "95d97f708d3c4bcca7070ed779f209b5d45ff963",
+        "id": 1656353,
+        "old_signatures": [
+          {
+            "signature": "b7914fac4b031fdf958ff42c7bdc8178cdd1a6e3",
+            "id": 1630174,
             "before": 1518163200000
           }
         ]
@@ -6468,17 +6507,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "8f91ee78fec525dac6cba8dda0cb1d43da0f0533",
-        "id": 1654463,
-        "old_signatures": [
-          {
-            "signature": "09dde4f476262e59e11927d29f24e71957adeb41",
-            "id": 1355481,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "666064acda23e09aa5621f108af35f3a4a4bb86f",
         "id": 1649546,
@@ -6486,6 +6514,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d900c8b08610371d14df11c725cfe161af7c36f3",
             "id": 1417975,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "8f91ee78fec525dac6cba8dda0cb1d43da0f0533",
+        "id": 1654463,
+        "old_signatures": [
+          {
+            "signature": "09dde4f476262e59e11927d29f24e71957adeb41",
+            "id": 1355481,
             "before": 1518163200000
           }
         ]
@@ -6505,17 +6544,6 @@ const PerfHerderSignatures = {
   },
   "simple.jsdebugger.reload.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "bceae330e83b3c4988e70d42e0ff1bd4d4353d83",
-        "id": 1655200,
-        "old_signatures": [
-          {
-            "signature": "106564e95eac16e36e4e0c5e91ff415261d79ef1",
-            "id": 1630257,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "eb055f9cb6ce0803fa64919147cdf68779a6e3f9",
         "id": 1654662,
@@ -6523,6 +6551,17 @@ const PerfHerderSignatures = {
           {
             "signature": "b50cee9c58362b37096da85a5e6b53bea6424ccb",
             "id": 1630024,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "bceae330e83b3c4988e70d42e0ff1bd4d4353d83",
+        "id": 1655200,
+        "old_signatures": [
+          {
+            "signature": "106564e95eac16e36e4e0c5e91ff415261d79ef1",
+            "id": 1630257,
             "before": 1518163200000
           }
         ]
@@ -6549,17 +6588,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "eb3b608b0bf4ed7104153f28db9bc32dfdfba919",
-        "id": 1649547,
-        "old_signatures": [
-          {
-            "signature": "02afb2865091345f66c6be3b0b5083ce446e71d8",
-            "id": 1629895,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "6aa20f0e43b3a665507d6ceadd1b9c223713faac",
         "id": 1654464,
@@ -6567,6 +6595,17 @@ const PerfHerderSignatures = {
           {
             "signature": "faed2dd639b7ca71a4f7a87c15e224ec216831ec",
             "id": 1630057,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "eb3b608b0bf4ed7104153f28db9bc32dfdfba919",
+        "id": 1649547,
+        "old_signatures": [
+          {
+            "signature": "02afb2865091345f66c6be3b0b5083ce446e71d8",
+            "id": 1629895,
             "before": 1518163200000
           }
         ]
@@ -6586,17 +6625,6 @@ const PerfHerderSignatures = {
   },
   "simple.memory.close": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "7b6bcc9f109e3924f790bd446f1ee3a1f5c96010",
-        "id": 1539665,
-        "old_signatures": [
-          {
-            "signature": "c562e78f6fef5fb504687b5a4a8f38ba891d0c78",
-            "id": 1418477,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "04e88a34e43b34235ed76e57d0d5fd5da61bbe2d",
         "id": 1539083,
@@ -6608,13 +6636,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "8d857d1d56ebc5578ae3512f36c00183ffa3c768",
-        "id": 1538300,
+      "windows7-32-opt": {
+        "signature": "7b6bcc9f109e3924f790bd446f1ee3a1f5c96010",
+        "id": 1539665,
         "old_signatures": [
           {
-            "signature": "4880498c43d905e7ec838f7d278055da18aa81a2",
-            "id": 1502867,
+            "signature": "c562e78f6fef5fb504687b5a4a8f38ba891d0c78",
+            "id": 1418477,
             "before": 1518163200000
           }
         ]
@@ -6626,6 +6654,17 @@ const PerfHerderSignatures = {
           {
             "signature": "1e844a03429a860090ddda2b6d85a9075365b7cd",
             "id": 1503328,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "8d857d1d56ebc5578ae3512f36c00183ffa3c768",
+        "id": 1538300,
+        "old_signatures": [
+          {
+            "signature": "4880498c43d905e7ec838f7d278055da18aa81a2",
+            "id": 1502867,
             "before": 1518163200000
           }
         ]
@@ -6667,17 +6706,6 @@ const PerfHerderSignatures = {
   },
   "simple.memory.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "1f9bfab04b64ee75db1a90d45f510dbbb3148d7d",
-        "id": 1539060,
-        "old_signatures": [
-          {
-            "signature": "bf3f3025a4287bc90646ecb5c07bc97d0ab89142",
-            "id": 1424801,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "72cc74349808852cd7ec06bab0d3e0d0cc85fe1a",
         "id": 1539660,
@@ -6689,13 +6717,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "0e2e8f996aead72130e8d42422158bd4a23a9875",
-        "id": 1538295,
+      "windows7-32-pgo": {
+        "signature": "1f9bfab04b64ee75db1a90d45f510dbbb3148d7d",
+        "id": 1539060,
         "old_signatures": [
           {
-            "signature": "7b2c2c9293e37a2b4ea80b337454b46830951ee7",
-            "id": 1502862,
+            "signature": "bf3f3025a4287bc90646ecb5c07bc97d0ab89142",
+            "id": 1424801,
             "before": 1518163200000
           }
         ]
@@ -6711,13 +6739,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "38a52b3665ade2d4edaff5bcf9de81addb77d2d9",
-        "id": 1649565,
+      "windows10-64-opt": {
+        "signature": "0e2e8f996aead72130e8d42422158bd4a23a9875",
+        "id": 1538295,
         "old_signatures": [
           {
-            "signature": "d46668225b920aafa73bd1c89878524dcec220c7",
-            "id": 1417998,
+            "signature": "7b2c2c9293e37a2b4ea80b337454b46830951ee7",
+            "id": 1502862,
             "before": 1518163200000
           }
         ]
@@ -6729,6 +6757,17 @@ const PerfHerderSignatures = {
           {
             "signature": "ba7e8c3d1b78f8035fd781f1e1bd1ff6ed6283b9",
             "id": 1355497,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "38a52b3665ade2d4edaff5bcf9de81addb77d2d9",
+        "id": 1649565,
+        "old_signatures": [
+          {
+            "signature": "d46668225b920aafa73bd1c89878524dcec220c7",
+            "id": 1417998,
             "before": 1518163200000
           }
         ]
@@ -6748,17 +6787,6 @@ const PerfHerderSignatures = {
   },
   "simple.memory.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "0ee12b387cf22601881846395675d48f27650da4",
-        "id": 1654669,
-        "old_signatures": [
-          {
-            "signature": "1c34a5108c96a603d525ceb7a34d5647eebc272b",
-            "id": 1630031,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "a3e970572f673fcc38ebfc31624459d80098238d",
         "id": 1655220,
@@ -6766,6 +6794,17 @@ const PerfHerderSignatures = {
           {
             "signature": "5dd80ba0ca543b0a0ba2851401b14ed395e3f236",
             "id": 1630264,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "0ee12b387cf22601881846395675d48f27650da4",
+        "id": 1654669,
+        "old_signatures": [
+          {
+            "signature": "1c34a5108c96a603d525ceb7a34d5647eebc272b",
+            "id": 1630031,
             "before": 1518163200000
           }
         ]
@@ -6873,17 +6912,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "96a57660ead24b8ca4952719eecd7d69696dbf6b",
-        "id": 1654484,
-        "old_signatures": [
-          {
-            "signature": "b47c3b093f61abb8d31ef415be65fd13b991738f",
-            "id": 1355499,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "27a7e4d4929b7149bcd6a7fc975acc594650a41c",
         "id": 1649567,
@@ -6891,6 +6919,17 @@ const PerfHerderSignatures = {
           {
             "signature": "8b9827386756f032c02283a961413d39b7dcf71a",
             "id": 1418000,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "96a57660ead24b8ca4952719eecd7d69696dbf6b",
+        "id": 1654484,
+        "old_signatures": [
+          {
+            "signature": "b47c3b093f61abb8d31ef415be65fd13b991738f",
+            "id": 1355499,
             "before": 1518163200000
           }
         ]
@@ -6932,17 +6971,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "cd1684db134cc64b91ab090bb451bcc5eea10863",
-        "id": 1653995,
-        "old_signatures": [
-          {
-            "signature": "65ce1d63914f91672c29a9e43e9c1111bb36a2c5",
-            "id": 1629999,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "cb2fa13336a6d43dc170eb465c2799556c6ea156",
         "id": 1656362,
@@ -6954,13 +6982,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "2b6e3b496f282e38a29dd0c7c655184b839ff995",
-        "id": 1654485,
+      "windows10-64-opt": {
+        "signature": "cd1684db134cc64b91ab090bb451bcc5eea10863",
+        "id": 1653995,
         "old_signatures": [
           {
-            "signature": "0cef4302506ac42013932453bec15919d22a1a2e",
-            "id": 1630065,
+            "signature": "65ce1d63914f91672c29a9e43e9c1111bb36a2c5",
+            "id": 1629999,
             "before": 1518163200000
           }
         ]
@@ -6972,6 +7000,17 @@ const PerfHerderSignatures = {
           {
             "signature": "7366d1d70e6185d7a0eedb98554db37f598c602f",
             "id": 1629903,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "2b6e3b496f282e38a29dd0c7c655184b839ff995",
+        "id": 1654485,
+        "old_signatures": [
+          {
+            "signature": "0cef4302506ac42013932453bec15919d22a1a2e",
+            "id": 1630065,
             "before": 1518163200000
           }
         ]
@@ -7035,17 +7074,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "2340996ddd23fcb9f9cfd1008a8788ecc16fab71",
-        "id": 1654481,
-        "old_signatures": [
-          {
-            "signature": "10c44acf48e8dd14160b0a0c1df31bf0a389b802",
-            "id": 1355496,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "9014a728694eccc964d3970302d51284836a40b9",
         "id": 1649564,
@@ -7053,6 +7081,17 @@ const PerfHerderSignatures = {
           {
             "signature": "f4cdf00564b0bf71c48ed6ff209973d51fa9b28b",
             "id": 1417996,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "2340996ddd23fcb9f9cfd1008a8788ecc16fab71",
+        "id": 1654481,
+        "old_signatures": [
+          {
+            "signature": "10c44acf48e8dd14160b0a0c1df31bf0a389b802",
+            "id": 1355496,
             "before": 1518163200000
           }
         ]
@@ -7092,14 +7131,14 @@ const PerfHerderSignatures = {
         "id": 1668814,
         "old_signatures": []
       },
-      "linux64-opt": {
-        "signature": "a50a1b74726116f2aa2a172e3ca5ba80fe0b84fe",
-        "id": 1668799,
-        "old_signatures": []
-      },
       "linux64-pgo": {
         "signature": "faee2a830f1c981d8bb9a28ce1e5035e91e7945e",
         "id": 1668803,
+        "old_signatures": []
+      },
+      "linux64-opt": {
+        "signature": "a50a1b74726116f2aa2a172e3ca5ba80fe0b84fe",
+        "id": 1668799,
         "old_signatures": []
       },
       "osx-10-10-opt": {
@@ -7111,17 +7150,6 @@ const PerfHerderSignatures = {
   },
   "simple.netmonitor.open": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "09277b4dce643ec5e553682d79f2a985f3416de2",
-        "id": 1539656,
-        "old_signatures": [
-          {
-            "signature": "2b645278978a929820784b332e6026defffb85f2",
-            "id": 1418447,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "cd2a2ae32144cc3e7d77d970f4dfb3ff1b74d3a7",
         "id": 1539048,
@@ -7133,13 +7161,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "8b2b6b3cccfce1b2762b5cfa29c31b94305292f4",
-        "id": 1538291,
+      "windows7-32-opt": {
+        "signature": "09277b4dce643ec5e553682d79f2a985f3416de2",
+        "id": 1539656,
         "old_signatures": [
           {
-            "signature": "240ef25b588e5aaf652d8c587a213c46bd0c17ec",
-            "id": 1502858,
+            "signature": "2b645278978a929820784b332e6026defffb85f2",
+            "id": 1418447,
             "before": 1518163200000
           }
         ]
@@ -7151,6 +7179,17 @@ const PerfHerderSignatures = {
           {
             "signature": "b9ad3875bc6ca761366073fdd1ecebce051368a2",
             "id": 1503319,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "8b2b6b3cccfce1b2762b5cfa29c31b94305292f4",
+        "id": 1538291,
+        "old_signatures": [
+          {
+            "signature": "240ef25b588e5aaf652d8c587a213c46bd0c17ec",
+            "id": 1502858,
             "before": 1518163200000
           }
         ]
@@ -7214,17 +7253,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "52de1352b1e9c78d720dd0e7475150edfa657341",
-        "id": 1653992,
-        "old_signatures": [
-          {
-            "signature": "1b592f28c01206b10f37ae7213557bfb6af32beb",
-            "id": 1629996,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "13ea69d5aa15bfbf129a9136ebe13abae22896b7",
         "id": 1656359,
@@ -7232,6 +7260,17 @@ const PerfHerderSignatures = {
           {
             "signature": "a6fba0cd2f5a4c95d7337c86c9dda712c7345e89",
             "id": 1630180,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "52de1352b1e9c78d720dd0e7475150edfa657341",
+        "id": 1653992,
+        "old_signatures": [
+          {
+            "signature": "1b592f28c01206b10f37ae7213557bfb6af32beb",
+            "id": 1629996,
             "before": 1518163200000
           }
         ]
@@ -7317,17 +7356,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "b0f89327264df8c56a4d7644d96ffd16ac86646f",
-        "id": 1654478,
-        "old_signatures": [
-          {
-            "signature": "bbf0eae6c9d559dc7654e764d4f8ffb8fdbb9f5b",
-            "id": 1355495,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "fa1e4630d16647657f02322e3a8ed2f251bdb221",
         "id": 1649561,
@@ -7335,6 +7363,17 @@ const PerfHerderSignatures = {
           {
             "signature": "95a705be32d0da778e033de5c7ddcb8726ecc11e",
             "id": 1417994,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "b0f89327264df8c56a4d7644d96ffd16ac86646f",
+        "id": 1654478,
+        "old_signatures": [
+          {
+            "signature": "bbf0eae6c9d559dc7654e764d4f8ffb8fdbb9f5b",
+            "id": 1355495,
             "before": 1518163200000
           }
         ]
@@ -7354,17 +7393,6 @@ const PerfHerderSignatures = {
   },
   "simple.netmonitor.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "288bd5103f76667f05a59d8e61469d9a663d515e",
-        "id": 1654668,
-        "old_signatures": [
-          {
-            "signature": "459119c58a629740b06ecb8f31d23d4cc7e97819",
-            "id": 1630030,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "0c95378bffec6f10ecc5bcbef4b7d1e95bbe42d4",
         "id": 1655216,
@@ -7376,13 +7404,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "d02f058845ddb85be982d84aa428bfc6bc1669b2",
-        "id": 1653993,
+      "windows7-32-opt": {
+        "signature": "288bd5103f76667f05a59d8e61469d9a663d515e",
+        "id": 1654668,
         "old_signatures": [
           {
-            "signature": "c16fce006c544eb25fd7156e85760cb43726838e",
-            "id": 1629997,
+            "signature": "459119c58a629740b06ecb8f31d23d4cc7e97819",
+            "id": 1630030,
             "before": 1518163200000
           }
         ]
@@ -7398,13 +7426,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "806e64db6b977d5d76ded96f1ca29688ede4b161",
-        "id": 1649562,
+      "windows10-64-opt": {
+        "signature": "d02f058845ddb85be982d84aa428bfc6bc1669b2",
+        "id": 1653993,
         "old_signatures": [
           {
-            "signature": "f52b7cf680760098ffd1932a197ab76b2ac5bad0",
-            "id": 1629901,
+            "signature": "c16fce006c544eb25fd7156e85760cb43726838e",
+            "id": 1629997,
             "before": 1518163200000
           }
         ]
@@ -7416,6 +7444,17 @@ const PerfHerderSignatures = {
           {
             "signature": "77e05afb3ec0768535fc1040f86e7f520c02fd92",
             "id": 1630063,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "806e64db6b977d5d76ded96f1ca29688ede4b161",
+        "id": 1649562,
+        "old_signatures": [
+          {
+            "signature": "f52b7cf680760098ffd1932a197ab76b2ac5bad0",
+            "id": 1629901,
             "before": 1518163200000
           }
         ]
@@ -7457,17 +7496,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "a0888da203ddb5389c1f2d7444eebbb21a9144e3",
-        "id": 1538293,
-        "old_signatures": [
-          {
-            "signature": "44a4bef9fbc06168544a8ee09342f4da73143aaa",
-            "id": 1502860,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "13119f1b5300368793a69843968a86dad2d47eeb",
         "id": 1539090,
@@ -7479,13 +7507,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "b7f49c9ff6cab97aa6a4cb7265dfcf9c166486da",
-        "id": 1649563,
+      "windows10-64-opt": {
+        "signature": "a0888da203ddb5389c1f2d7444eebbb21a9144e3",
+        "id": 1538293,
         "old_signatures": [
           {
-            "signature": "8111582f8e51919622a55f30f98033d1feb2ca77",
-            "id": 1470289,
+            "signature": "44a4bef9fbc06168544a8ee09342f4da73143aaa",
+            "id": 1502860,
             "before": 1518163200000
           }
         ]
@@ -7497,6 +7525,17 @@ const PerfHerderSignatures = {
           {
             "signature": "2cb844e1535df4ed091eb308551f021c690f8819",
             "id": 1470308,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "b7f49c9ff6cab97aa6a4cb7265dfcf9c166486da",
+        "id": 1649563,
+        "old_signatures": [
+          {
+            "signature": "8111582f8e51919622a55f30f98033d1feb2ca77",
+            "id": 1470289,
             "before": 1518163200000
           }
         ]
@@ -7516,17 +7555,6 @@ const PerfHerderSignatures = {
   },
   "simple.performance.close": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "ff1359772a6210167170c989e76a9215179ac5ed",
-        "id": 1539655,
-        "old_signatures": [
-          {
-            "signature": "a3e18404e3a129c0e598af3d8996b35b2c0962ba",
-            "id": 1418445,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "b8d5721f763765b34cdfac2fb22ed67dae6bbee3",
         "id": 1539045,
@@ -7534,6 +7562,17 @@ const PerfHerderSignatures = {
           {
             "signature": "0cc49b09e6751ec4a0d6e3daf082e2a98673b891",
             "id": 1424790,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "ff1359772a6210167170c989e76a9215179ac5ed",
+        "id": 1539655,
+        "old_signatures": [
+          {
+            "signature": "a3e18404e3a129c0e598af3d8996b35b2c0962ba",
+            "id": 1418445,
             "before": 1518163200000
           }
         ]
@@ -7597,17 +7636,6 @@ const PerfHerderSignatures = {
   },
   "simple.performance.open": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "1b367b31608bceb758c942987c74c137974b79f7",
-        "id": 1539039,
-        "old_signatures": [
-          {
-            "signature": "bd0095b826f088984b84728c34d575e8978d9051",
-            "id": 1424786,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "194a73495fed79ac435239add31a25d58258b980",
         "id": 1539653,
@@ -7619,13 +7647,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "9495b0c4223ff4a05f2d5f82ba12c275c702319e",
-        "id": 1539066,
+      "windows7-32-pgo": {
+        "signature": "1b367b31608bceb758c942987c74c137974b79f7",
+        "id": 1539039,
         "old_signatures": [
           {
-            "signature": "5d75f7189570ddf15b8949375c9b66710f7e3273",
-            "id": 1503316,
+            "signature": "bd0095b826f088984b84728c34d575e8978d9051",
+            "id": 1424786,
             "before": 1518163200000
           }
         ]
@@ -7637,6 +7665,17 @@ const PerfHerderSignatures = {
           {
             "signature": "ab254b75199b6c15e6da3fa51ef981d194ca1cf9",
             "id": 1502855,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "9495b0c4223ff4a05f2d5f82ba12c275c702319e",
+        "id": 1539066,
+        "old_signatures": [
+          {
+            "signature": "5d75f7189570ddf15b8949375c9b66710f7e3273",
+            "id": 1503316,
             "before": 1518163200000
           }
         ]
@@ -7700,17 +7739,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "219500b2ad6b1c78e4c4e762653a257db5086901",
-        "id": 1656357,
-        "old_signatures": [
-          {
-            "signature": "770998517255af8f3d8917a2a6cf263e653e2867",
-            "id": 1630178,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "6cb7ba31a98b20ab46f47505e1c0ecc9c6762647",
         "id": 1653990,
@@ -7718,6 +7746,17 @@ const PerfHerderSignatures = {
           {
             "signature": "af17cf2794474711a65ccff5995a0a8409955725",
             "id": 1629994,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "219500b2ad6b1c78e4c4e762653a257db5086901",
+        "id": 1656357,
+        "old_signatures": [
+          {
+            "signature": "770998517255af8f3d8917a2a6cf263e653e2867",
+            "id": 1630178,
             "before": 1518163200000
           }
         ]
@@ -7803,17 +7842,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "77b2ca4d2fb1ac811116dada12a1ce1b3ce7b7b7",
-        "id": 1654473,
-        "old_signatures": [
-          {
-            "signature": "49d3608cbfcadadd331e59e5763b9acc03ff54d1",
-            "id": 1355491,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "34e1521dbe1c8c18fe7eb3689f4fed9f80dfc7df",
         "id": 1649556,
@@ -7821,6 +7849,17 @@ const PerfHerderSignatures = {
           {
             "signature": "171034fbbecc6f617dd85234391ba8a9106e44ff",
             "id": 1417988,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "77b2ca4d2fb1ac811116dada12a1ce1b3ce7b7b7",
+        "id": 1654473,
+        "old_signatures": [
+          {
+            "signature": "49d3608cbfcadadd331e59e5763b9acc03ff54d1",
+            "id": 1355491,
             "before": 1518163200000
           }
         ]
@@ -7840,17 +7879,6 @@ const PerfHerderSignatures = {
   },
   "simple.performance.reload.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "ec46584b0598a82faa1ad4bd5d5ec3ac132b2b50",
-        "id": 1655211,
-        "old_signatures": [
-          {
-            "signature": "d5388eed557531e74985fc6b1f99ce32409b8fb9",
-            "id": 1630261,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "90738653b8a1f7ff0f6db2144a20b5c021988089",
         "id": 1654666,
@@ -7858,6 +7886,17 @@ const PerfHerderSignatures = {
           {
             "signature": "d042cf6d17a5bd1c011b369fb69be3888b7d88c5",
             "id": 1630028,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "ec46584b0598a82faa1ad4bd5d5ec3ac132b2b50",
+        "id": 1655211,
+        "old_signatures": [
+          {
+            "signature": "d5388eed557531e74985fc6b1f99ce32409b8fb9",
+            "id": 1630261,
             "before": 1518163200000
           }
         ]
@@ -7884,17 +7923,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "95180110ede920bed7185d2cd88b3911d5236b45",
-        "id": 1654474,
-        "old_signatures": [
-          {
-            "signature": "c09f35f4d00a73bc4013ce4cca35a7b2b5a03b38",
-            "id": 1630061,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "bef9b2a46a0db737f648a6587860084b065842d9",
         "id": 1649557,
@@ -7902,6 +7930,17 @@ const PerfHerderSignatures = {
           {
             "signature": "60eb1f2dca28d14890dd61377d9fd0761e3bd892",
             "id": 1629899,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "95180110ede920bed7185d2cd88b3911d5236b45",
+        "id": 1654474,
+        "old_signatures": [
+          {
+            "signature": "c09f35f4d00a73bc4013ce4cca35a7b2b5a03b38",
+            "id": 1630061,
             "before": 1518163200000
           }
         ]
@@ -7921,17 +7960,6 @@ const PerfHerderSignatures = {
   },
   "simple.readHeapSnapshot": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "ce6a9586266aec5b6a566f1c2bd0d2653c8247ce",
-        "id": 1539074,
-        "old_signatures": [
-          {
-            "signature": "1e35257c24d86815dececf6edc1b08b03915dbf1",
-            "id": 1424807,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "540d5e7d90a98a0a7a2e534aec1cb4b0745af008",
         "id": 1539663,
@@ -7939,6 +7967,17 @@ const PerfHerderSignatures = {
           {
             "signature": "4c7a871298e5f9b46adea9ffc61b17828725cb05",
             "id": 1418471,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "ce6a9586266aec5b6a566f1c2bd0d2653c8247ce",
+        "id": 1539074,
+        "old_signatures": [
+          {
+            "signature": "1e35257c24d86815dececf6edc1b08b03915dbf1",
+            "id": 1424807,
             "before": 1518163200000
           }
         ]
@@ -7965,17 +8004,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "f27d6a5371c39336c19089ddf16da9c9ab5dc4a1",
-        "id": 1649570,
-        "old_signatures": [
-          {
-            "signature": "8ea28bd09299fd9aacb2e955dc05f6f25a7b6bef",
-            "id": 1418004,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-pgo": {
         "signature": "ae0dcf3564b6e53470cfcc633e5a3eca4702ad5b",
         "id": 1654487,
@@ -7983,6 +8011,17 @@ const PerfHerderSignatures = {
           {
             "signature": "6acb0fe5faf4e09b7f47bdac8afd7d13c0399c4a",
             "id": 1355503,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "f27d6a5371c39336c19089ddf16da9c9ab5dc4a1",
+        "id": 1649570,
+        "old_signatures": [
+          {
+            "signature": "8ea28bd09299fd9aacb2e955dc05f6f25a7b6bef",
+            "id": 1418004,
             "before": 1518163200000
           }
         ]
@@ -8083,17 +8122,6 @@ const PerfHerderSignatures = {
   },
   "simple.styleeditor.close": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "e04151cf0e318364135371925685d8a8989e498f",
-        "id": 1539035,
-        "old_signatures": [
-          {
-            "signature": "a4aa4bf0fed63c6e413b487e5df48425ef8fd114",
-            "id": 1424785,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "b8e3ee6b73d76b9f9275aae12ac7d3820234d6a9",
         "id": 1539652,
@@ -8105,13 +8133,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "4f938be09669a3b5123f07bcd787b2b835798c0c",
-        "id": 1538287,
+      "windows7-32-pgo": {
+        "signature": "e04151cf0e318364135371925685d8a8989e498f",
+        "id": 1539035,
         "old_signatures": [
           {
-            "signature": "00f0dcc2f035d1ebbed6051c813f021bf79de027",
-            "id": 1502854,
+            "signature": "a4aa4bf0fed63c6e413b487e5df48425ef8fd114",
+            "id": 1424785,
             "before": 1518163200000
           }
         ]
@@ -8127,13 +8155,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "e2b158e250dff45d4c1a34fc1937d85921313209",
-        "id": 1654470,
+      "windows10-64-opt": {
+        "signature": "4f938be09669a3b5123f07bcd787b2b835798c0c",
+        "id": 1538287,
         "old_signatures": [
           {
-            "signature": "05d4cbf7f1d9b1965ead145b2ddc6af5e0bec4c1",
-            "id": 1355488,
+            "signature": "00f0dcc2f035d1ebbed6051c813f021bf79de027",
+            "id": 1502854,
             "before": 1518163200000
           }
         ]
@@ -8145,6 +8173,17 @@ const PerfHerderSignatures = {
           {
             "signature": "28512e0d50f12003aa0eb7e439fb55b520510b27",
             "id": 1417983,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "e2b158e250dff45d4c1a34fc1937d85921313209",
+        "id": 1654470,
+        "old_signatures": [
+          {
+            "signature": "05d4cbf7f1d9b1965ead145b2ddc6af5e0bec4c1",
+            "id": 1355488,
             "before": 1518163200000
           }
         ]
@@ -8186,17 +8225,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "0823b450d1d9f7c779a156941cfc57e4daa239fa",
-        "id": 1538285,
-        "old_signatures": [
-          {
-            "signature": "1819aec6f0d6fc263558a2a930db6cf4b00b9685",
-            "id": 1502852,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "25cc57acc5212e4904dea0eecb186abb20888d9e",
         "id": 1539053,
@@ -8208,13 +8236,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "3c05bd1c548b096dd124ebe22ab3220c645fa8f2",
-        "id": 1649549,
+      "windows10-64-opt": {
+        "signature": "0823b450d1d9f7c779a156941cfc57e4daa239fa",
+        "id": 1538285,
         "old_signatures": [
           {
-            "signature": "6a00d0d75c7020e063082c60db0919bd0e0c53d9",
-            "id": 1417979,
+            "signature": "1819aec6f0d6fc263558a2a930db6cf4b00b9685",
+            "id": 1502852,
             "before": 1518163200000
           }
         ]
@@ -8226,6 +8254,17 @@ const PerfHerderSignatures = {
           {
             "signature": "9abef9d69ae3308b34eef4da06cd7a0310277f96",
             "id": 1355484,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "3c05bd1c548b096dd124ebe22ab3220c645fa8f2",
+        "id": 1649549,
+        "old_signatures": [
+          {
+            "signature": "6a00d0d75c7020e063082c60db0919bd0e0c53d9",
+            "id": 1417979,
             "before": 1518163200000
           }
         ]
@@ -8245,17 +8284,6 @@ const PerfHerderSignatures = {
   },
   "simple.styleeditor.open.settle": {
     "platforms": {
-      "windows7-32-pgo": {
-        "signature": "fc7afe4f66ae68b801de3717a5c939a4bdfadab8",
-        "id": 1655203,
-        "old_signatures": [
-          {
-            "signature": "4a16dab462e2c5eb7267cdaae9a40992eba4129f",
-            "id": 1630258,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-opt": {
         "signature": "534837cdb280e0648655b330e987490fb619a463",
         "id": 1654663,
@@ -8263,6 +8291,17 @@ const PerfHerderSignatures = {
           {
             "signature": "123f720adf587a29b232cb365a02d37b48c0311f",
             "id": 1630025,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "fc7afe4f66ae68b801de3717a5c939a4bdfadab8",
+        "id": 1655203,
+        "old_signatures": [
+          {
+            "signature": "4a16dab462e2c5eb7267cdaae9a40992eba4129f",
+            "id": 1630258,
             "before": 1518163200000
           }
         ]
@@ -8326,17 +8365,6 @@ const PerfHerderSignatures = {
   },
   "simple.styleeditor.reload": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "09bc46368ce4d20afff1a7531b6b8aea86df477b",
-        "id": 1539651,
-        "old_signatures": [
-          {
-            "signature": "cc3651d87650309aaf0334bd43f03c9ed2e6106f",
-            "id": 1418432,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "ab62abfe1f4f834333ad9be54f7838081138a7d2",
         "id": 1539032,
@@ -8348,13 +8376,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "756523f61a6fee870bf2156cd17c5106dacb5d36",
-        "id": 1538286,
+      "windows7-32-opt": {
+        "signature": "09bc46368ce4d20afff1a7531b6b8aea86df477b",
+        "id": 1539651,
         "old_signatures": [
           {
-            "signature": "4c18dee4b579c4e97127b61aeea7e4fb3157b5a0",
-            "id": 1502853,
+            "signature": "cc3651d87650309aaf0334bd43f03c9ed2e6106f",
+            "id": 1418432,
             "before": 1518163200000
           }
         ]
@@ -8370,13 +8398,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "1f9ce1f3fd3947b0277bf15accc4c88ef42ac7ed",
-        "id": 1649551,
+      "windows10-64-opt": {
+        "signature": "756523f61a6fee870bf2156cd17c5106dacb5d36",
+        "id": 1538286,
         "old_signatures": [
           {
-            "signature": "fb4c2e8a690bfb181f28bd1c0e23c9c3a6d54b24",
-            "id": 1417981,
+            "signature": "4c18dee4b579c4e97127b61aeea7e4fb3157b5a0",
+            "id": 1502853,
             "before": 1518163200000
           }
         ]
@@ -8388,6 +8416,17 @@ const PerfHerderSignatures = {
           {
             "signature": "bb6fcfff3c61f7d39a3fdf002d2066d51e9c3df8",
             "id": 1355486,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "1f9ce1f3fd3947b0277bf15accc4c88ef42ac7ed",
+        "id": 1649551,
+        "old_signatures": [
+          {
+            "signature": "fb4c2e8a690bfb181f28bd1c0e23c9c3a6d54b24",
+            "id": 1417981,
             "before": 1518163200000
           }
         ]
@@ -8407,17 +8446,6 @@ const PerfHerderSignatures = {
   },
   "simple.styleeditor.reload.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "a9477f2e4afdd5bf37bcbe3d238c33ea10235b14",
-        "id": 1654664,
-        "old_signatures": [
-          {
-            "signature": "77b46c0f4f73fd1b3e6c6eff76cfb6660bd99506",
-            "id": 1630026,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "e6121b1f5b818847dd0f5e23c544097d1ef135bf",
         "id": 1655205,
@@ -8425,6 +8453,17 @@ const PerfHerderSignatures = {
           {
             "signature": "ba93fb34c749ad56f8edd4398930cf493b6dac94",
             "id": 1630259,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-opt": {
+        "signature": "a9477f2e4afdd5bf37bcbe3d238c33ea10235b14",
+        "id": 1654664,
+        "old_signatures": [
+          {
+            "signature": "77b46c0f4f73fd1b3e6c6eff76cfb6660bd99506",
+            "id": 1630026,
             "before": 1518163200000
           }
         ]
@@ -8451,17 +8490,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "025d9f1c731f562dc2fef1025cd35e63aced4641",
-        "id": 1654469,
-        "old_signatures": [
-          {
-            "signature": "c2da8b758715f3d62cbef0f030789786b08cf7ab",
-            "id": 1630059,
-            "before": 1518163200000
-          }
-        ]
-      },
       "linux64-opt": {
         "signature": "7806f693f5f945c74db5fc1fdc30c6acaefe999b",
         "id": 1649552,
@@ -8469,6 +8497,17 @@ const PerfHerderSignatures = {
           {
             "signature": "99fd9c2fe2d806f24f9263236aaf4ae46681cbe5",
             "id": 1629897,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "025d9f1c731f562dc2fef1025cd35e63aced4641",
+        "id": 1654469,
+        "old_signatures": [
+          {
+            "signature": "c2da8b758715f3d62cbef0f030789786b08cf7ab",
+            "id": 1630059,
             "before": 1518163200000
           }
         ]
@@ -8510,17 +8549,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "b3d2eb4889c1ee0fdccae234d072e2bdb4432597",
-        "id": 1539110,
-        "old_signatures": [
-          {
-            "signature": "38f332a898a45f5137d3a1dc46de851782d25e49",
-            "id": 1503327,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "fc9f21f2d8b9762c306933608633435dd81bf50b",
         "id": 1538299,
@@ -8532,13 +8560,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "5a271fdfc4aacb438793fa7d0f289df52a691aa6",
-        "id": 1654488,
+      "windows10-64-pgo": {
+        "signature": "b3d2eb4889c1ee0fdccae234d072e2bdb4432597",
+        "id": 1539110,
         "old_signatures": [
           {
-            "signature": "31f47567e2bc05b00f0ef312e689b3039787b276",
-            "id": 1355504,
+            "signature": "38f332a898a45f5137d3a1dc46de851782d25e49",
+            "id": 1503327,
             "before": 1518163200000
           }
         ]
@@ -8550,6 +8578,17 @@ const PerfHerderSignatures = {
           {
             "signature": "f99e6e8bdb256770e23a6a6bda9a86d09b14b2eb",
             "id": 1418006,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "5a271fdfc4aacb438793fa7d0f289df52a691aa6",
+        "id": 1654488,
+        "old_signatures": [
+          {
+            "signature": "31f47567e2bc05b00f0ef312e689b3039787b276",
+            "id": 1355504,
             "before": 1518163200000
           }
         ]
@@ -8591,17 +8630,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-pgo": {
-        "signature": "9705111834abdced7c2e6ea5452a41868c3ed31c",
-        "id": 1539033,
-        "old_signatures": [
-          {
-            "signature": "e4b30de88206617c6ae4f3dda70f2723b14ee432",
-            "id": 1503306,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-opt": {
         "signature": "4ead15828f568587ef3c9c304ee151334ea3ab0d",
         "id": 1538278,
@@ -8613,13 +8641,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "daf4bee26ef109d4d85771ec94bee788008b1ef4",
-        "id": 1649538,
+      "windows10-64-pgo": {
+        "signature": "9705111834abdced7c2e6ea5452a41868c3ed31c",
+        "id": 1539033,
         "old_signatures": [
           {
-            "signature": "df27a2c566a6363c3533daa0f3dc3bf11fe0a882",
-            "id": 1417964,
+            "signature": "e4b30de88206617c6ae4f3dda70f2723b14ee432",
+            "id": 1503306,
             "before": 1518163200000
           }
         ]
@@ -8631,6 +8659,17 @@ const PerfHerderSignatures = {
           {
             "signature": "a0a0e59bebb9455148bb1685b4874886d77407bd",
             "id": 1355474,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "daf4bee26ef109d4d85771ec94bee788008b1ef4",
+        "id": 1649538,
+        "old_signatures": [
+          {
+            "signature": "df27a2c566a6363c3533daa0f3dc3bf11fe0a882",
+            "id": 1417964,
             "before": 1518163200000
           }
         ]
@@ -8672,17 +8711,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "e34293918e646aa4eca1861270a1aea8955e79bb",
-        "id": 1538276,
-        "old_signatures": [
-          {
-            "signature": "7cebaa844224a366c73bf8afb979175bc068226f",
-            "id": 1502843,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "17c2cc2d5de8f57b7f851659acf6cb33aa23b294",
         "id": 1539029,
@@ -8690,6 +8718,17 @@ const PerfHerderSignatures = {
           {
             "signature": "80d1781a4d6c9103ac960c9ba254281b5ea4caad",
             "id": 1503304,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "e34293918e646aa4eca1861270a1aea8955e79bb",
+        "id": 1538276,
+        "old_signatures": [
+          {
+            "signature": "7cebaa844224a366c73bf8afb979175bc068226f",
+            "id": 1502843,
             "before": 1518163200000
           }
         ]
@@ -8731,17 +8770,6 @@ const PerfHerderSignatures = {
   },
   "simple.webconsole.open.settle": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "ed3935591ffcff295c0934e1a95b3209c7d1ff67",
-        "id": 1654657,
-        "old_signatures": [
-          {
-            "signature": "47162f5139782e45c5cd70ed85ddfae5f0b0cab0",
-            "id": 1630019,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "054217688c27600d00221518fde2c6c115fa6c49",
         "id": 1655183,
@@ -8753,13 +8781,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "c12175192da4001eb977c3e5424b4be44bf605a2",
-        "id": 1653982,
+      "windows7-32-opt": {
+        "signature": "ed3935591ffcff295c0934e1a95b3209c7d1ff67",
+        "id": 1654657,
         "old_signatures": [
           {
-            "signature": "f81fb2b3b14263ab2094d344bcfb4f13eb8fb494",
-            "id": 1629986,
+            "signature": "47162f5139782e45c5cd70ed85ddfae5f0b0cab0",
+            "id": 1630019,
             "before": 1518163200000
           }
         ]
@@ -8775,13 +8803,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-pgo": {
-        "signature": "7ce290f630234c7c8b7062452679d85ca4ddf657",
-        "id": 1654452,
+      "windows10-64-opt": {
+        "signature": "c12175192da4001eb977c3e5424b4be44bf605a2",
+        "id": 1653982,
         "old_signatures": [
           {
-            "signature": "3e805f118a8988e847f65d19a67dc6b5e077f39c",
-            "id": 1630052,
+            "signature": "f81fb2b3b14263ab2094d344bcfb4f13eb8fb494",
+            "id": 1629986,
             "before": 1518163200000
           }
         ]
@@ -8797,6 +8825,17 @@ const PerfHerderSignatures = {
           }
         ]
       },
+      "linux64-pgo": {
+        "signature": "7ce290f630234c7c8b7062452679d85ca4ddf657",
+        "id": 1654452,
+        "old_signatures": [
+          {
+            "signature": "3e805f118a8988e847f65d19a67dc6b5e077f39c",
+            "id": 1630052,
+            "before": 1518163200000
+          }
+        ]
+      },
       "osx-10-10-opt": {
         "signature": "f6018cbc6c3e4cfe6c3da3b3243ade326a2be4f2",
         "id": 1652255,
@@ -8804,87 +8843,6 @@ const PerfHerderSignatures = {
           {
             "signature": "754ed63b7567bc0a935c6b15d3988c95de942d67",
             "id": 1629857,
-            "before": 1518163200000
-          }
-        ]
-      }
-    }
-  },
-  "simple.webconsole.reload": {
-    "platforms": {
-      "windows7-32-opt": {
-        "signature": "1e40d91f136d71bc61b0c5c7c22ad9e562fea290",
-        "id": 1539642,
-        "old_signatures": [
-          {
-            "signature": "27c51d9f8e33cab77ca98239b49b5c1f6caee054",
-            "id": 1418404,
-            "before": 1518163200000
-          }
-        ]
-      },
-      "windows7-32-pgo": {
-        "signature": "69012dc37c1f4eef8e5b6d9f7ec5c8a49e486139",
-        "id": 1539020,
-        "old_signatures": [
-          {
-            "signature": "eec6563534653bee5593fdf51be3d41f8b17fa01",
-            "id": 1424774,
-            "before": 1518163200000
-          }
-        ]
-      },
-      "windows10-64-opt": {
-        "signature": "071a68da94cbe6783d3d1cca01e10a33f07a08f8",
-        "id": 1538277,
-        "old_signatures": [
-          {
-            "signature": "e9f694021329b0c202b0a8ee6da9d63cb6234fe4",
-            "id": 1502844,
-            "before": 1518163200000
-          }
-        ]
-      },
-      "windows10-64-pgo": {
-        "signature": "077945697fbdd87e0bd9da59a02d2877b7c7f114",
-        "id": 1539031,
-        "old_signatures": [
-          {
-            "signature": "2270e835669cd5074cd7fe03e24b4398859e79a7",
-            "id": 1503305,
-            "before": 1518163200000
-          }
-        ]
-      },
-      "linux64-opt": {
-        "signature": "1614bbbd62b03e02ea93241f5c122b56486d2453",
-        "id": 1649536,
-        "old_signatures": [
-          {
-            "signature": "c20152c4bcf19ed9b07cbefe6019e2d08907231e",
-            "id": 1417962,
-            "before": 1518163200000
-          }
-        ]
-      },
-      "linux64-pgo": {
-        "signature": "284fbf4a22c968d83d7eee35045b5a3c7f5af92a",
-        "id": 1654453,
-        "old_signatures": [
-          {
-            "signature": "50e31ce485ee574a70f72b6a83da9a454d6d5927",
-            "id": 1355473,
-            "before": 1518163200000
-          }
-        ]
-      },
-      "osx-10-10-opt": {
-        "signature": "092b5784927acbeafba177b7e9f8fe6aa796dacb",
-        "id": 1542637,
-        "old_signatures": [
-          {
-            "signature": "721f9096ebc2a393c402c419acd713a5300537d3",
-            "id": 1420219,
             "before": 1518163200000
           }
         ]
@@ -8915,17 +8873,6 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "445978225e23c67d38be63f6d883d4a4f89ed2dc",
-        "id": 1653983,
-        "old_signatures": [
-          {
-            "signature": "4a98c8b5e380572d451b77741361f5c0654e24c1",
-            "id": 1629987,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows10-64-pgo": {
         "signature": "06d9cde3e92906c75a9655a67107a2878d29b8d3",
         "id": 1656350,
@@ -8937,13 +8884,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "74a75d170dd159006bf6e7aacda967870a9225b9",
-        "id": 1649537,
+      "windows10-64-opt": {
+        "signature": "445978225e23c67d38be63f6d883d4a4f89ed2dc",
+        "id": 1653983,
         "old_signatures": [
           {
-            "signature": "446b7b40aed5eeac6105823b23c5d383a470c0ca",
-            "id": 1629891,
+            "signature": "4a98c8b5e380572d451b77741361f5c0654e24c1",
+            "id": 1629987,
             "before": 1518163200000
           }
         ]
@@ -8955,6 +8902,17 @@ const PerfHerderSignatures = {
           {
             "signature": "bb4edf733f7ee17a754ad8230276326d80607f88",
             "id": 1630053,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "74a75d170dd159006bf6e7aacda967870a9225b9",
+        "id": 1649537,
+        "old_signatures": [
+          {
+            "signature": "446b7b40aed5eeac6105823b23c5d383a470c0ca",
+            "id": 1629891,
             "before": 1518163200000
           }
         ]
@@ -8974,17 +8932,6 @@ const PerfHerderSignatures = {
   },
   "summary": {
     "platforms": {
-      "windows7-32-opt": {
-        "signature": "2fa549258445b035f7463afad97852e46b399a6d",
-        "id": 1539640,
-        "old_signatures": [
-          {
-            "signature": "63c652b34bd8fcf3623be048bdd3104906f70f02",
-            "id": 1337205,
-            "before": 1518163200000
-          }
-        ]
-      },
       "windows7-32-pgo": {
         "signature": "389a5b1ef37772bad22611e4d6237fffea35c9cb",
         "id": 1539018,
@@ -8996,13 +8943,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "windows10-64-opt": {
-        "signature": "28c4fee1ef7d4e5d184aa628df7c94de208b7678",
-        "id": 1538275,
+      "windows7-32-opt": {
+        "signature": "2fa549258445b035f7463afad97852e46b399a6d",
+        "id": 1539640,
         "old_signatures": [
           {
-            "signature": "f687ee347bcbdc55828148af029908049de69b7f",
-            "id": 1502842,
+            "signature": "63c652b34bd8fcf3623be048bdd3104906f70f02",
+            "id": 1337205,
             "before": 1518163200000
           }
         ]
@@ -9018,13 +8965,13 @@ const PerfHerderSignatures = {
           }
         ]
       },
-      "linux64-opt": {
-        "signature": "f79b6a4f1f8f53326d3056f6c8008c0ff4de0a94",
-        "id": 1649531,
+      "windows10-64-opt": {
+        "signature": "28c4fee1ef7d4e5d184aa628df7c94de208b7678",
+        "id": 1538275,
         "old_signatures": [
           {
-            "signature": "edaec66500db21d37602c99daa61ac983f21a6ac",
-            "id": 1328338,
+            "signature": "f687ee347bcbdc55828148af029908049de69b7f",
+            "id": 1502842,
             "before": 1518163200000
           }
         ]
@@ -9040,6 +8987,17 @@ const PerfHerderSignatures = {
           }
         ]
       },
+      "linux64-opt": {
+        "signature": "f79b6a4f1f8f53326d3056f6c8008c0ff4de0a94",
+        "id": 1649531,
+        "old_signatures": [
+          {
+            "signature": "edaec66500db21d37602c99daa61ac983f21a6ac",
+            "id": 1328338,
+            "before": 1518163200000
+          }
+        ]
+      },
       "osx-10-10-opt": {
         "signature": "7cbb05567f41ef34c669c6987c808f3fc1f5ef57",
         "id": 1542635,
@@ -9047,6 +9005,87 @@ const PerfHerderSignatures = {
           {
             "signature": "9663a154caf9b713fb951c8db24518c7e0ceddce",
             "id": 1341447,
+            "before": 1518163200000
+          }
+        ]
+      }
+    }
+  },
+  "simple.webconsole.reload": {
+    "platforms": {
+      "windows7-32-opt": {
+        "signature": "1e40d91f136d71bc61b0c5c7c22ad9e562fea290",
+        "id": 1539642,
+        "old_signatures": [
+          {
+            "signature": "27c51d9f8e33cab77ca98239b49b5c1f6caee054",
+            "id": 1418404,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows7-32-pgo": {
+        "signature": "69012dc37c1f4eef8e5b6d9f7ec5c8a49e486139",
+        "id": 1539020,
+        "old_signatures": [
+          {
+            "signature": "eec6563534653bee5593fdf51be3d41f8b17fa01",
+            "id": 1424774,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-pgo": {
+        "signature": "077945697fbdd87e0bd9da59a02d2877b7c7f114",
+        "id": 1539031,
+        "old_signatures": [
+          {
+            "signature": "2270e835669cd5074cd7fe03e24b4398859e79a7",
+            "id": 1503305,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "windows10-64-opt": {
+        "signature": "071a68da94cbe6783d3d1cca01e10a33f07a08f8",
+        "id": 1538277,
+        "old_signatures": [
+          {
+            "signature": "e9f694021329b0c202b0a8ee6da9d63cb6234fe4",
+            "id": 1502844,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-pgo": {
+        "signature": "284fbf4a22c968d83d7eee35045b5a3c7f5af92a",
+        "id": 1654453,
+        "old_signatures": [
+          {
+            "signature": "50e31ce485ee574a70f72b6a83da9a454d6d5927",
+            "id": 1355473,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "linux64-opt": {
+        "signature": "1614bbbd62b03e02ea93241f5c122b56486d2453",
+        "id": 1649536,
+        "old_signatures": [
+          {
+            "signature": "c20152c4bcf19ed9b07cbefe6019e2d08907231e",
+            "id": 1417962,
+            "before": 1518163200000
+          }
+        ]
+      },
+      "osx-10-10-opt": {
+        "signature": "092b5784927acbeafba177b7e9f8fe6aa796dacb",
+        "id": 1542637,
+        "old_signatures": [
+          {
+            "signature": "721f9096ebc2a393c402c419acd713a5300537d3",
+            "id": 1420219,
             "before": 1518163200000
           }
         ]
