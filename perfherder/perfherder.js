@@ -145,11 +145,12 @@ async function loadPerfHerder({ interval, platform, ignoreFlags, params, test })
   document.getElementById("loading").style.display = "block";
   let data = [];
 
+  let tagsRequest = loadPushTags();
+
   let { old_signatures } = signatures.platforms[platform];
   await fetchObsoleteTests(old_signatures, interval, data);
 
   let perfHerderRequest = fetchJSON(url);
-  let tagsRequest = loadPushTags();
 
   let response = await perfHerderRequest;
 

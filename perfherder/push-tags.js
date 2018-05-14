@@ -7,24 +7,8 @@
  * It requires OAuth authentification when pushing data, while it does not for reading.
  */
 
-// Client ID and API key from the Developer Console
-const CLIENT_ID = '778447735329-qn55s6h81trk72v1eeaje7f3be36dmvi.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyDmrIPR027XAVDrT7cgpqU5IFLjdRzh7tQ';
-
-// Array of API discovery doc URLs for APIs used by the quickstart
-const DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
-
-// Authorization scopes required by the API; multiple scopes can be
-// included, separated by spaces.
-const SCOPES = "https://www.googleapis.com/auth/spreadsheets";
-
 // List of flag types
 const TAG_TYPES = ["devtools", "platform", "damp", "hardware"];
-
-// Info about the google spreadsheet used to store changeset metadata
-const SPREADSHEET_ID = "12Goo3vq-0X0_Ay-J6gfV56pUB8GC0Nl62I4p8G-UsEA";
-const INSERT_RANGE = "Data!A1:C1";
-const GET_RANGE = "Data!A:D";
 
 /**
  * Create the DOM elements related to the popup displaying the metadata form
@@ -82,7 +66,7 @@ function hideFormPopup() {
 }
 
 function updateSignInState() {
-  let isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
+  let isSignedIn = "gapi" in top ? top.gapi.auth2.getAuthInstance().isSignedIn.get() : false;
   if (isSignedIn) {
     formSignin.style("display", "none");
     formDiv.style("display", "");
@@ -93,10 +77,6 @@ function updateSignInState() {
 }
 
 function showFormPopup(circle, data) {
-  // Force loading Google Doc API on popup show
-  // In order to be ready when clicking on Sign-in button
-  initClient();
-
   if (!formPopup) {
     createFormPopup();
   }
@@ -120,92 +100,39 @@ function showFormPopup(circle, data) {
 }
 
 /**
- *  Load the auth2 library and API client library, then,
- *  initializes the API client library and sets up sign-in state
- *  listeners.
+ * Evaluate "push-tags-shared.js" into the parent document (if available, otherwise the current document).
+ * That, to load Google API only once and fetch spreadsheet data also once.
  */
-let gDocInited = false;
-function initClient() {
-  if (gDocInited) {
-    return Promise.resolve();
-  }
-  gDocInited = true;
-  return new Promise(resolve => {
-    gapi.load('client:auth2', () => {
-      gapi.client.init({
-        apiKey: API_KEY,
-        clientId: CLIENT_ID,
-        discoveryDocs: DISCOVERY_DOCS,
-        scope: SCOPES
-      }).then(function () {
-        // Listen for sign-in state changes.
-        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInState);
-
-        // Handle the initial sign-in state.
-        let isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
-        console.log("google doc API initialized", "isSignedIn", isSignedIn);
-        resolve();
+if (!top.document.getElementById("push-tags-shared")) {
+  let script = top.document.createElement('script');
+  script.id = "push-tags-shared";
+  script.addEventListener("load", () => {
+    window.handleAuthClick = top.handleAuthClick;
+    window.loadPushTags = top.loadPushTags;
+    window.submitNewPushData = top.submitNewPushData;
+  }, { once: true });
+  let rootURL = location.href.replace(/\/(tools|perfherder).+$/, "/");
+  script.src = rootURL + "perfherder/push-tags-shared.js";
+  top.document.head.appendChild(script);
+} else {
+  (async function () {
+    let script = top.document.getElementById("push-tags-shared");
+    if (!("loadPushTags" in top)) {
+      await new Promise(resolve => {
+        script.addEventListener("load", resolve, { once: true });
       });
+    }
+    window.handleAuthClick = top.handleAuthClick;
+    window.submitNewPushData = top.submitNewPushData;
+  })();
+}
+
+async function loadPushTags() {
+  let script = top.document.getElementById("push-tags-shared");
+  if (!("loadPushTags" in top)) {
+    await new Promise(resolve => {
+      script.addEventListener("load", resolve, { once: true });
     });
-  });
-}
-
-/**
- *  Sign in the user upon button click.
- */
-function handleAuthClick(event) {
-  gapi.auth2.getAuthInstance().signIn();
-}
-
-/**
- *  Sign out the user upon button click.
- */
-function handleSignoutClick(event) {
-  gapi.auth2.getAuthInstance().signOut();
-}
-
-function loadPushTags() {
-  return initClient().then(resolve => {
-    return gapi.client.sheets.spreadsheets.values.get({
-      spreadsheetId: SPREADSHEET_ID,
-      range: GET_RANGE,
-    }).then(function(response) {
-      var range = response.result;
-      if (range.values.length > 0) {
-        let tags = {};
-        for (i = 0; i < range.values.length; i++) {
-          var row = range.values[i];
-          tags[row[0]] = {
-            push_id: row[0],
-            type: row[1],
-            bug: row[2],
-            message: row[3],
-          }
-        }
-        console.log("push tags", tags);
-        return tags;
-      } else {
-        return {};
-      }
-    }, function(response) {
-      console.log("error while fetching push tags", response);
-      return {};
-    });
-  });
-}
-
-/**
- * Create a new row of DAMP push information in the spreadsheet
- */
-function submitNewPushData({push_id, type, bug, message}) {
-  let values = [[push_id, type, bug, message]];
-  console.log("submit new data", values);
-  return gapi.client.sheets.spreadsheets.values.append({
-    spreadsheetId: SPREADSHEET_ID,
-    range: INSERT_RANGE,
-    insertDataOption: "INSERT_ROWS",
-    resource: JSON.stringify({ values }),
-    valueInputOption: "USER_ENTERED",
-  }).then(response => console.log("submit data success", response),
-    error => console.error("submit data error", error));
+  }
+  return top.loadPushTags();
 }
