@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="../css/graph.css" />
+
+<script type="text/javascript" src="../js/fetch.js"></script>
+
+<script type="text/javascript" src="../perfherder/perfherder-signatures.js"></script>
+
+<script type="text/javascript" src="../js/d3.v4.min.js"></script>
+<script type="text/javascript" src="boxplot.js"></script>
+<script type="text/javascript" src="stats.js"></script>
+
+<script type="text/javascript" src="inspect.js"></script>
+
+<div id="loading">Downloading data...</div>
+
+<div id="content"></div>
+
+<form id="form" method="GET">
+  <label>Base:</label><input name="base" /><br/>
+  <label>New:</label><input name="new" /><br/>
+  <label>Platform:</label>
+    <select name="platform">
+      <option value="linux64-opt">Linux opt</option>
+      <option value="linux64-pgo">Linux pgo</option>
+      <option value="windows10-64-opt">Windows 10 opt</option>
+      <option value="windows10-64-pgo">Windows 10 pgo</option>
+    </select><br/>
+  <input type="submit" />
+</form>
+
+<style>
+form {
+  display: none;
+  margin: auto;
+  width: 400px;
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 100px;
+  line-height: 35px;
+}
+form label {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+  padding-right: 10px;
+}
+form input[type="submit"] {
+  margin: auto;
+  display: block;
+  width: 150px;
+}
+svg {
+  position: static;
+  width: auto;
+  height: auto;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.verticalGrid
+{
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: white;
+    stroke-width: 1px;
+}
+
+.title 
+{
+    text-anchor: middle;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.whisker
+{
+    stroke-width: 1px;
+}
+
+.median
+{
+    stroke: black;
+    stroke-width: 1.3px;
+}
+
+.box
+{
+    opacity: 0.6;
+}
+
+circle 
+{
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.categoryLabel 
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+}
+
+.outlier 
+{
+    opacity: 1;
+}
+
+.point 
+{
+    opacity: 0.7;
+}
+
+.axis path 
+{
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis line 
+{
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis text 
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+div.tooltip 
+{   
+    position: absolute;         
+    text-align: center;                                              
+    padding: 3px;               
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;      
+    background: lightsteelblue; 
+    border: 0px;        
+    border-radius: 8px;         
+    pointer-events: none;           
+}
+
+tr.even {
+  background: #f0f0f0;
+}
+tr td {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+</style>
