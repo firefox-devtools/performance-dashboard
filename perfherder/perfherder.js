@@ -8,9 +8,9 @@ let PerfHerderTimings = {
   90: 7776000, // last three months
   365: 31536000, // last year
 };
-function buildTreeHerderURL({ interval, signature }) {
+function buildTreeHerderURL({ interval, signature, framework }) {
   let url = "https://treeherder.mozilla.org/api/project/mozilla-central/performance/data/" +
-    "?format=json&framework=1&interval=" + interval + "&signatures=" + signature;
+    "?format=json&framework=" + framework + "&interval=" + interval + "&signatures=" + signature;
   return url;
 }
 async function getPushIdRevision(push_id, callback) {
@@ -39,10 +39,10 @@ async function getLink({ push_id: to_push_id }, { push_id: from_push_id }) {
 }
 async function fetchObsoleteTests(old_signatures, interval, data) {
   let oldestTime = new Date().getTime() - ( interval * 1000 );
-  for (let { id, signature, before } of old_signatures) {
+  for (let { id, signature, framework, before } of old_signatures) {
     console.log("old signature", signature, "id", id, before > oldestTime);
     if (before > oldestTime) {
-      let url = buildTreeHerderURL({ interval, signature });
+      let url = buildTreeHerderURL({ interval, signature, framework });
       let response = await fetchJSON(url);
       if (response && response[signature]) {
         data.push(...response[signature]);
@@ -139,8 +139,9 @@ async function loadPerfHerder({ interval, platform, ignoreFlags, params, test })
     throw new Error("Unable to find test '" + test + "' for platform '" + platform + "'");
   }
   let perfHerderId = signatures.platforms[platform].id;
-  console.log("signature", signature, "id", perfHerderId);
-  let url = buildTreeHerderURL({ interval, signature });
+  let framework = signatures.platforms[platform].framework;
+  console.log("signature", signature, "id", perfHerderId, "framework", framework);
+  let url = buildTreeHerderURL({ interval, signature, framework });
 
   document.getElementById("loading").style.display = "block";
   let data = [];
@@ -199,8 +200,9 @@ async function loadPerfHerder({ interval, platform, ignoreFlags, params, test })
     signatures = PerfHerderSignatures[test + ".settle"]
     signature = signatures.platforms[platform].signature;
     perfHerderId = signatures.platforms[platform].id;
+    framework = signatures.platforms[platform].framework;
     console.log("signature settle", signature, "id", perfHerderId);
-    url = buildTreeHerderURL({ interval, signature });
+    url = buildTreeHerderURL({ interval, signature, framework });
     response = await fetchJSON(url);
     settleData = response[signature];
     console.log("settle perfherder data", settleData);
