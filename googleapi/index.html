@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+// Client ID and API key from the Developer Console
+const CLIENT_ID = '778447735329-qn55s6h81trk72v1eeaje7f3be36dmvi.apps.googleusercontent.com';
+const API_KEY = 'AIzaSyDmrIPR027XAVDrT7cgpqU5IFLjdRzh7tQ';
+
+// Array of API discovery doc URLs for APIs used by the quickstart
+const DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+
+// Authorization scopes required by the API; multiple scopes can be
+// included, separated by spaces.
+const SCOPES = "https://www.googleapis.com/auth/spreadsheets";
+
+// Info about the google spreadsheet used to store changeset metadata
+const SPREADSHEET_ID = "12Goo3vq-0X0_Ay-J6gfV56pUB8GC0Nl62I4p8G-UsEA";
+const INSERT_RANGE = "Data!A1:C1";
+const GET_RANGE = "Data!A:D";
+
+/**
+ * Load Google API script.
+ */
+let gApiLoadPromise;
+async function loadGoogleAPI() {
+  if ("gapi" in window) {
+    return;
+  }
+  if (gApiLoadPromise) {
+    return gApiLoadPromise;
+  }
+  gApiLoadPromise = new Promise(resolve => {
+    var script = document.createElement('script');
+    script.addEventListener("load", resolve, { once: true });
+    script.src = "https://apis.google.com/js/api.js";
+    document.head.appendChild(script);
+  });
+  return gApiLoadPromise;
+}
+
+/**
+ *  Load the auth2 library and API client library, then,
+ *  initializes the API client library and sets up sign-in state
+ *  listeners.
+ */
+let gApiInitPromise;
+async function initClient() {
+  await loadGoogleAPI();
+
+  if ("client" in gapi) {
+    return;
+  }
+  if (gApiInitPromise) {
+    return gApiInitPromise;
+  }
+  gApiInitPromise = new Promise(resolve => {
+    gapi.load('client:auth2', () => {
+      gapi.client.init({
+        apiKey: API_KEY,
+        clientId: CLIENT_ID,
+        discoveryDocs: DISCOVERY_DOCS,
+        scope: SCOPES
+      }).then(function () {
+        // Handle the initial sign-in state.
+        const isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
+        console.log("is signed in", isSignedIn);
+        resolve();
+      });
+    });
+  });
+  return gApiInitPromise;
+}
+
+/**
+ *  Sign in the user upon click.
+ */
+window.onclick = function onclick(event) {
+  gapi.auth2.getAuthInstance().signIn();
+}
+
+window.onload = async function onload() {
+  await initClient();
+
+  let response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: GET_RANGE,
+  });
+  console.log("got tags", response);
+}
+</script>
+
