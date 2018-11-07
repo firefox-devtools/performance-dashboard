@@ -66,17 +66,12 @@ async function initClient() {
         const isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
         console.log("is signed in", isSignedIn);
         resolve();
+      }, error => {
+         console.log("gapi.client.init error", error);
       });
     });
   });
   return gApiInitPromise;
-}
-
-/**
- *  Sign in the user upon click.
- */
-window.onclick = function onclick(event) {
-  gapi.auth2.getAuthInstance().signIn();
 }
 
 window.onload = async function onload() {
