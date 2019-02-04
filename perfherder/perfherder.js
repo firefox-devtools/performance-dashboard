@@ -10,7 +10,7 @@ let PerfHerderTimings = {
 };
 function buildTreeHerderURL({ interval, signature, framework }) {
   let url = "https://treeherder.mozilla.org/api/project/mozilla-central/performance/data/" +
-    "?format=json&framework=" + framework + "&interval=" + interval + "&signatures=" + signature;
+    "?framework=" + framework + "&interval=" + interval + "&signature_id=" + signature;
   return url;
 }
 async function getPushIdRevision(push_id, callback) {
@@ -42,7 +42,7 @@ async function fetchObsoleteTests(old_signatures, interval, data) {
   for (let { id, signature, framework, before } of old_signatures) {
     console.log("old signature", signature, "id", id, before > oldestTime);
     if (before > oldestTime) {
-      let url = buildTreeHerderURL({ interval, signature, framework });
+      let url = buildTreeHerderURL({ interval, signature: id, framework });
       let response = await fetchJSON(url);
       if (response && response[signature]) {
         data.push(...response[signature]);
@@ -141,7 +141,7 @@ async function loadPerfHerder({ interval, platform, ignoreFlags, params, test })
   let perfHerderId = signatures.platforms[platform].id;
   let framework = signatures.platforms[platform].framework;
   console.log("signature", signature, "id", perfHerderId, "framework", framework);
-  let url = buildTreeHerderURL({ interval, signature, framework });
+  let url = buildTreeHerderURL({ interval, signature: perfHerderId, framework });
 
   document.getElementById("loading").style.display = "block";
   let data = [];
@@ -202,7 +202,7 @@ async function loadPerfHerder({ interval, platform, ignoreFlags, params, test })
     perfHerderId = signatures.platforms[platform].id;
     framework = signatures.platforms[platform].framework;
     console.log("signature settle", signature, "id", perfHerderId);
-    url = buildTreeHerderURL({ interval, signature, framework });
+    url = buildTreeHerderURL({ interval, signature: perfHerderId, framework });
     response = await fetchJSON(url);
     settleData = response[signature];
     console.log("settle perfherder data", settleData);
