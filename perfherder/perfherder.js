@@ -14,7 +14,7 @@ function buildTreeHerderURL({ interval, signature, framework }) {
   return url;
 }
 async function getPushIdRevision(push_id, callback) {
-  let url = "https://treeherder.mozilla.org/api/project/mozilla-central/resultset/" + push_id + "/";
+  let url = "https://treeherder.mozilla.org/api/project/mozilla-central/push/" + push_id + "/";
   let { revision } = await fetchJSON(url);
   return revision;
 }
