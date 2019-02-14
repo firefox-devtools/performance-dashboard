@@ -125,8 +125,8 @@ function graph(data, { displayAverageLine = false, displayOnlySignificantDots = 
    .attr("stroke-width", displayAverageLine ? 0.1 : 1.5)
    .attr("d", line);
 
-  let tooltipDiv = d3.select("body").append("div")  
-    .attr("class", "tooltip")        
+  let tooltipDiv = d3.select("body").append("div")
+    .attr("class", "tooltip")
     .style("opacity", 0);
   let hideTooltipTimeout = null;
 
@@ -167,8 +167,12 @@ function graph(data, { displayAverageLine = false, displayOnlySignificantDots = 
 
        let previous = data[i-1].value;
        let current = d.value;
+       let realCurrent = d.realValue;
        let percent =  Math.round( 1000 * ( ( current - previous ) / previous ) ) / 10;
-       let html = formatTime(d.date) + "<br/> Δ " + (percent > 0 ? "+" : "") + percent + "% " + current;
+       let html = formatTime(d.date) +
+         "<br> Δ " + (percent > 0 ? "+" : "") + percent + "%" +
+         "<br>" + current +
+         "<br> (real value: " + realCurrent + ")";
        if (d.getTooltip) {
          html += await d.getTooltip(d, data[i-1]);
        }

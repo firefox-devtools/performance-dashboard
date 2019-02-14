@@ -82,6 +82,8 @@ function filterOutIgnoredFlags(data, pushTags) {
     }
     let copy = Object.assign({}, d);
     copy.value = value;
+    // Keep the real value to be displayed in the tooltip.
+    copy.realValue = d.value;
     data2.push(copy);
     lastFlattenValue = value;
     lastRealValue = d.value;
