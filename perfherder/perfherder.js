@@ -78,6 +78,7 @@ function filterOutIgnoredFlags(data, pushTags) {
         let current = d.value;
         let factor = ( current - previous ) / previous;
         value = lastFlattenValue + ( lastFlattenValue * factor );
+        value = Number.parseFloat(value.toFixed(2));
       }
     }
     let copy = Object.assign({}, d);
