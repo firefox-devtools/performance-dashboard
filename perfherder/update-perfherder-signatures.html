@@ -29,7 +29,8 @@ async function update() {
       }).filter(t => {
         // Select only the tests we want: DAMP and with at least e10s (there can be other items in there, like "stylo")
         return (t.suite == "damp" && t.extra_options && t.extra_options.includes("e10s") && !t.extra_options.includes("stylo_disabled")) ||
-          t.suite.match(/-metrics$/);
+          t.suite.match(/-metrics$/) ||
+          t.suite.match(/total-after-gc/);
       });
 
       tests.sort((a,b) => a.test > b.test).forEach(t => {
