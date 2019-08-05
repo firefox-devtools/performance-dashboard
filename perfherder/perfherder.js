@@ -247,7 +247,7 @@ function update() {
     return;
   }
   let interval = PerfHerderTimings[params.get("days") || 14];
-  let platform = params.get("platform") || "windows7-32-opt";
+  let platform = params.get("platform") || "windows10-64-opt";
   let ignoreFlags = params.get("ignore-flags") === "true";
   loadPerfHerder({
     interval,

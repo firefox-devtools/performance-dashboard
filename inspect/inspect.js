@@ -111,7 +111,7 @@ function displayForm() {
 async function main() {
   // This is DAMP signature for linux
   let params = new URL(window.location).searchParams;
-  let platform = params.get("platform") || "windows7-32-opt";
+  let platform = params.get("platform") || "windows10-64-opt";
   let test = params.get("test") || "summary";
   let signatures = PerfHerderSignatures[test]
   let signature = signatures.platforms[platform].signature;
