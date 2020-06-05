@@ -5,7 +5,7 @@
 <script>
 const platforms = [
   "windows7-32",
-  "windows10-64",
+  "windows10-64-shippable",
   "linux1804-64",
   "linux64",
   "osx-10-10",
@@ -32,6 +32,10 @@ async function update() {
         return (t.suite == "damp" && t.extra_options && t.extra_options.includes("e10s") && !t.extra_options.includes("stylo_disabled")) ||
           t.suite.match(/-metrics$/) ||
           t.suite.match(/total-after-gc/);
+      }).filter(t => {
+        // Exclude children of 70a5a2af which seem to contain duplicated windows
+        // job signatures without any data.
+        return t.parent_signature !== "70a5a2af1df7a7c3510015023f85acdb25a2d7c6";
       });
 
       tests.sort((a,b) => a.test > b.test).forEach(t => {
@@ -45,8 +49,14 @@ async function update() {
           };
         }
         let s = final[name];
+
         // getCollectionName returns "pgo" or "opt"
-        let build = (platform == "linux64" ? "linux1804-64" : platform) + "-" + getCollectionName(t.option_collection_hash);
+        let buildPlatformName = platform;
+        if (platform === "linux64") {
+          buildPlatformName = "linux1804-64";
+        }
+
+        let build = buildPlatformName + "-" + getCollectionName(t.option_collection_hash);
         console.log(build, name);
         if (!s.platforms[build]) {
           s.platforms[build] = {
