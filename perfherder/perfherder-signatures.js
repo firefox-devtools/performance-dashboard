@@ -1687,6 +1687,86 @@ const PerfHerderSignatures = {
       }
     }
   },
+  "server.pool.summary": {
+    "platforms": {
+      "windows10-64-shippable-opt": {
+        "signature": "74cb8c65e597dfe7f4ae037315af5fc01a963c3a",
+        "id": 3031403,
+        "old_signatures": [],
+        "framework": 12
+      },
+      "linux1804-64-shippable-opt": {
+        "signature": "d2e0522007cccfc02b7e8831d5c8a704ac0dfd6f",
+        "id": 3031412,
+        "old_signatures": [],
+        "framework": 12
+      }
+    }
+  },
+  "server.pool.server.pool.destroy": {
+    "platforms": {
+      "windows10-64-shippable-opt": {
+        "signature": "f9157225af5079ea61d71adf2ff75471c65a88a0",
+        "id": 3031407,
+        "old_signatures": [],
+        "framework": 12
+      },
+      "linux1804-64-shippable-opt": {
+        "signature": "bfcffb1de627f00f2b8f5c80d93f4de2c1d8a749",
+        "id": 3031416,
+        "old_signatures": [],
+        "framework": 12
+      }
+    }
+  },
+  "server.pool.server.pool.manage": {
+    "platforms": {
+      "windows10-64-shippable-opt": {
+        "signature": "04c1f98484a6df71ebb047a2cb1db8cddd0eebef",
+        "id": 3031404,
+        "old_signatures": [],
+        "framework": 12
+      },
+      "linux1804-64-shippable-opt": {
+        "signature": "6c2c2fab97612d5fef400dd9ad0d8565c8584323",
+        "id": 3031413,
+        "old_signatures": [],
+        "framework": 12
+      }
+    }
+  },
+  "server.pool.server.pool.manage-already-managed": {
+    "platforms": {
+      "windows10-64-shippable-opt": {
+        "signature": "f21cf1c7f68fe00e50a9975f9ebb471539599af0",
+        "id": 3031405,
+        "old_signatures": [],
+        "framework": 12
+      },
+      "linux1804-64-shippable-opt": {
+        "signature": "d8c5205520656007ee560dc76d9aa38901183b2c",
+        "id": 3031414,
+        "old_signatures": [],
+        "framework": 12
+      }
+    }
+  },
+  "server.pool.server.pool.unmanage": {
+    "platforms": {
+      "windows10-64-shippable-opt": {
+        "signature": "40a659c2de4ce1117a550bd6cb7edcb0db69b2de",
+        "id": 3031406,
+        "old_signatures": [],
+        "framework": 12
+      },
+      "linux1804-64-shippable-opt": {
+        "signature": "ce25fa6ab23c388d67da5d8dec4727228ae755a9",
+        "id": 3031415,
+        "old_signatures": [],
+        "framework": 12
+      }
+    }
+  },
   "inspector-metrics.summary": {
     "platforms": {
       "linux1804-64-shippable-opt": {
