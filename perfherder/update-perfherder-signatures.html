@@ -26,7 +26,10 @@ async function update() {
       tests = Object.values(tests).filter(t => {
         // Select only the tests we want: DAMP and with at least e10s (there can be other items in there, like "stylo")
         return (t.suite == "damp" && t.extra_options && t.extra_options.includes("e10s") && !t.extra_options.includes("stylo_disabled")) ||
+          // retrieve panel metrics tests
           t.suite.match(/-metrics$/) ||
+          // retrieve server-pool metrics tests
+          t.suite.match(/server.pool$/) ||
           t.suite.match(/total-after-gc/);
       }).filter(t => {
         // Exclude children of 70a5a2af which seem to contain duplicated windows
