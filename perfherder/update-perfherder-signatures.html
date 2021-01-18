@@ -6,7 +6,7 @@
 const platforms = [
   "windows7-32",
   "windows10-64-shippable",
-  "linux1804-64",
+  "linux1804-64-shippable",
   "linux64",
   "osx-10-10",
 ];
@@ -49,7 +49,7 @@ async function update() {
         // getCollectionName returns "pgo" or "opt"
         let buildPlatformName = platform;
         if (platform === "linux64") {
-          buildPlatformName = "linux1804-64";
+          buildPlatformName = "linux1804-64-shippable";
         }
 
         let build = buildPlatformName + "-" + getCollectionName(t.option_collection_hash);
