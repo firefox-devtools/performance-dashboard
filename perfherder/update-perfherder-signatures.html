@@ -3,9 +3,28 @@
 
 <script type="text/javascript" src="../js/fetch.js"></script>
 <script>
+
+// HOW TO HANDLE OLD SIGNATURES
+//
+// Say a test moved from linuxA to linuxB on 1st January 2022
+//
+// 1 - make sure linuxA and linuxB are both in the `platforms`
+// array at the top of this file.
+//
+// 2 - data from linuxA and linuxB should both populate the same
+// s.platforms[build] item. Make sure to use the same buildPlatformName
+// for both. if (platform === linuxA) { buildPlatformName = linuxB; }
+//
+// 3 - add an @old-signature {date} block in the last if/else of this
+// method. After 1 year, you can remove it, because the UI doesn't support
+// going back more than 1 year in the past.
+//
+// 4 - in test html files, set linuxB as the platform query argument.
+
 const platforms = [
   "windows10-64-shippable-qr",
   "linux1804-64-shippable",
+  "linux1804-64-shippable-qr",
   "linux64",
   "osx-10-10",
 ];
@@ -48,12 +67,14 @@ async function update() {
         }
         let s = final[name];
 
-        // getCollectionName returns "pgo" or "opt"
         let buildPlatformName = platform;
-        if (platform === "linux64") {
-          buildPlatformName = "linux1804-64-shippable";
+        // linux1804-64-shippable is only retrieved as an old signature for
+        // linux1804-64-shippable-qr
+        if (platform === "linux1804-64-shippable") {
+          buildPlatformName = "linux1804-64-shippable-qr";
         }
 
+        // getCollectionName returns "pgo" or "opt"
         let build = buildPlatformName + "-" + getCollectionName(t.option_collection_hash);
         console.log(build, name);
         if (!s.platforms[build]) {
@@ -64,15 +85,18 @@ async function update() {
           };
         }
 
-        if (platform == "linux64") {
-          // Starting December 10th 2019, linux builds are now named linux1806 instead of linux64 (bug 1602863)
+        if (platform == "linux1804-64-shippable") {
+          // @old-signature {2021-08-01}
+          // Metrics tests moved from linux1804-64-shippable to linux1804-64-shippable-qr
+          // in August 2021
           s.platforms[build].old_signatures.push({
             signature : t.signature_hash,
             id: t.id,
             framework,
-            before: new Date(2019, 11, 10, 0, 0).getTime(),
+            before: new Date(2021, 7, 1, 0, 0).getTime(),
           });
         } else {
+          // Up-to-date data
           s.platforms[build].signature = t.signature_hash;
           s.platforms[build].id = t.id;
           s.platforms[build].framework = framework;
